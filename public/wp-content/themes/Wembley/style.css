@@ -589,6 +589,7 @@ header#masthead .menu ul li {
 }
 .flipper_container {
   perspective: 1000;
+  -webkit-perspective: 1000px;
 }
 .flipper {
   width: 100%;
