@@ -77,6 +77,7 @@ function web2feel_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'web2feel' ),
+		'secondary' => __( 'Secondary', 'web2feel' ),
 	) );
 
 	/**
@@ -227,3 +228,64 @@ else $fflink = '';
 echo $fflink;
 }
 
+function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_img = $matches [1] [0];
+
+  if(empty($first_img)){
+    return false;
+  }
+  
+  return $first_img;
+}
+
+add_filter( 'the_excerpt', 'shortcode_unautop');
+add_filter( 'the_excerpt', 'do_shortcode');
+
+function full($link) {
+	return '<div class="link_container"><p class="full"><a href="' . $link . '">Full link</a></p></div>';
+}
+
+function short($link) {
+	return '<p class="short"><a href="' . $link . '">Click here</a></p>';
+}
+
+function wide($link) {
+	return '<p class="wide"><a href="' . $link . '">Click here</a></p>';
+}
+
+function socials($links) {
+	return '<p class="wide"><a href="' . $links['main'] . '">Click here</a><p class="socials"><a href="' . $links['fb']. '"class="fb">fb</a>' . 
+							'<a href="' . $links['tw'] . '"class="tw">tw</a>' . 
+							'<a href="' . $links['ig'] . '"class="ig">ig</a>' . 
+							'<a href="' . $links['pt'] . '"class="pt">pt</a></p></p>';
+}
+
+function make_link($atts) {
+	extract( shortcode_atts( array(
+      'link' => '/',
+      'type' => 'full',
+      'tw' => 'tw',
+      'fb' => 'fb',
+      'pt' => 'pt',
+      'ig' => 'ig',
+      ), $atts ) );
+
+	switch($type) {
+		case 'full':
+			return full($link);
+		case 'short':
+			return short($link);
+		case 'wide':
+			return wide($link);
+		case 'socials':
+			return socials(array('main' => $link, 'tw' => $tw, 'fb' => $fb, 'pt' => $pt, 'ig' => $ig));
+	}
+
+	
+}
+add_shortcode('link', 'make_link');

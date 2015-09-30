@@ -536,3 +536,203 @@ img.product {
 	max-width: 50% !important;
 	margin: auto;
 }
+
+header#masthead {
+	position: fixed;
+	width: 100%;
+	z-index: 9000;
+	background: transparent url("/wp-content/themes/Wembley/header-bg.jpg") repeat-x scroll left top;
+	min-height: 20px;
+	height: 47px;
+}
+
+header#masthead .site-branding {
+	padding-top: 0px !important;
+}
+
+header#masthead .menu ul li {
+	padding-top: 10px !important;
+}
+
+.main-navigation ul > li {
+	padding-top: 10px !important;
+	padding-bottom: 0px !important;
+}
+
+.main-navigation ul > li a:link, .main-navigation ul > li a:visited  {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.grid-item { 
+	width: 220px; 
+	float: left;
+	margin: 7px;
+	box-sizing: border-box;
+}
+.grid-item--width2 { width: 460px; }
+.grid-item--height2 {height: 460px;}
+.grid-item--width3 {width: 700px;}
+
+.flipper_container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+}
+.grid-item--width2 .flipper_container {
+	width: 460px;
+}
+.grid-item--height2 .flipper_container {
+	height: 460px;
+}
+.flipper_container {
+  perspective: 1000;
+}
+.flipper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.flipper_container:hover .flipper {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  color: white;
+  /*text-align: center;*/
+  background-color: #aaa;
+}
+
+.face.back img {
+	position: absolute;
+}
+
+.back p {
+	position: absolute;
+	/*margin-top: -7em;*/
+	/*margin-left: 38%;
+	line-height: 2.5;*/
+	opacity: 0;
+}
+
+div.link_container {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+p.full {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+p.short {
+	margin-top: 58%;
+	font-size: 17px;
+	margin-left: 34%;
+}
+p.wide {
+	margin-top: 27%;
+	font-size: 20px;
+	margin-left: 40%;
+}
+p.socials {
+	margin-top: 163px;
+	font-size: 23px !important;
+}
+
+p.socials .fb{
+	margin-left: 157px;
+}
+p.socials .tw, p.socials .ig, p.socials .pt{
+	margin-left: 19px;
+}
+
+
+nav#submenu {
+	display: none;
+	width: 100%;
+	height: 192px;
+	position: absolute;
+	margin-top: 45px;
+	background: transparent url("/wp-content/themes/Wembley/product-filter-bg.png") repeat scroll left top;
+}
+a#blogname {
+	background: transparent url("/wp-content/themes/Wembley/torani-logo.png") no-repeat scroll left top;
+	position: absolute;
+	z-index: 1000;
+	width: 164px;
+	height: 92px;
+	box-shadow: 2px 7px 27px 0px #000;
+}
+
+nav#submenu li a:hover {
+	color: #C5161E;
+}
+
+.the_logo {
+	position: absolute !important;
+}
+#site-navigation ul#topmenu {
+	margin-left: 200px;
+}
+
+#menu-secondary {
+	max-width: 1293px;
+	margin-left: auto;
+	color: #705944;
+	margin-top: 40px;
+}
+
+#menu-secondary li {
+
+}
+
+#menu-secondary li div {
+	text-align: center;
+}
+
+#menu-secondary li div img {
+	background: url("/wp-content/themes/Wembley/product-filter-icons.png") left 0px;
+	height: 50px;
+	margin-right: 42px;
+	min-width: 50px;
+	padding: 0px !important;
+	margin: auto;
+}
+
+#menu-secondary li a {
+	color: #705944;
+	/*margin-top: 44px;*/
+	display: block;
+	/*width: 219px;*/
+	font-weight: normal;
+}
+
+.products-all div img {
+	background-position: 46px 0px !important;
+}
+.products-fruitful div img {
+	background-position: 263px 0px !important;
+}
+.products-seasonal div img {
+	background-position: 370px 0px !important;
+}
+.products-sugarfree div img {
+	background-position: 148px 0px !important;
+	min-width: 54px !important;
+}
+
+.the_logo + div {
+	padding: 0px !important;
+}
