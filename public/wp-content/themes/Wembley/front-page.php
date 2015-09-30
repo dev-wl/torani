@@ -76,6 +76,34 @@ get_header(); ?>
 	            wp_reset_postdata(); ?>
             </div>
 
+            <div class="mobile">
+            	<?php 
+            	 global $post;
+	            $args = array('category' => 4, 'numberposts' => -1, 'orderby' => 'date', 'order' => 'ASC' );
+	            $myposts = get_posts( $args );
+	            $i = 0;
+				foreach ( $myposts as $post ) : {
+					setup_postdata( $post );
+					?>
+						<?php
+							$thumb_id = get_post_thumbnail_id();
+							$img_url = wp_get_attachment_url( $thumb_id, 'meduim' ); //get full URL to image (use "large" or "medium" if the images too big)
+						?>
+							
+						<article class="col-md-4 col-sm-4 pbox post-83 post type-post status-publish format-standard has-post-thumbnail hentry">
+							<a href="<?php get_permalink(); ?>"><img class="img-responsive" src="<?php echo $img_url;?>" /></a>
+							<h2 class="box-title">
+								<a href="<?php get_permalink(); ?>"><?php echo get_the_title();?></a>
+							</h2>
+							<div class="box-meta">
+							  	<?php echo wp_strip_all_tags( get_the_content() ); ?>
+							</div>
+						</article>
+						  
+						<?php } endforeach;
+	            wp_reset_postdata(); ?>
+            </div>
+
 			<div class="clearfix"></div>
 			<div class="col-md-12">
 			<?php bootstrap_pagination();?>
@@ -92,9 +120,7 @@ get_header(); ?>
 		  columnWidth: 7
 		});
 		$(document).on('click', '.back .link_container', function(e) {
-			// alert($(this).find('a').attr('href'));
 			window.location.href = $(this).find('a').attr('href');
-			//alert('a');
 		});
 		
 	});

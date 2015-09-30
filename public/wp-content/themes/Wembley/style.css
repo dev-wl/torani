@@ -737,3 +737,25 @@ nav#submenu li a:hover {
 .the_logo + div {
 	padding: 0px !important;
 }
+
+.mobile {
+	display: none;
+}
+
+.img-responsive {
+	margin: auto;
+}
+
+h2.box-title a:link, h2.box-title a:visited {
+	color: #333 !important;
+}
+
+@media (max-width: 640px) {
+	#main .grid {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
