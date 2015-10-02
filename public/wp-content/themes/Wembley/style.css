@@ -360,27 +360,27 @@ img {
 @media screen and (max-width: 768px) {
 
 
-.mobilenavi{
-	width: 100%;
-	padding:5px 10px;
-	border:1px solid #eee;
-	margin-bottom: 20px;
-	
-}
+	.mobilenavi{
+		width: 100%;
+		padding:5px 10px;
+		border:1px solid #eee;
+		margin-bottom: 20px;
+		
+	}
 
-select.mnav{
-	width: 100%;
-	background: transparent;
-	border: none;
-	  -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    height: 30px;
-}
+	select.mnav{
+		width: 100%;
+		background: transparent;
+		border: none;
+		-webkit-appearance:none;
+	    -moz-appearance:none;
+	    appearance:none;
+	    height: 30px;
+	}
 
-.site-branding{
-	text-align: center;
-}
+	.site-branding{
+		text-align: center;
+	}
 }
 
 
@@ -599,6 +599,7 @@ header#masthead .menu ul li {
 }
 .flipper_container:hover .flipper {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 .face {
   position: absolute;
@@ -609,6 +610,7 @@ header#masthead .menu ul li {
 .face.back {
   display: block;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   box-sizing: border-box;
   color: white;
   /*text-align: center;*/
@@ -677,8 +679,12 @@ a#blogname {
 	box-shadow: 2px 7px 27px 0px #000;
 }
 
-nav#submenu li a:hover {
+nav#submenu li:hover a {
 	color: #C5161E;
+}
+
+nav#submenu li {
+	cursor: pointer;
 }
 
 .the_logo {
@@ -750,12 +756,218 @@ h2.box-title a:link, h2.box-title a:visited {
 	color: #333 !important;
 }
 
+#mobnav {
+	display: none;
+}
+
+#main {
+	margin-top: 60px;
+}
+
+.recipe h2.box-title a:link {
+	color: #644834 !important;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.post_images {
+	max-width: 351px;
+	float: left;
+	padding-bottom: 15px;
+	margin-right: 30px;
+	min-width: 351px;
+}
+
+.post_images img {
+	float: left;
+	border-width: 9px 9px 3px;
+	border-style: solid;
+	border-color: #FFF;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	margin: 0 auto;
+}
+
+h2.single-title {
+	margin: 0px auto;
+	display: inline;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	color: #FF8400;
+}
+
+.recipe p:first-child {
+	margin-top: 50px;
+}
+
+.recipe {
+	font-size: 17px;
+	color: #fff;
+}
+
+.related_product {
+	height: 150px;
+	float: left;
+	margin-right: 100px;
+	margin-bottom: 40px;
+}
+
+.related_product img {
+	height: 100%;
+	width: auto;
+	padding-right: 10px;
+	float: left
+}
+
+.related_product img:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.related_product h5 {
+	color: #fff;
+	display: inline;
+	position: relative;
+	top: 81px;
+	left: 48px;
+}
+
+.related_product h5:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.single-details {
+	background: transparent url("/wp-content/themes/Wembley/chalk-background.jpg") repeat left top !important; 
+	background-size: 100% !important;
+}
+
+h3.featured {
+	margin-left: 30%;
+	color: #fff;
+}
+
+a.buy {
+	position: relative;
+	top:90px;
+	color: #fff;
+	background-color: #4682B4;
+	padding: 8px;
+}
+a.buy:visited {
+	color: #fff;
+}
+a.buy:hover {
+	color: #FF8400;
+}
+
+.product .post_images img {
+	border: none;
+}
+
+.product .post_images {
+	min-width: 0px;
+	max-width: none;
+}
+
+.related_recipe {
+	margin-bottom: 10px;
+}
+
+.related_recipe h5 {
+	display: inline;
+	font-size: 20px;
+}
+
+.related_recipe h5 a, .related_recipe h5 a:visited {
+	color: #FF8400;
+}
+
+.related_recipe h5 a:hover {
+	color: #fff;
+}
+
 @media (max-width: 640px) {
+	#main {
+		margin-top: 0px;
+	}
+
 	#main .grid {
 		display: none;
 	}
 
 	.mobile {
 		display: block;
+	}
+
+	#mobilenavi {
+		display: block;
+	}
+
+
+	#site-navigation, #submenu {
+		display: none;
+	}
+
+	#mobnav {
+	width: 36px;
+	height: 6px;
+	margin-top: 15px;
+	margin-left: 10px;
+	background-color: #ffffff;
+	color: #fff;
+	font-size: 28px;
+	display: none;
+	margin-right: 30px;	
+	display: block;
+	padding-top: 1px;
+	}
+	#mobnav:before {
+	  content: "";
+	  display: block;
+	  width: 36px;
+	  height: 6px;
+	  margin-top: -10px;
+	  background-color: #ffffff;
+	  /*display: block;*/
+	}
+	#mobnav:after {
+	  content: "";
+	  clear: both;
+	  width: 36px;
+	  height: 6px;
+	  margin-top: 12px;
+	  background-color: #ffffff;
+	  display: block;
+	}
+
+	.pushy #nav {
+		margin-top: 20px;
+	}
+
+	.pushy #nav #submenu {
+		display: none;
+	}
+
+	.pushy #nav ul {
+		list-style: none;
+	}
+	
+	.post_images {
+		max-width: 200px;
+		margin: 0px auto;
+		float:none;
+	}
+	.post_images:after {
+	  content: "";
+	  clear: both;
+	  display: block;
 	}
 }

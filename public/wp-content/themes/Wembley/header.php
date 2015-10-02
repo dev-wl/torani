@@ -22,11 +22,21 @@
 
 <script>
 	$(window).on('load', function() {
-		$("ul#topmenu, #submenu").mouseenter(function() {
+		$("#topmenu li:first-child, #submenu, #submenu li").mouseenter(function() {
+			if($(window).width() < 640)
+				return;
 			$('#submenu').css('display', 'block');
-		}).mouseleave(function(){
-			$('#submenu').css('display', 'none');
 		});
+		$('#submenu').mouseleave(function(){
+			setTimeout(function() {
+				$('#submenu').css('display', 'none');
+			}, 500);
+		});
+
+		$("#submenu li").click(function() {
+			$(window).location = $(this).find('a').attr('href');
+		});
+
 	});
 </script>
 
@@ -39,7 +49,7 @@
 
     <div class="site-overlay"></div>
 <div id="page" class="hfeed site  ">
-<div class="menu-btn"><i class="glyphicon glyphicon-cog"></i></div>
+<!-- <div class="menu-btn"><i class="glyphicon glyphicon-cog"></i></div> -->
 	
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<div class="container" style="width: 100%;max-width: 100%;"> <div class="row"> 
@@ -56,7 +66,9 @@
 		</div>
 			
 			<div class="col-lg-12 col-md-8 col-xs-12">
-			<div class="mobilenavi"></div>
+			<div class="mobilenavi">
+				<div id="mobnav"></div>
+			</div>
 			
 			 <nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary','container_class' => 'topmenu','menu_id'=>'topmenu' ) ); ?>

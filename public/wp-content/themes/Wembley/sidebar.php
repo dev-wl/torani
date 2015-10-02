@@ -9,10 +9,18 @@
 		<?php get_search_form(); ?>
 	</div>
 	
+	<div id="nav" class="widget-area">
+		<aside class="widget widget_categories">
+			<h1 class="widget-title">NAVIGATION</h1>
+			<?php wp_nav_menu( array( 'menu_id'=>'topmenu' ) ); ?>
+		</aside>
+	</div>
+
 	<div id="secondary" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 		<?php endif; // end sidebar widget area ?>
-		<?php get_template_part( 'sponsors' ); ?>
+		<?php //get_template_part( 'sponsors' ); ?>
 	</div><!-- #secondary -->
+	

@@ -31,11 +31,6 @@ function custom_style() {
 add_action( 'wp_footer', 'custom_style' );
 
 
-
-
- 
- 
-
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -134,7 +129,7 @@ function web2feel_scripts() {
 	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/js/modernizr-2.6.2.min.js', array( 'jquery' ), '20120206', true );
-	wp_enqueue_script( 'mobilemenu', get_template_directory_uri() . '/js/mobilemenu.js', array( 'jquery' ), '20120206', true );
+	// wp_enqueue_script( 'mobilemenu', get_template_directory_uri() . '/js/mobilemenu.js', array( 'jquery' ), '20120206', true );
 	wp_enqueue_script( 'jscroll', get_template_directory_uri() . '/js/jscroll.js', array( 'jquery' ), '20120206', true );
 	wp_enqueue_script( 'mousewheel', get_template_directory_uri() . '/js/mouse-wheel.js', array( 'jquery' ), '20120206', true );
 	wp_enqueue_script( 'pushy', get_template_directory_uri() . '/js/pushy.js', array( 'jquery' ), '20120206', true );
@@ -289,3 +284,15 @@ function make_link($atts) {
 	
 }
 add_shortcode('link', 'make_link');
+
+add_filter('single_template', 'my_single_template');
+function my_single_template($single) {
+	global $wp_query, $post;
+	foreach((array)get_the_category() as $cat) :
+		if(file_exists(TEMPLATEPATH . '/single-' . $cat->slug . '.php')) {
+			return TEMPLATEPATH . '/single-' . $cat->slug . '.php';
+		}
+		else
+			return TEMPLATEPATH . '/single.php';
+	endforeach;
+}
