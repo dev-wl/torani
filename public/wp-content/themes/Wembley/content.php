@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-4 col-sm-4 pbox'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-3 col-md-4 col-sm-4 pbox'); ?>>
 
 		<?php
 			$thumb = get_post_thumbnail_id();
@@ -17,5 +17,6 @@
 		<?php endif; ?>	
 		
 		<h2 class="box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-		<div class="box-meta"><?php the_category(', '); ?></div>	
+		<div class="box-meta"><?php the_excerpt(); ?></div>	
+		<div class="box-meta"><?php the_category(', '); ?></div>
 </article><!-- #post-## -->

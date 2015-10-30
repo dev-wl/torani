@@ -13,7 +13,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				
 				<h2 class="single-title"> <?php the_title();?> </h2>
-				<div class="post_images"></div>
+				<div class="post_images recipe"></div>
 
 				<div class="recipe">
 					<?php the_content(); ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 					);
 					$postslist = get_posts( $args );
 				?>
-				<div class="clearfix">
+				<div class="clearfix"></div>
 				<h3 class="featured">FEATURED IN THIS RECIPE</h3>
 				<?php foreach ($postslist as $post): ?>
 					<div class="related_product">

@@ -285,6 +285,16 @@ function make_link($atts) {
 }
 add_shortcode('link', 'make_link');
 
+function remove_more($more) {
+	return '';
+}
+add_filter('excerpt_more', 'remove_more');
+
+function custom_excerpt_length( $length ) {
+	return 23;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length');
+
 add_filter('single_template', 'my_single_template');
 function my_single_template($single) {
 	global $wp_query, $post;

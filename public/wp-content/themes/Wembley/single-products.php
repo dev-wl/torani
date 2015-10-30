@@ -49,21 +49,17 @@ get_header(); ?>
 					$postslist = get_posts( $args );
 					// print_r($postslist);
 				?>
-				<div class="clearfix">
+				<div class="clearfix"></div>
 				<h3 class="featured">RECIPES WITH THIS PRODUCT</h3>
 				<?php foreach ($postslist as $post): ?>
-					<div class="related_recipe col-lg-4">
+					<div class="related_recipe col-lg-4 col-sm-2 col-md-3">
 						<h5><a href="<?php echo $post->guid;?>"><?php echo $post->post_title; ?></a></h5>
-						<?php
-							 $thumb = get_post_thumbnail_id($post->ID);
-							 $img_url = wp_get_attachment_url( $thumb,'small' );
-						 ?>
 					</div>
 				<?php endforeach; ?>
 
 				<div class="clearfix"></div>
 
-				<?php web2feel_content_nav( 'nav-below' ); ?>
+				<?php //web2feel_content_nav( 'nav-below' ); ?>
 				
 				<div class="col-lg-12 col-md-12 col-lg-offset-2">
 				<?php

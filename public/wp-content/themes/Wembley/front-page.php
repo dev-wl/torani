@@ -30,6 +30,29 @@ get_header(); ?>
 	<div id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
 			<div class="grid">
+				<!-- css slider -->
+					<div class="sl-wrapper grid-item grid-item--width3">
+						<input type="radio" name="point" id="slide1" checked>
+						<input type="radio" name="point" id="slide2">
+						<input type="radio" name="point" id="slide3">
+						<input type="radio" name="point" id="slide4">
+						<input type="radio" name="point" id="slide5">
+						<div class="slider">
+							<div class="slides slide1"></div>
+							<div class="slides slide2"></div>
+							<div class="slides slide3"></div>
+							<div class="slides slide4"></div>
+							<div class="slides slide5"></div>
+						</div>	
+						<div class="controls">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+							<label for="slide3"></label>
+							<label for="slide4"></label>
+							<label for="slide5"></label>
+						</div>
+					</div>
+				<!-- eofcss slide -->
 				<?php /* Start the Loop */ ?>
 				<?php
 	            global $post;
@@ -39,17 +62,19 @@ get_header(); ?>
 				foreach ( $myposts as $post ) : {
 					setup_postdata( $post );
 					$i++;
+					if($i == 1)
+						continue;
 					?>
 						<?php
 							$thumb_id = get_post_thumbnail_id();
 							$img_url = wp_get_attachment_url( $thumb_id,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
 						
 							$res = getimagesize($img_url);
-							
+
 							$additional = '';
 							if($res[0] == 460)
 								$additional .= ' grid-item--width2';
-							if($res[0] == 700)
+							if($res[0] == 900)
 								$additional .= ' grid-item--width3';
 							if($res[1] == 460)
 								$additional .= ' grid-item--height2';
@@ -72,7 +97,23 @@ get_header(); ?>
 							</div>
 						<?php endif; ?>
 						  </div>
-						<?php } endforeach;
+						<?php } endforeach;?>
+							
+						<div class="grid-item grid-item--heightFeed grid-item--widthFeed feed tw-feed">
+							<div class="feed-header">
+								<h1><label class="feed-image tw"></label> twitter</h1>
+							</div>
+								<a class="twitter-timeline"  href="https://twitter.com/Skinnygirl_tea" data-widget-id="644784352090550272">Tweets by @Skinnygirl_tea</a>
+					            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+
+						<div class="grid-item grid-item--heightFeed feed fb-feed">
+							<div class="feed-header">
+								<h1><label class="feed-image fb"></label> facebook</h1>
+							</div>
+							<?php echo do_shortcode('[facebook-feed]'); ?>
+						</div>
+				<?php
 	            wp_reset_postdata(); ?>
             </div>
 
@@ -102,6 +143,23 @@ get_header(); ?>
 						  
 						<?php } endforeach;
 	            wp_reset_postdata(); ?>
+
+	            <div class="feed tw-feed">
+							<div class="feed-header">
+								<h1><label class="feed-image tw"></label> twitter</h1>
+							</div>
+								<a class="twitter-timeline"  href="https://twitter.com/Skinnygirl_tea" data-widget-id="644784352090550272">Tweets by @Skinnygirl_tea</a>
+					            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+
+						<div class="feed fb-feed">
+							<div class="feed-header">
+								<h1><label class="feed-image fb"></label> facebook</h1>
+							</div>
+							<?php echo do_shortcode('[facebook-feed]'); ?>
+						</div>
+
+
             </div>
 
 			<div class="clearfix"></div>
@@ -122,10 +180,7 @@ get_header(); ?>
 		$(document).on('click', '.back .link_container', function(e) {
 			window.location.href = $(this).find('a').attr('href');
 		});
-		
 	});
-
-	
 </script>
 
 <?php get_footer(); ?>

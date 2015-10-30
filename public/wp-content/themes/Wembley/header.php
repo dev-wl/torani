@@ -27,6 +27,19 @@
 				return;
 			$('#submenu').css('display', 'block');
 		});
+
+		$('ul#topmenu li a').css('text-transform', 'uppercase');
+
+		// $("#topmenu li:first-child, #submenu, #submenu li").touchstart(function() {
+		// 	alert('a');
+		// });
+
+
+		// $("#topmenu li:first-child").touchend(function(e) {
+		// 	e.stopPropagation();
+		// 	e.preventDefault();
+		// });
+
 		$('#submenu').mouseleave(function(){
 			setTimeout(function() {
 				$('#submenu').css('display', 'none');
@@ -65,7 +78,7 @@
 				</div>
 		</div>
 			
-			<div class="col-lg-12 col-md-8 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-xs-12">
 			<div class="mobilenavi">
 				<div id="mobnav"></div>
 			</div>
@@ -76,8 +89,19 @@
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>	
 			 </nav><!-- #site-navigation -->
+
+			 <div id="maillist">
+				<form>
+					<input type="text" placeholder="JOIN OUR MAILING LIST" />
+					<div class="submit-wrapper">
+						<input class="submit-button" type="submit" value="SUBMIT" />
+					</div>
+				</form>
+			</div>
+			<div class="clearfix"></div>
 			</div>
 		</div></div>
+		
 	</header><!-- #masthead -->
 	
 	<div class="container">

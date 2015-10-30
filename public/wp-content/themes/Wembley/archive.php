@@ -8,63 +8,119 @@
  */
 
 get_header(); ?>
+<style type="text/css">
+	#page {
+		background-color: #eae4d8;
+	}
 
+	h1.page-title {
+		color: #705944;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 40px;
+		display: inline-block;
+		float: left;
+		padding-right: 15px;
+		width: 19%;
+		margin: 0;
+	}
+
+	.description {
+		border-top: 2px solid #705944;
+		border-bottom: 2px solid #705944;
+		padding-bottom: 5px;
+		padding-top: 5px;
+
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.description p {
+		margin-left: 10px;
+	}
+
+	.column {
+		-moz-columns: auto 2;
+		columns: auto 2;
+		-webkit-columns: auto 2;
+	}
+
+</style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="pages-header col-md-12">
-				<h1 class="page-title">
-					<?php
-						if ( is_category() ) :
-							single_cat_title();
+				<div class="description">
+					<h1 class="page-title">
+						<?php
+							if ( is_category() ) :
+								single_cat_title();
+								$id = get_the_category();
+								$id = $id[0]->term_id;
+								if($id == 11) {
+									$cat_text = get_page_by_title('Coffee Description', 'ARRAY_A', 'post' );
+									$cat_text = $cat_text['post_content'];
+								}
+								else if($id == 12) {
+									$cat_text = get_page_by_title('Flavored coffee description', 'ARRAY_A', 'post' );
+									$cat_text = $cat_text['post_content'];
+								} else if($id == 13) {
+									$cat_text = get_page_by_title('Indulgent beverages', 'ARRAY_A', 'post' );
+									$cat_text = $cat_text['post_content'];
+								}
+								$a = null;
 
-						elseif ( is_tag() ) :
-							single_tag_title();
+							elseif ( is_tag() ) :
+								single_tag_title();
 
-						elseif ( is_author() ) :
-							/* Queue the first post, that way we know
-							 * what author we're dealing with (if that is the case).
-							*/
-							the_post();
-							printf( __( 'Author: %s', 'web2feel' ), '<span class="vcard">' . get_the_author() . '</span>' );
-							/* Since we called the_post() above, we need to
-							 * rewind the loop back to the beginning that way
-							 * we can run the loop properly, in full.
-							 */
-							rewind_posts();
+							// elseif ( is_author() ) :
+							// 	/* Queue the first post, that way we know
+							// 	 * what author we're dealing with (if that is the case).
+							// 	*/
+							// 	the_post();
+							// 	printf( __( 'Author: %s', 'web2feel' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							// 	/* Since we called the_post() above, we need to
+							// 	 * rewind the loop back to the beginning that way
+							// 	 * we can run the loop properly, in full.
+							// 	 */
+							// 	rewind_posts();
 
-						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'web2feel' ), '<span>' . get_the_date() . '</span>' );
+							// elseif ( is_day() ) :
+							// 	printf( __( 'Day: %s', 'web2feel' ), '<span>' . get_the_date() . '</span>' );
 
-						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'web2feel' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+							// elseif ( is_month() ) :
+							// 	printf( __( 'Month: %s', 'web2feel' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
-						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'web2feel' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+							// elseif ( is_year() ) :
+							// 	printf( __( 'Year: %s', 'web2feel' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'web2feel' );
+							// elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
+							// 	_e( 'Asides', 'web2feel' );
 
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'web2feel');
+							// elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
+							// 	_e( 'Images', 'web2feel');
 
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'web2feel' );
+							// elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
+							// 	_e( 'Videos', 'web2feel' );
 
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'web2feel' );
+							// elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
+							// 	_e( 'Quotes', 'web2feel' );
 
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'web2feel' );
+							// elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
+							// 	_e( 'Links', 'web2feel' );
 
-						else :
-							_e( 'Archives', 'web2feel' );
+							// else :
+							// 	_e( 'Archives', 'web2feel' );
 
-						endif;
-					?>
-				</h1>
+							endif;
+						?>
+					</h1> 
+					<div class="column"><p><?php echo $cat_text; ?></p></div><div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -73,7 +129,7 @@ get_header(); ?>
 					endif;
 				?>
 			</header><!-- .page-header -->
-
+			<div class="flex-main">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -86,6 +142,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
+			</div>
 			<div class="clearfix"></div>
 			<?php bootstrap_pagination();?>
 
