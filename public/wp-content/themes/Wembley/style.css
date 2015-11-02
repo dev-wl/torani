@@ -279,7 +279,7 @@ img {
 	display: block;
 	float: left;
 	/*width: 100%;*/
-	width: 70%;
+	width: 72%;
 }
 .main-navigation ul {
 	list-style: none;
@@ -364,7 +364,7 @@ img {
 	.mobilenavi{
 		width: 100%;
 		padding:5px 10px;
-		border:1px solid #eee;
+		/*border:1px solid #eee;*/
 		margin-bottom: 20px;
 		
 	}
@@ -1013,6 +1013,7 @@ p.copy {
 /*footer experiment*/
 #page {
 	overflow: inherit;
+	background-color: #EAE4D8;
 }
 .footer {
 	width: 100%;
@@ -1260,11 +1261,13 @@ label.fb {
 article.post.type-post.status-publish.format-standard h2 {
 	display: inline-block;
 	font-size: 20px;
+	width: 100%;
 }
 
 article.post.type-post.status-publish.format-standard .box-meta {
 	text-align: justify;
 	max-width: 234px;
+	margin: 0px auto;
 }
 
 .flex-main {
@@ -1272,37 +1275,108 @@ article.post.type-post.status-publish.format-standard .box-meta {
 	flex-flow: row wrap;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-	#menu-secondary {
-		width: 68%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.product .post_images {
-		margin-top: 20px;
-	}
+.sfsi_plus_wicons.shuffeldiv {
+	width: 27px !important;
 }
 
-@media (max-width: 746px) {
-	.flex-main article {
-		margin: 0px auto;
-	}
+span.share {
+	text-transform: uppercase;
+	float: left;
+	margin-top: 7px;
 }
 
-@media (max-width: 640px) {
-	#main {
-		margin-top: 0px;
-	}
+.share-icons {
+	/*margin: 0px 14px;*/
+	max-width: 234px;
+	margin: 0px auto;
+}
 
-	#main .grid {
-		display: none;
-	}
+.sfsi_plus_widget .sfsiplus_norm_row {
+	width: 188px !important;
+	position: relative !important;
+}
 
-	.mobile {
-		display: block;
-	}
+#sfsi_holder {
+	display: none;
+}
 
+.torani-btn {
+	padding: 10px;
+	border-radius: 0px;
+	color: #DCDCDC !important;
+}
+
+.torani-btn:active {
+	box-shadow: inset 0px 0px 10px 2px #696969;
+}
+
+.read-more {
+	background-color: #DAA520;
+}
+
+.buy-now {
+	background-color: #DC143C;
+}
+
+.options {
+	max-width: 234px;
+	margin: 0px auto;
+}
+
+.single-product .image-block {
+	float: left;
+	max-width: 42% !important;
+	margin-right: 30px;
+	min-width: 21%;
+}
+
+.single-product .image-block .share-icons {
+	max-width: none;
+}
+
+.single-product .general{
+	float: left;
+	width: 55%;
+}
+
+.single-product .general .box-meta {
+	max-width: 100% !important;
+}
+
+.description {
+	border-top: 2px solid #705944;
+	border-bottom: 2px solid #705944;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description p {
+	margin-left: 10px;
+}
+
+.column {
+	-moz-columns: auto 2;
+	columns: auto 2;
+	-webkit-columns: auto 2;
+}
+
+.single-product .description {
+	margin-bottom: 20px;
+}
+
+.single-product .share-icons {
+	max-width: 320px;
+}
+
+.single-product .options {
+	width: 192px;
+}
+
+@media (max-width: 1110px) {
 	#mobilenavi {
 		display: block;
 	}
@@ -1355,7 +1429,99 @@ article.post.type-post.status-publish.format-standard .box-meta {
 	.pushy #nav ul {
 		list-style: none;
 	}
+
+	#maillist {
+		display: none;
+	}
+
+	.site-branding {
+		text-align: initial;
+	}
+
+	a#blogname {
+		right: 10px;
+	}
+
+	.footer {
+		position: relative;
+	}
+
+	.footer-left {
+		margin-top: 0px;
+		margin-left: 0px;
+		font-size: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.footer-right {
+		padding-right: 0px;
+		float: none;
+	}
+
+	.footer-right p.copy {
+		width: 50%;
+		margin: 0px auto;
+		float: none;
+	}
+
+	#content {
+	    padding-bottom: 35px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+	#menu-secondary {
+		width: 68%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.product .post_images {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 746px) {
+	.flex-main article {
+		margin: 0px auto;
+	}
+
+	.description {
+		display: block !important;
+	}
 	
+	.description .column {
+	    -moz-columns: 1 auto;
+	    columns: auto 1;
+	    -webkit-columns: auto 1;
+	}
+
+	.pages-header h1.page-title {
+		margin: 0px auto;
+		float: none;
+		display: block;
+		width: 20%;
+	}
+
+	.flex-main article {
+	    margin: 0px auto 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	#main {
+		margin-top: 0px;
+	}
+
+	#main .grid {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+		
 	.post_images {
 		max-width: 200px;
 		margin: 0px auto;
@@ -1461,5 +1627,9 @@ article.post.type-post.status-publish.format-standard .box-meta {
 
 	#twitter-widget-1 {
 		height: 291px !important;
+	}
+
+	.pages-header h1.page-title {
+		width: 50%;
 	}
 }

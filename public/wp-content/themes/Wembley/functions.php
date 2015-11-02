@@ -299,7 +299,14 @@ add_filter('single_template', 'my_single_template');
 function my_single_template($single) {
 	global $wp_query, $post;
 	foreach((array)get_the_category() as $cat) :
-		if(file_exists(TEMPLATEPATH . '/single-' . $cat->slug . '.php')) {
+		if($cat->slug == 'Products' || $cat->slug == 'coffee' || $cat->slug == 'flavored-coffee' || $cat->slug == 'indulgent-beverages') {
+			if(file_exists(TEMPLATEPATH . '/single-product.php')) {
+				return TEMPLATEPATH . '/single-product.php';
+			}
+			else
+				return TEMPLATEPATH . '/single.php';
+		}
+		else if(file_exists(TEMPLATEPATH . '/single-' . $cat->slug . '.php')) {
 			return TEMPLATEPATH . '/single-' . $cat->slug . '.php';
 		}
 		else

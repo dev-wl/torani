@@ -25,27 +25,6 @@ get_header(); ?>
 		margin: 0;
 	}
 
-	.description {
-		border-top: 2px solid #705944;
-		border-bottom: 2px solid #705944;
-		padding-bottom: 5px;
-		padding-top: 5px;
-
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	}
-
-	.description p {
-		margin-left: 10px;
-	}
-
-	.column {
-		-moz-columns: auto 2;
-		columns: auto 2;
-		-webkit-columns: auto 2;
-	}
-
 </style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -138,7 +117,8 @@ get_header(); ?>
 					 * If you want to overload this in a child theme then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'product_tpl', get_post_format() );
+
 				?>
 
 			<?php endwhile; ?>
