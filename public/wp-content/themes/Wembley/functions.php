@@ -313,3 +313,42 @@ function my_single_template($single) {
 			return TEMPLATEPATH . '/single.php';
 	endforeach;
 }
+
+/*Buy now! link*/
+
+add_action( 'admin_menu', 'my_create_post_meta_box' );
+add_action( 'save_post', 'my_save_post_meta_box', 10, 2 );
+
+function my_create_post_meta_box() {
+  add_meta_box( 'my-meta-box', 'Buy now! Link', 'my_post_meta_box', 'post', 'normal', 'high' );
+}
+
+function my_post_meta_box( $object, $box ) { ?>
+  <p>
+    <label for="buy-now-link">Buy now! link:</label>
+    <br />
+    <input type="text" name="buy-now-link" id="buy-now-link" style="width: 97%;" value="<?php echo wp_specialchars( get_post_meta( $object->ID, 'buy-now-link', true ), 1 ); ?>" />
+    <input type="hidden" name="my_meta_box_nonce" value="<?php echo wp_create_nonce( plugin_basename( __FILE__ ) ); ?>" />
+  </p>
+<?php }
+
+function my_save_post_meta_box( $post_id, $post ) {
+
+  if ( !wp_verify_nonce( $_POST['my_meta_box_nonce'], plugin_basename( __FILE__ ) ) )
+    return $post_id;
+
+  if ( !current_user_can( 'edit_post', $post_id ) )
+    return $post_id;
+
+  $meta_value = get_post_meta( $post_id, 'buy-now-link', true );
+  $new_meta_value = stripslashes( $_POST['buy-now-link'] );
+
+  if ( $new_meta_value && '' == $meta_value )
+    add_post_meta( $post_id, 'buy-now-link', $new_meta_value, true );
+
+  elseif ( $new_meta_value != $meta_value )
+    update_post_meta( $post_id, 'buy-now-link', $new_meta_value );
+
+  elseif ( '' == $new_meta_value && $meta_value )
+    delete_post_meta( $post_id, 'buy-now-link', $meta_value );
+}

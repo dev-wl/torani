@@ -37,7 +37,7 @@ get_header(); ?>
 					<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 				</div>
 				<div class="options">
-					<a href="#" class="torani-btn buy-now">BUY NOW</a>
+					<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now" target="_blank">BUY NOW</a>
 				</div>
 			</div>
 
@@ -58,6 +58,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<script>
+	//temporary js to align share icons next to the post image
+	$('.post .share-icons').width($('.img-responsive').width());
+</script>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

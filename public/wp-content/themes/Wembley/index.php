@@ -12,6 +12,16 @@
  */
 
 get_header(); ?>
+<style type="text/css">
+	#main {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	.description {
+		margin-bottom: 20px;
+	}
+</style>
 
 	<div class="col-md-12 intro-me clearfix">
 		<h2> <?php echo ft_of_get_option('fabthemes_welcome_title'); ?></h2>
@@ -21,21 +31,30 @@ get_header(); ?>
 	
 	<div id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
-
+			<div class="description">
+				<h1 class="page-title">BLOG</h1> 
+				<?php 
+					$cat_text = get_page_by_title('Blog Description', 'ARRAY_A', 'post' );
+					$cat_text = $cat_text['post_content']; 
+				?>
+				<div class="column"><p><?php echo $cat_text; ?></p></div><div class="clearfix"></div>
+			</div>
+		<?php query_posts($query_string . '&cat=-11, -12, -13, -4, -2, -7, -14, -6' ); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="flex-main blog">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+						/* Include the Post-Format-specific template for the content.
+						 * If you want to overload this in a child theme then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'blog-tpl', get_post_format() );
+					?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to overload this in a child theme then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div>
 			<div class="clearfix"></div>
 			<div class="col-md-12">
 			<?php bootstrap_pagination();?>

@@ -533,6 +533,10 @@ object {
 
 /*Wl-AK*/
 
+body, #page {
+	min-height: 100vh;
+}
+
 img.product {
 	max-width: 50% !important;
 	margin: auto;
@@ -1270,6 +1274,10 @@ article.post.type-post.status-publish.format-standard .box-meta {
 	margin: 0px auto;
 }
 
+.flex-main article a img.img-responsive {
+	max-width: 234px;
+}
+
 .flex-main {
 	display: flex;
 	flex-flow: row wrap;
@@ -1343,15 +1351,44 @@ span.share {
 	max-width: 100% !important;
 }
 
+.single-product .general h2.box-title, .post .entry-content .description h2.page-title {
+	font-size: 32px !important;
+	margin-bottom: 12px;
+	color: #705944;
+}
+
+.post .description {
+	width: 100%;
+	margin-left: 0px !important;
+	margin-bottom: 15px;
+}
+
+.singlepic {
+	margin: 20px 0px !important;
+}
+
+h1.page-title {
+	color: #705944 !important;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 40px;
+	display: inline-block;
+	float: left;
+	padding-right: 15px;
+	width: 19%;
+	margin: 0;
+}
+
 .description {
 	border-top: 2px solid #705944;
 	border-bottom: 2px solid #705944;
 	padding-bottom: 5px;
 	padding-top: 5px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 98.8%;
+    margin-left: 1.2%;
 }
 
 .description p {
@@ -1374,6 +1411,43 @@ span.share {
 
 .single-product .options {
 	width: 192px;
+}
+
+#main .flex-main.blog article a img {
+	max-width: 100%;
+}
+
+#main .flex-main.blog .box-meta {
+	max-width: 100%;
+}
+
+#main .flex-main.blog .box-title {
+	width: initial;
+	font-size: 25px;
+}
+
+#main .flex-main.blog .options {
+	max-width: 100%;
+	margin-top: 15px;
+}
+
+.post .image-block {
+	float:left;
+	max-width: 50%;
+}
+
+.post .share-icons {
+	max-width: initial;
+}
+
+.post .entry-content
+{
+	max-width: 48%;
+	float: right;
+}
+
+li.indent {
+	margin-left: 20px !important;
 }
 
 @media (max-width: 1110px) {
@@ -1430,9 +1504,9 @@ span.share {
 		list-style: none;
 	}
 
-	#maillist {
+	/*#maillist {
 		display: none;
-	}
+	}*/
 
 	.site-branding {
 		text-align: initial;
@@ -1470,6 +1544,56 @@ span.share {
 	}
 }
 
+@media (max-width: 1280px) and(max-device-width: 1280px) {
+	body, #page {
+		min-height: initial;
+	}
+}
+
+@media (max-width: 1280px) {
+
+	.flex-main .share-icons {
+		max-width: 234px;
+	}
+
+	.post .image-block, .single-product .general, .single-product .options, .post .entry-content {
+		float: none !important;
+		max-width: initial !important;
+		width: 100%;
+	}
+
+	.sfsi_plus_wicons {
+		margin-bottom: 0px !important;
+	}
+
+	.entry-content {
+		margin-top: 0px !important;
+	}
+
+	#content {
+		padding-bottom: 0px !important;
+	}
+	
+	#maillist {
+		margin-top: 20px;
+	}
+
+	#maillist form {
+		float: none;
+		margin: 0px 10px !important;
+		width: 232px !important;
+	}
+
+	#maillist form .submit-wrapper {
+		height: 31px;
+	}
+
+	#maillist form input[type="text"] {
+	    width: 151px;
+	    padding-left: 7px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
 	#menu-secondary {
 		width: 68%;
@@ -1482,9 +1606,19 @@ span.share {
 	}
 }
 
+@media (max-width: 746px) and (orientation: landscape) {
+	.flex-main article.col-xs-12 {
+		width: 50% !important;
+	}
+}
+
 @media (max-width: 746px) {
 	.flex-main article {
 		margin: 0px auto;
+	}
+
+	.flex-main article .share-icons {
+		max-width: 234px !important;
 	}
 
 	.description {
@@ -1497,15 +1631,34 @@ span.share {
 	    -webkit-columns: auto 1;
 	}
 
-	.pages-header h1.page-title {
+	.pages-header h1.page-title, .description h2.page-title {
 		margin: 0px auto;
 		float: none;
 		display: block;
 		width: 20%;
+		text-align: center !important;
+		margin-bottom: 0px !important;
 	}
 
 	.flex-main article {
-	    margin: 0px auto 20px;
+	    margin: 0px auto 60px;
+	}
+
+	.post .image-block, .post .entry-content {
+		float: none;
+		max-width: initial;
+	}
+
+	.sfsiplus_norm_row.sfsi_plus_wDiv div {
+		margin-bottom: 0px !important;
+	}
+
+	.sfsi_plus_wicons {
+		margin-bottom: 0px !important;
+	}
+
+	.entry-content {
+		margin: 0px !important;
 	}
 }
 
@@ -1527,6 +1680,7 @@ span.share {
 		margin: 0px auto;
 		float:none;
 	}
+
 	.post_images:after {
 	  content: "";
 	  clear: both;
@@ -1596,17 +1750,7 @@ span.share {
 
 	#maillist form input[type="text"] {
 		padding-left: 0px;
-		width: 180px;
-	}
-
-	.submit-wrapper {
-		float: right;
-	}
-
-	.submit-wrapper:after {
-		content: " ";
-		display: block;
-		clear: both;
+		width: 130px;
 	}
 
 	.feed {
@@ -1631,5 +1775,12 @@ span.share {
 
 	.pages-header h1.page-title {
 		width: 50%;
+	}
+
+	.description h1.page-title {
+		float: none;
+		padding: 0px !important;
+	    margin: 0px auto !important;
+	    display: block;
 	}
 }

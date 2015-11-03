@@ -13,6 +13,7 @@
 		<aside class="widget widget_categories">
 			<h1 class="widget-title">NAVIGATION</h1>
 			<?php wp_nav_menu( array( 'menu_id'=>'topmenu' ) ); ?>
+			<?php wp_nav_menu( array( 'menu'=>'Secondary', 'menu_id' => 'secondary-mobile' ) ); ?>
 		</aside>
 	</div>
 

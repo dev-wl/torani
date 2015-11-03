@@ -13,10 +13,12 @@
 		?>
 					
 		<?php if($image) : ?>
-		<a href="<?php the_permalink(); ?>"> <img class="img-responsive" src="<?php echo $image ?>"/></a>
+			<a href="<?php the_permalink(); ?>"> <img class="img-responsive" src="<?php echo $image ?>"/></a>
 		<?php endif; ?>	
 		
 		<h2 class="box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<div class="box-meta"><?php the_excerpt(); ?></div>	
-		<div class="box-meta"><?php the_category(', '); ?></div>
+		<div class="options">
+			<a href="<?php the_permalink(); ?>" class="torani-btn read-more">READ MORE</a>
+		</div>
 </article><!-- #post-## -->

@@ -16,11 +16,14 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="/wp-content/themes/Wembley/js/masonry.pkgd.min.js"></script>
-
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
+<![endif]-->
 
 <?php wp_head(); ?>
 
 <script>
+
 	$(window).on('load', function() {
 		$("#topmenu li:first-child, #submenu, #submenu li").mouseenter(function() {
 			if($(window).width() < 640)
@@ -97,6 +100,7 @@
 						<input class="submit-button" type="submit" value="SUBMIT" />
 					</div>
 				</form>
+				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>
 			</div>
@@ -106,3 +110,10 @@
 	
 	<div class="container">
 	<div id="content" class="site-content row">
+
+<script>
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('#maillist').insertAfter('.pushy .searchbox');
+	}
+	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+</script>

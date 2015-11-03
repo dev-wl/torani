@@ -18,12 +18,12 @@
 		
 		<h2 class="box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<div class="box-meta"><?php the_excerpt(); ?></div>	
-		<div class="box-meta"><?php the_category(', '); ?></div>
+		<!-- <div class="box-meta"><?php the_category(', '); ?></div> -->
 		<div class="share-icons">
 			<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 		</div>
 		<div class="options">
 			<a href="<?php the_permalink(); ?>" class="torani-btn read-more">READ MORE</a>
-			<a href="#" class="torani-btn buy-now">BUY NOW</a>
+			<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now">BUY NOW</a>
 		</div>
 </article><!-- #post-## -->

@@ -40,8 +40,8 @@ define('DB_COLLATE', '');
 // define('WP_HOME', 'http://torani.dev.wonderslab.com/');
 // define('WP_SITEURL', 'http://torani.dev.wonderslab.com/');
 
-define('WP_HOME', 'http://ak.torani/');
-define('WP_SITEURL', 'http://ak.torani/');
+// define('WP_HOME', 'http://ak.torani/');
+// define('WP_SITEURL', 'http://ak.torani/');
 
 /**#@+
  * Authentication Unique Keys and Salts.
