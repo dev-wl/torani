@@ -23,6 +23,11 @@
 <?php wp_head(); ?>
 
 <script>
+function test() {
+	alert('a');
+}
+
+	window.addEventListener('orientationchange', test);
 
 	$(window).on('load', function() {
 		$("#topmenu li:first-child, #submenu, #submenu li").mouseenter(function() {
