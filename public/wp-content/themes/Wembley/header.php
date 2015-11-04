@@ -23,8 +23,12 @@
 <?php wp_head(); ?>
 
 <script>
-	function test() {
-		alert('a');
+	function recheckFooter() {
+		if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
+			$('.footer').css('position', 'fixed');
+		} else {
+			$('.footer').css('position', 'static');
+		}
 	}
 
 
@@ -58,13 +62,7 @@
 		});
 
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			window.addEventListener('orientationchange', test);
-			
-			if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
-				$('.footer').css('position', 'fixed');
-			} else {
-				$('.footer').css('position', 'static');
-			}
+			recheckFooter();
 		}
 
 	});
@@ -131,12 +129,7 @@
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$('#maillist').insertAfter('.pushy .searchbox');
 
-
-		// if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
-		// 		$('.footer').css('position', 'fixed');
-		// 	} else {
-		// 		$('.footer').css('position', 'static');
-		// 	}
+		window.addEventListener('orientationchange', recheckFooter);
 	}
 
 	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');

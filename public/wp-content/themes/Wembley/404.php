@@ -9,7 +9,7 @@ get_header(); ?>
 
 <style>
 	.page-title {
-	    width: 30% !important;
+	    width: 49% !important;
 	}
 
 	@media (max-width: 1280px)  {
@@ -22,7 +22,14 @@ get_header(); ?>
 		    margin: 0px auto;
 		}
 	}
+
 	@media (max-width: 1024px)  {
+		.page-title {
+			width: 46% !important;
+		}
+	}
+
+	@media (max-width: 640px) {
 		.page-title {
 			width: 65% !important;
 		}
