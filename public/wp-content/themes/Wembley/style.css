@@ -580,6 +580,7 @@ header#masthead .menu ul li {
 .grid-item--height2 {height: 460px;}
 .grid-item--heightFeed {height: 366px;}
 .grid-item--width3 {width: 900px;}
+.grid-item--width-mobile {width: 400px;}
 .grid-item--widthFeed {width: 442px;}
 
 .flipper_container {
@@ -1251,7 +1252,7 @@ label.fb {
 }
 
 .wff-row .wff-facebook-feed-title-div {
-	width: 82%;
+	width: 78%;
 }
 
 .wff-feed-wrapper a:link {
@@ -1450,6 +1451,19 @@ li.indent {
 	margin-left: 20px !important;
 }
 
+.contact-form {
+	margin: 0px auto;
+	max-width: 323px;
+}
+
+.contact-form .wpcf7-captchac {
+	margin-bottom: 15px;
+}
+
+.radio-btns label {
+	margin-right: 10px !important;
+}
+
 @media (max-width: 1110px) {
 	#mobilenavi {
 		display: block;
@@ -1461,17 +1475,17 @@ li.indent {
 	}
 
 	#mobnav {
-	width: 36px;
-	height: 6px;
-	margin-top: 15px;
-	margin-left: 10px;
-	background-color: #ffffff;
-	color: #fff;
-	font-size: 28px;
-	display: none;
-	margin-right: 30px;	
-	display: block;
-	padding-top: 1px;
+		width: 36px;
+		height: 6px;
+		margin-top: 15px;
+		margin-left: 10px;
+		background-color: #ffffff;
+		color: #fff;
+		font-size: 28px;
+		display: none;
+		margin-right: 30px;	
+		display: block;
+		padding-top: 1px;
 	}
 	#mobnav:before {
 	  content: "";
@@ -1592,6 +1606,23 @@ li.indent {
 	    width: 151px;
 	    padding-left: 7px;
 	}
+
+	.contact-form p input, .contact-form p textarea,  .contact-form p select {
+	    max-width: 99%;
+	}
+
+	.wpcf7-captchac {
+		margin-top: 15px;
+		margin-bottom: 5px !important;
+	}
+
+	#darkener {
+		height: 152px;
+	}
+
+	.image-block img {
+		margin-bottom: 10px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -1609,6 +1640,14 @@ li.indent {
 @media (max-width: 746px) and (orientation: landscape) {
 	.flex-main article.col-xs-12 {
 		width: 50% !important;
+	}
+
+	.footer .row {
+		margin-right: 0px !important;
+	}
+
+	#darkener {
+		height: 164px;
 	}
 }
 
@@ -1631,7 +1670,7 @@ li.indent {
 	    -webkit-columns: auto 1;
 	}
 
-	.pages-header h1.page-title, .description h2.page-title {
+	.pages-header h1.page-title, .description h2.page-title, .description h1.page-title {
 		margin: 0px auto;
 		float: none;
 		display: block;
@@ -1782,5 +1821,27 @@ li.indent {
 		padding: 0px !important;
 	    margin: 0px auto !important;
 	    display: block;
+	}
+
+	.contact-form p, .radio-btns {
+	    max-width: 90%;
+	    margin: 0px auto;
+	}
+	
+	.contact-form p input, .contact-form p textarea,  .contact-form p select {
+	    max-width: 99%;
+	}
+
+	.wpcf7-captchac {
+		margin-top: 15px;
+		margin-bottom: 5px !important;
+	}
+
+	.wpcf7-submit {
+		margin-top: 10px;
+	}
+
+	#darkener {
+		height: 176px;
 	}
 }

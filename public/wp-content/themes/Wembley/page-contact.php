@@ -26,6 +26,28 @@ get_header(); ?>
 		-moz-columns: auto 1;
 		columns: auto 1;
 		-webkit-columns: auto 1;
+		font-size: 20px;
+	}
+	
+	@media (max-width: 462px) {
+		h1.page-title {
+			width: 50% !important;
+		}
+
+		.column {
+		    margin: 0px 0px 0px 47px;
+		}
+	}
+
+	@media (max-width: 746px) {
+		.description h1.page-title {
+			width: 50% !important;
+		}
+
+		.column {
+			width: 80%;
+		    margin: 0px auto;
+		}
 	}
 </style>
 
@@ -46,25 +68,47 @@ get_header(); ?>
 				<div class="column"><p><?php echo $cat_text; ?></p></div><div class="clearfix"></div>
 			</div>
 		
-			<div class="flex-main blog">
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						//get_template_part( 'blog-tpl', get_post_format() );
+			<div class="flex-main">
+				<div class="contact-form">
+					<div class="radio-btns">
+						<input type="radio" name="form-opt" value="Customer" id="customer" checked/> <label for="customer">Customer</label>
+						<input type="radio" name="form-opt" value="Business" id="business"/> <label for="business">Business</label>
+					</div>	
+					
+					<div id="form-customer">
+						<?php echo do_shortcode('[contact-form-7 id="374" title="Contact form 1"]'); ?>
+					</div>
 
-						if(!true)
-							echo do_shortcode('[contact-form-7 id="374" title="Contact form 1"]');
-						else
-							echo do_shortcode('[contact-form-7 id="375" title="contact form business"]');
-					?>
-
+					<div id="form-business">
+						<?php echo do_shortcode('[contact-form-7 id="375" title="contact form business"]'); ?>
+					</div>
+				</div>
 			</div>
 			<div class="clearfix"></div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<script>
+	$("input:radio[name='form-opt']").change(function() {
+		if ($("input:radio[name='form-opt']:checked").val() == 'Customer') {
+			$('#form-business').slideUp();
+			$('#form-customer').slideDown();
+		}
+		else {
+			$('#form-customer').slideUp();
+			$('#form-business').slideDown();
+		}
+	});
+
+	if ($("input:radio[name='form-opt']:checked").val() == 'Customer') {
+		$('#form-business').slideUp();
+		$('#form-customer').slideDown();
+	}
+	else {
+		$('#form-customer').slideUp();
+		$('#form-business').slideDown();
+	}
+</script>
 
 <?php get_footer(); ?>

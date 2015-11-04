@@ -8,9 +8,33 @@
  */
 ?>
 
+<style>
+	.page-title {
+	    width: 30% !important;
+	}
+	
+	@media (max-width: 1280px)  {
+		.page-title {
+			width: 33% !important;
+		}
+
+		.page-content {
+		    max-width: 90%;
+		    margin: 0px auto;
+		}
+	}
+	@media (max-width: 462px)  {
+		.page-title {
+			width: 65% !important;
+		}
+	}
+</style>
+
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'web2feel' ); ?></h1>
+		<div class="description">
+			<h1 class="page-title"><?php _e( 'Nothing Found', 'web2feel' ); ?></h1>
+		</div>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

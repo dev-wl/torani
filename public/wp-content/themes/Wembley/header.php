@@ -53,7 +53,17 @@
 			$(window).location = $(this).find('a').attr('href');
 		});
 
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
+				$('.footer').css('position', 'fixed');
+			} else {
+				$('.footer').css('position', 'static');
+			}
+		}
+
 	});
+
+
 </script>
 
 </head>
@@ -114,6 +124,14 @@
 <script>
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$('#maillist').insertAfter('.pushy .searchbox');
+
+
+		// if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
+		// 		$('.footer').css('position', 'fixed');
+		// 	} else {
+		// 		$('.footer').css('position', 'static');
+		// 	}
 	}
+
 	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
 </script>
