@@ -23,11 +23,10 @@
 <?php wp_head(); ?>
 
 <script>
-function test() {
-	alert('a');
-}
+	function test() {
+		alert('a');
+	}
 
-	window.addEventListener('orientationchange', test);
 
 	$(window).on('load', function() {
 		$("#topmenu li:first-child, #submenu, #submenu li").mouseenter(function() {
@@ -59,6 +58,8 @@ function test() {
 		});
 
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			window.addEventListener('orientationchange', test);
+			
 			if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
 				$('.footer').css('position', 'fixed');
 			} else {
