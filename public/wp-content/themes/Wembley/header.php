@@ -126,8 +126,21 @@
 	<div id="content" class="site-content row">
 
 <script>
-	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if($(window).width() < 1100) {
 		$('#maillist').insertAfter('.pushy .searchbox');
+	} else {
+		$('#maillist').insertAfter('nav#site-navigation');
+	}
+	$(window).on('resize', function() {
+		if($(window).width() < 1100) {
+			$('#maillist').insertAfter('.pushy .searchbox');
+		} else {
+			$('#maillist').insertAfter('nav#site-navigation');
+		}
+	});
+	
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		// $('#maillist').insertAfter('.pushy .searchbox');
 
 		window.addEventListener('orientationchange', recheckFooter);
 	}

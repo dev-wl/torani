@@ -13,7 +13,7 @@
 		?>
 					
 		<?php if($image) : ?>
-			<a href="<?php the_permalink(); ?>"> <img class="img-responsive" src="<?php echo $image ?>"/></a>
+			<a href="<?php the_permalink(); ?>"> <img class="img-responsive" src="<?php echo $image ?>"/></a><div class="clearfix"></div>
 		<?php endif; ?>	
 		
 		<h2 class="box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>

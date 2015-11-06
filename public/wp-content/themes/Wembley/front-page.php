@@ -12,6 +12,7 @@
  */
 
 get_header(); ?>
+
 <style>
 	.container {
 		width: 100% !important;
@@ -22,6 +23,7 @@ get_header(); ?>
 		max-width: none;
 	}
 </style>
+
 	<div class="col-md-12 intro-me clearfix">
 		<p> <?php echo ft_of_get_option('fabthemes_welcome_text'); ?> </p>
 	</div>
@@ -115,7 +117,7 @@ get_header(); ?>
 						</div>
 				<?php
 	            wp_reset_postdata(); ?>
-            </div>
+        </div>
 
             <div class="mobile">
             	<?php 
@@ -124,6 +126,7 @@ get_header(); ?>
 	            $myposts = get_posts( $args );
 	            $i = 0;
 				foreach ( $myposts as $post ) : {
+					$i++;
 					setup_postdata( $post );
 					?>
 						<?php
@@ -134,7 +137,7 @@ get_header(); ?>
 						<article class="col-md-4 col-sm-4 pbox post-83 post type-post status-publish format-standard has-post-thumbnail hentry">
 							<a href="<?php get_permalink(); ?>"><img class="img-responsive" src="<?php echo $img_url;?>" /></a>
 							<h2 class="box-title">
-								<a href="<?php get_permalink(); ?>"><?php echo get_the_title();?></a>
+								<a href="<?php if($i == 2) echo '/blog'; else echo get_permalink(); ?>"><?php echo get_the_title();?></a>
 							</h2>
 							<div class="box-meta">
 							  	<?php echo wp_strip_all_tags( get_the_content() ); ?>
@@ -181,6 +184,17 @@ get_header(); ?>
 			window.location.href = $(this).find('a').attr('href');
 		});
 	});
+
+	//if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if($(window).width() < 1100 ) {
+		$('.grid-item.grid-item--width3:eq(1)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
+		if($(window).width() >= 768)
+			$('.grid-item.grid-item--heightFeed:eq(0)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
+	}
+	
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		window.addEventListener('orientationchange', function() { window.location = window.location; });
+	}
 </script>
 
 <?php get_footer(); ?>

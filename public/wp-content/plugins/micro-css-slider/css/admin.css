@@ -1,0 +1,29 @@
+.single-slide {
+	display: block;
+	width: 700px;
+	height: 350px;
+	background-color: #ccc;
+	margin-bottom: 20px;
+}
+
+.single-slide .image {
+	width: 350px;
+	height: 100%;
+	float: left;
+}
+
+.single-slide .image img {
+	width: 100%;
+	height: auto;
+	margin: auto 0px;
+}
+
+.single-slide textarea {
+	height: 90%;
+	width: 330px;
+	margin: 10px 10px;
+}
+
+.cf {
+	clear: both;
+}

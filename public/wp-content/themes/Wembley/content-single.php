@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 post'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?>>
 
 		<?php
 			$thumb = get_post_thumbnail_id();
