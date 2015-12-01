@@ -28,6 +28,7 @@ get_header(); ?>
 					</div>
 				</div>
 			<?php endif; ?>	
+			
 			<div class="general">
 				<div class="description">
 					<h2 class="box-title"><?php the_title(); ?></h2>
@@ -58,9 +59,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 <script>
 	//temporary js to align share icons next to the post image
-	$('.post .share-icons').width($('.img-responsive').width());
+	$('.post .share-icons:eq(0)').width($('.img-responsive').width());
 </script>
 
 <?php get_sidebar(); ?>

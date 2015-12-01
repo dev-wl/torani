@@ -84,6 +84,58 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+
+			<!-- BEGIN DIRECT MAIL SUBSCRIBE FORM -->
+			<link rel="stylesheet" type="text/css" href="https://www.dm-mailinglist.com/subscribe_forms/embed.css?v=2&f=bf05580c&sbg=1" media="all">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<script src="https://www.dm-mailinglist.com/subscribe_forms/localized.js" charset="UTF-8"></script>
+			<script src="https://www.dm-mailinglist.com/subscribe_forms/subscribe_embed.js" charset="UTF-8"></script>
+			<div style="visibility:hidden;">
+			<form method="post" action="https://www.dm-mailinglist.com/subscribe" data-directmail-use-ajax="1" data-form-id="bf05580c" accept-charset="UTF-8" id="bf05580c">
+			<input type="hidden" name="email"></input>
+			<input type="hidden" name="form_id" value="bf05580c"></input>
+			<div>
+			<table>
+			<tr>
+			<td colspan=1>Torani Coffee Newsletter Subscription</td>
+			</tr>
+			<tr>
+			<td colspan=1></td>
+			</tr>
+			<tr>
+			<td>
+			<label for="directmail-bf05580c-first_name">First Name:</label>
+			<input type="text" id="directmail-bf05580c-first_name" name="first_name" value="" placeholder="First Name" ></input>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="directmail-bf05580c-last_name">Last Name:</label>
+			<input type="text" id="directmail-bf05580c-last_name" name="last_name" value="" placeholder="Last Name" ></input>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="directmail-bf05580c-custom_1">Country:</label>
+			<input type="text" id="directmail-bf05580c-custom_1" name="custom_1" value="" placeholder="Country" ></input>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="directmail-bf05580c-subscriber_email">Email*:</label>
+			<input type="email" id="directmail-bf05580c-subscriber_email" name="subscriber_email" value="" placeholder="Email*" required="required"></input>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<input type="submit" value="Subscribe"></input>
+			</td>
+			</tr>
+			</table>
+			</div>
+			</form>
+			</div>
+			<!-- END DIRECT MAIL SUBSCRIBE FORM -->
 			<div class="clearfix"></div>
 
 		</main><!-- #main -->
@@ -109,6 +161,32 @@ get_header(); ?>
 		$('#form-customer').slideUp();
 		$('#form-business').slideDown();
 	}
+
+	var theForm;
+	var send = false;
+
+	
+	
+
+	$('.wpcf7 input[type="submit"]').click(function() {
+		theForm = $(this).parent().parent();
+		$('#directmail-bf05580c-first_name').val($(theForm).find('input[type="text"]:eq(0)').val());
+		$('#directmail-bf05580c-custom_1').val($(theForm).find('input[type="text"]:eq(4)').val());
+		$('#bf05580c #directmail-bf05580c-subscriber_email').val($(theForm).find('input[type="email"]').val());
+
+		if($(theForm).find('input[type="checkbox"]:checked').length == 1) {
+			send = true;
+		}
+	});
+
+	$(document).on('DOMNodeInserted', function(e) {
+	    if ($(e.target).attr('class') == 'wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok') {
+	    	if(send) {
+        		$('#bf05580c').submit();
+	        }
+	    }
+	});
+
 </script>
 
 <?php get_footer(); ?>

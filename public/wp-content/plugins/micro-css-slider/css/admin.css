@@ -3,7 +3,7 @@
 	width: 700px;
 	height: 350px;
 	background-color: #ccc;
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 }
 
 .single-slide .image {
@@ -22,8 +22,84 @@
 	height: 90%;
 	width: 330px;
 	margin: 10px 10px;
+	resize: none;
 }
 
 .cf {
 	clear: both;
+}
+
+a.slide-delete {
+	cursor: pointer;
+}
+
+label.new {
+	display: block;
+	margin-bottom: 22px;
+	margin-top: 20px;
+	width: 110px;
+}
+
+label.new a {
+	padding: 10px;
+	border-radius: 5px;
+	background: #8BC2D1;
+	color: #fff;
+}
+
+label form {
+	display: none;
+}
+
+label.slide-image-update {
+	vertical-align: text-top;
+}
+
+.slide-upd, .slide-delete, .btn {
+	padding: 10px;
+	border-radius: 5px;
+	background: #8BC2D1;
+	color: #fff;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.slide-delete {
+	color: #f00;
+}
+
+.confirm {
+	position: fixed;
+	top: 25%;
+	left: 43%;
+	display: none;
+	width: 280px;
+	height: 150px;
+	background: rgb(236, 233, 233) none repeat scroll 0% 0%;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 0px 0px 1500px rgba(0, 0, 0, 0.5);
+}
+
+.btn-yes:hover {
+	color: #f00;
+}
+
+.btn-no:hover {
+	color: #1B5309;
+}
+
+#all-slides {
+	float: left;
+}
+
+.options {
+	margin-left: 50px;
+	float: left;
+}
+
+.options p:first-child {
+	margin-top: 0px;
 }

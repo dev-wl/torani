@@ -7,68 +7,60 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area	">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="col-lg-8 col-lg-offset-2">
-			<?php while ( have_posts() ) : the_post(); ?>
-				
-				<h2 class="single-title"> <?php the_title();?> </h2>
-				<div class="post_images recipe"></div>
+		
+		<?php while ( have_posts() ) : the_post(); ?>
+			
+			<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-12 col-md-12 col-sm-12 col-xs-12 single-product'); ?>>
 
-				<div class="recipe">
-					<?php the_content(); ?>
-				</div>
-
-				<?php
-					$str = '';
-					$i = 0;
-					$search = ' ';
-					$tag = wp_get_post_tags( get_the_ID() ); 
-					foreach ($tag as $key) {
-						$i++;
-						$str = strtolower(str_replace(' ', '-', $key->name));
-						if($i > 1)
-							$search .= ', ';
-						$search .= $str;
-					}
-
-					$args = array(
-						'tag' => $search,
-						'category' => 2,
-					);
-					$postslist = get_posts( $args );
-				?>
-				<div class="clearfix"></div>
-				<h3 class="featured">FEATURED IN THIS RECIPE</h3>
-				<?php foreach ($postslist as $post): ?>
-					<div class="related_product">
-						<a href="<?php echo $post->guid;?>"><h5><?php echo $post->post_title; ?></h5></a>
-						<?php
-							 $thumb = get_post_thumbnail_id($post->ID);
-							 $img_url = wp_get_attachment_url( $thumb,'small' );
-						 ?>
-						 <a href="<?php echo $post->guid;?>" class="buy">BUY NOW</a>
-						<img src="<?php echo $img_url; ?>" alt="">
+			<?php
+				$thumb = get_post_thumbnail_id();
+				$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
+				$image = aq_resize( $img_url, 720, 560, true ); //resize & crop the image
+			?>
+						
+			<?php if($image) : ?>
+				<div class="image-block">
+					<img class="img-responsive" src="<?php echo $image ?>"/>
+					<div class="share-icons">
+						<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 					</div>
-				<?php endforeach; ?>
-				<div class="clearfix"></div>
-
-				<?php web2feel_content_nav( 'nav-below' ); ?>
-				
-				<div class="col-lg-12 col-md-12 col-lg-offset-2">
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template();
-				?>
 				</div>
-			<?php endwhile; // end of the loop. ?>
-		</div>
+			<?php endif; ?>	
+
+			<div class="general">
+				<div class="description">
+					<h2 class="box-title"><?php the_title(); ?></h2>
+				</div>
+				<div class="box-meta"><?php the_content(); ?></div>	
+				<div class="share-icons">
+					<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
+				</div>
+				<div class="options">
+					<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now" target="_blank">BUY NOW</a>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+	</article><!-- #post-## -->
+
+	<div class="col-md-12">
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template
+				// if ( comments_open() || '0' != get_comments_number() )
+					// comments_template();
+			?>
+			</div>
+		<?php endwhile; // end of the loop. ?>
+
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <script>
-	$('#main.site-main .recipe img').appendTo($('.post_images'));
-	$('#page').addClass('single-details');
+	// $('#main.site-main .recipe img').appendTo($('.post_images'));
+	// $('#page').addClass('single-details');
+	$('.post .share-icons:eq(0)').width($('.img-responsive').width());
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

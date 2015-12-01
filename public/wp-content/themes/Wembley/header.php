@@ -87,9 +87,9 @@
 				<div class="site-branding">
 
 	<?php if (get_theme_mod(FT_scope::tool()->optionsName . '_logo', '') != '') { ?>
-				<h1 class="site-title logo"><a class="mylogo" rel="home" href="<?php bloginfo('siteurl');?>/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><img relWidth="<?php echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxWidth', 0)); ?>" relHeight="<?php echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxHeight', 0)); ?>" id="ft_logo" src="<?php echo get_theme_mod(FT_scope::tool()->optionsName . '_logo', ''); ?>" alt="" /></a></h1>
+				<h1 class="site-title logo"><a class="mylogo" rel="home" href="<?php bloginfo(site_url());?>/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><img relWidth="<?php echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxWidth', 0)); ?>" relHeight="<?php echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxHeight', 0)); ?>" id="ft_logo" src="<?php echo get_theme_mod(FT_scope::tool()->optionsName . '_logo', ''); ?>" alt="" /></a></h1>
 	<?php } else { ?>
-				<h1 class="site-title logo"><a id="blogname" rel="home" href="<?php bloginfo('siteurl');?>/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php //bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title logo"><a id="blogname" rel="home" href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php //bloginfo( 'name' ); ?></a></h1>
 	<?php } ?>
 
 				</div>
@@ -106,10 +106,15 @@
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>	
 			 </nav><!-- #site-navigation -->
+	
 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<script src="https://www.dm-mailinglist.com/subscribe_forms/localized.js" charset="UTF-8"></script>
+			<script src="https://www.dm-mailinglist.com/subscribe_forms/subscribe_embed.js" charset="UTF-8"></script>
 			 <div id="maillist">
-				<form>
-					<input type="text" placeholder="JOIN OUR MAILING LIST" />
+				<form method="post" action="https://www.dm-mailinglist.com/subscribe" data-directmail-use-ajax="1" data-form-id="bf05580c">
+					<input type="text" placeholder="JOIN OUR MAILING LIST" id="directmail-bf05580c-subscriber_email" name="subscriber_email" value="" required="required"/>
+					<input type="hidden" name="form_id" value="bf05580c"></input>
 					<div class="submit-wrapper">
 						<input class="submit-button" type="submit" value="SUBMIT" />
 					</div>

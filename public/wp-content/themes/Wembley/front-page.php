@@ -22,39 +22,94 @@ get_header(); ?>
 	img {
 		max-width: none;
 	}
+
 </style>
 
 	<div class="col-md-12 intro-me clearfix">
 		<p> <?php echo ft_of_get_option('fabthemes_welcome_text'); ?> </p>
 	</div>
 	
-	
 	<div id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
 			<div class="grid">
 				<!-- css slider -->
-					<div class="sl-wrapper grid-item grid-item--width3">
-						<input type="radio" name="point" id="slide1" checked>
-						<input type="radio" name="point" id="slide2">
-						<input type="radio" name="point" id="slide3">
-						<input type="radio" name="point" id="slide4">
-						<input type="radio" name="point" id="slide5">
-						<div class="slider">
-							<div class="slides slide1"></div>
-							<div class="slides slide2"></div>
-							<div class="slides slide3"></div>
-							<div class="slides slide4"></div>
-							<div class="slides slide5"></div>
-						</div>	
-						<div class="controls">
-							<label for="slide1"></label>
-							<label for="slide2"></label>
-							<label for="slide3"></label>
-							<label for="slide4"></label>
-							<label for="slide5"></label>
+					<?php if(get_option('m_slider_enabled') == 1): ?>
+
+						<?php
+							$mainSlider = get_posts(array(
+								'numberposts'		=> -1,
+								'orderby'			=> 'menu_order',
+								'order'				=> 'ASC',
+								'post_type'			=> 'Micro Slider',
+								'post_parent'		=> 0
+							));
+
+							$id = $mainSlider[0]->ID;
+
+							$slidePosts = get_posts(array(
+								'numberposts'		=> -1,
+								'orderby'			=> 'menu_order',
+								'order'				=> 'ASC',
+								'post_parent'		=> $id,
+								'post_type'			=> 'Micro Slider'
+							));
+
+							$pic_count = count($slidePosts);
+						?>
+
+
+
+						<div class="sl-wrapper grid-item grid-item--width3">
+							<?php for($i=1; $i<=$pic_count; $i++): ?>
+								<input type="radio" name="point" id="<?php echo 'slide' . $i; ?>" value="" <?php checked($i, 1); ?> >
+							<?php endfor; ?>
+							
+							<div class="slider">
+								<?php $i=1; foreach ($slidePosts as $slider): ?>
+								<?php 
+									$attach = get_attached_media( 'image', $slider->ID);
+									$cleanedObject = current($attach);
+									$the_meta = get_post_meta ( $slider->ID, 'description', false);
+								?>
+								<div class="slides <?php echo 'slide' . $i?> <?php echo get_option('effects') == 'on' ? 'slides-zoomy' : ''?>" style="background-image:url('')">
+									<div>
+										<img src="<?php echo $cleanedObject->guid?>" />
+										<?php if($the_meta[0] != '') : ?>
+											<div class="text"><?php echo $the_meta[0]; ?></div>
+										<?php endif; ?>
+									</div>
+								</div>
+								<?php $i++; ?>
+								<?php endforeach; ?>
+							</div>	
+							<div class="controls">
+								<?php for($i=1; $i<=$pic_count; $i++): ?>
+									<label for="<?php echo 'slide' . $i; ?>"></label>
+								<?php endfor; ?>
+							</div>
 						</div>
-					</div>
+						
+						<?php
+							$backgrounds = '';
+							for($i=1; $i<=$pic_count; $i++) {
+								$backgrounds .= '#slide' . $i . ':checked ~ .controls label:nth-of-type(' . $i .')';
+								if($i != $pic_count)
+									$backgrounds .= ', ';
+							}
+
+							$selectors = '';
+							for($i=1; $i<=$pic_count; $i++) {
+								$selectors .= '#slide' . $i . ':checked ~ .slider > .slide' . $i .'';
+								if($i != $pic_count)
+									$selectors .= ', ';
+							}
+						?>
+						
+						
+
+					<?php endif; ?>
 				<!-- eofcss slide -->
+
 				<?php /* Start the Loop */ ?>
 				<?php
 	            global $post;
@@ -119,62 +174,44 @@ get_header(); ?>
 	            wp_reset_postdata(); ?>
         </div>
 
-            <div class="mobile">
-            	<?php 
-            	 global $post;
-	            $args = array('category' => 4, 'numberposts' => -1, 'orderby' => 'date', 'order' => 'ASC' );
-	            $myposts = get_posts( $args );
-	            $i = 0;
-				foreach ( $myposts as $post ) : {
-					$i++;
-					setup_postdata( $post );
-					?>
-						<?php
-							$thumb_id = get_post_thumbnail_id();
-							$img_url = wp_get_attachment_url( $thumb_id, 'meduim' ); //get full URL to image (use "large" or "medium" if the images too big)
-						?>
-							
-						<article class="col-md-4 col-sm-4 pbox post-83 post type-post status-publish format-standard has-post-thumbnail hentry">
-							<a href="<?php get_permalink(); ?>"><img class="img-responsive" src="<?php echo $img_url;?>" /></a>
-							<h2 class="box-title">
-								<a href="<?php if($i == 2) echo '/blog'; else echo get_permalink(); ?>"><?php echo get_the_title();?></a>
-							</h2>
-							<div class="box-meta">
-							  	<?php echo wp_strip_all_tags( get_the_content() ); ?>
-							</div>
-						</article>
-						  
-						<?php } endforeach;
-	            wp_reset_postdata(); ?>
-
-	            <div class="feed tw-feed">
-							<div class="feed-header">
-								<h1><label class="feed-image tw"></label> twitter</h1>
-							</div>
-								<a class="twitter-timeline"  href="https://twitter.com/Skinnygirl_tea" data-widget-id="644784352090550272">Tweets by @Skinnygirl_tea</a>
-					            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						</div>
-
-						<div class="feed fb-feed">
-							<div class="feed-header">
-								<h1><label class="feed-image fb"></label> facebook</h1>
-							</div>
-							<?php echo do_shortcode('[facebook-feed]'); ?>
-						</div>
-
-
-            </div>
 
 			<div class="clearfix"></div>
 			<div class="col-md-12">
 			<?php bootstrap_pagination();?>
 			</div>
-
+	
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	
+<style>
+	<?php echo $backgrounds; ?> {
+		background: #ffc718;
+	}
+
+	<?php echo $selectors; ?> {
+		opacity: 1;
+		z-index: 1;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		background-size: 100% auto;
+	}
+</style>
 
 <script>
 	$(window).on('load', function() {
+		var current = 0;
+		var total_slides = $('.sl-wrapper input[type="radio"]').length;
+		
+		<?php if (get_option('m_slider_mode') == 'auto'): ?>
+			setInterval(function() {
+				$('.sl-wrapper input[type="radio"]:eq(' + current + ')').prop('checked', true);
+				current++;
+				if(current > total_slides-1)
+					current = 0;
+			}, 4500);
+		<?php endif; ?>
+
 		$('.grid').masonry({
 		  // options
 		  itemSelector: '.grid-item',
@@ -186,15 +223,32 @@ get_header(); ?>
 	});
 
 	//if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	
+	$(document).ready(function() {
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			window.addEventListener('orientationchange', function() { window.location = window.location; });
+		}
+
+		if($(window).width() <= 640) {
+			$('.sl-wrapper .slider').css('height', $('.slider .slides:eq(0) img').height() + 'px');	
+		}
+		 $('.flipper_container').css('height', $('.front.face img').height());
+		 $('.sl-wrapper').css('height', $('.slider .slides:eq(0) img').height() + 'px');
+		// $('.feed').css('margin-top', $('.front.face img').height() + 10 + 'px');
+	})
+
+	$(window).on('resize', function() {
+		$('.flipper_container').css('height', $('.front.face img').height());
+		$('.sl-wrapper').css('height', $('.slider .slides:eq(0) img').height() + 'px');
+		// $('.feed:eq(0)').css('margin-top', $('.front.face img').height() + 80 + 'px');
+	});
+
 	if($(window).width() < 1100 ) {
-		$('.grid-item.grid-item--width3:eq(1)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
-		if($(window).width() >= 768)
-			$('.grid-item.grid-item--heightFeed:eq(0)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
+		// $('.grid-item.grid-item--width3:eq(1)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
+		// if($(window).width() >= 768)
+		// 	$('.grid-item.grid-item--heightFeed:eq(0)').css('margin-left', $('.grid-item.grid-item--width3:eq(0)').offset().left);
 	}
 	
-	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		window.addEventListener('orientationchange', function() { window.location = window.location; });
-	}
 </script>
 
 <?php get_footer(); ?>
