@@ -65,7 +65,7 @@ get_header(); ?>
 	$(document).ready(function() {
 		setTimeout(function() {
 			$('.post .share-icons:eq(0)').width($('.img-responsive').width());
-		}, 1000);
+		}, 500);
 	});
 	
 </script>
