@@ -82,6 +82,6 @@
 	$(document).ready(function() {
 		setTimeout(function() {
 			$('.post .share-icons:eq(0)').width($('.img-responsive').width());
-		}, 100);
+		}, 500);
 	});
 </script>
