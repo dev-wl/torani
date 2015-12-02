@@ -1315,6 +1315,7 @@ article.post.type-post.status-publish.format-standard .box-meta {
 
 .flex-main {
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
 }
 
@@ -1420,6 +1421,7 @@ h1.page-title {
 	padding-bottom: 5px;
 	padding-top: 5px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     max-width: 98.8%;
