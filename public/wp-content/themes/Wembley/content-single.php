@@ -79,5 +79,5 @@
 
 <script>
 	//temporary js to align share icons next to the post image
-	$('.post .share-icons').width($('.img-responsive').width());
+	$('.post .share-icons:eq(0)').width($('.img-responsive').width());
 </script>
