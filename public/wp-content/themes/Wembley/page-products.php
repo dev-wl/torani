@@ -39,9 +39,9 @@ get_header(); ?>
 						<h2 class="box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 						<div class="box-meta"><?php the_category(', '); ?></div>	
 					</article><!-- #post-## -->
-					<?php if($i == 6) : ?>
+					<?php if($i == 3) : ?>
 						<div style="clear:both;"></div>
-						<?php $i = 0; endif; ?>
+						<?php $i = 1; endif; ?>
 			<?php } endforeach;
             wp_reset_postdata(); ?>
 

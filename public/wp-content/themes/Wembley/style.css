@@ -795,7 +795,9 @@ h2.box-title a:link, h2.box-title a:visited {
 }
 
 #main {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
+	width: 80%;
+	margin: 32px auto;
 }
 
 .recipe h2.box-title a:link {
@@ -955,6 +957,18 @@ a.buy:hover {
 	color: #fff;
 }
 
+.footer-left a:nth-child(1) img {
+	height: 46px !important;
+}
+
+.footer-left a:nth-child(2) img {
+	height: 44px !important;
+}
+
+.footer-left a:nth-child(3) {
+	font-size: 14px;
+}
+
 .footer-left a:visited, .footer-left a:hover, .footer-left a:link {
 	color: #fff !important;
 }
@@ -962,6 +976,10 @@ a.buy:hover {
 .footer-right {
 	float: right;
 	padding-right: 50px;
+}
+
+.footer-right a:nth-child(1) p {
+	text-align: right;
 }
 
 p.info {
@@ -1037,6 +1055,7 @@ p.copy {
 .footer {
 	width: 100%;
 	position: fixed;
+	-webkit-position: fixed;
 	bottom:0;
 	z-index: 2;
 }
@@ -1391,7 +1410,8 @@ span.share {
 	font-size: 32px !important;
 	margin-bottom: 12px;
 	color: #705944;
-	width: initial !important;
+	text-align: left !important;
+	/*width: initial !important;*/
 }
 
 .blogpost .description {
@@ -1425,8 +1445,9 @@ h1.page-title {
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
-    max-width: 98.8%;
-    margin-left: 1.2%;
+    max-width: 100%;
+    /*max-width: 98.8%;*/
+    /*margin-left: 1.2%;*/
 }
 
 .description p {

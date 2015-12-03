@@ -20,6 +20,7 @@ get_header(); ?>
 
 	.description {
 		margin-bottom: 20px;
+		justify-content: initial !important;
 	}
 
 	.column {
@@ -27,8 +28,27 @@ get_header(); ?>
 		columns: auto 1;
 		-webkit-columns: auto 1;
 		font-size: 20px;
+		margin-left: 17%;
 	}
 	
+	input, textarea {
+		border: none;
+	}
+
+	input[type="submit"] {
+	    background: linear-gradient(to bottom, #f78e18, #f78218);
+	    outline: none;
+	    color: #fff;
+	    text-transform: uppercase;
+	    box-shadow: none;
+	    border: 0px #f7aa52;
+	    padding: 3px 15px;
+	}
+
+	input[type="submit"]:active {
+	   box-shadow: 0px 0px 7px 0px inset;
+	}
+
 	@media (max-width: 462px) {
 		h1.page-title {
 			width: 50% !important;

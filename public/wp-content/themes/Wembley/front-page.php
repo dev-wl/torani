@@ -141,16 +141,7 @@ get_header(); ?>
 						  	<img src='<?php echo $img_url?>' alt=''/>
 						  <?php else : ?>
 							<div class="flipper_container">
-								<div class="flipper shadow">
-									<div class="front face">
-										<img src='<?php echo $img_url?>' alt=''/>
-									</div>
-									<div class="back face center">
-									    <?php $i = catch_that_image();?>
-									    <img src='<?php echo $i; ?>' alt=''/>
-									    <?php the_excerpt(); ?>
-								  </div>
-								</div>
+									<img src='<?php echo $img_url?>' alt=''/>
 							</div>
 						<?php endif; ?>
 						  </div>

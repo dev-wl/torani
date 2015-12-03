@@ -24,7 +24,7 @@ get_header(); ?>
 				setup_postdata( $post ); 
 				$i++;
 				?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-3 col-md-4 col-sm-6 col-xs-12 pbox post'); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-4 col-md-4 col-sm-6 col-xs-12 pbox post'); ?>>
 							<?php
 								$thumb = get_post_thumbnail_id();
 								$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
@@ -47,7 +47,7 @@ get_header(); ?>
 							</div>
 					</article>
 
-					<?php if($i == 6) : ?>
+					<?php if($i == 3) : ?>
 						<div style="clear:both;"></div>
 						<?php $i = 0; endif; ?>
 			<?php } endforeach;
