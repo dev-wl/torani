@@ -2192,13 +2192,13 @@ li.indent {
 
 	#maillist form {
 		width: 100%;
-	    padding-left: 20px;
+	    padding-left: 9px;
 	    margin-right: 0px;
 	}
 
 	#maillist form input[type="text"] {
 		padding-left: 0px;
-		width: 130px;
+		width: 140px;
 	}
 
 	.feed {
