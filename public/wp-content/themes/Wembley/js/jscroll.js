@@ -53,7 +53,7 @@
 			function h() {
 				fb.height(hb + "px"), ab = 0, gb = P.verticalGutter + fb.outerWidth(), Q.width(R - gb - tb);
 				try {
-					0 === eb.position().left && Q.css("margin-left", 0 + "px")
+					0 === eb.position().left && Q.css("margin-left", gb + "px")
 				} catch (a) {}
 			}
 
