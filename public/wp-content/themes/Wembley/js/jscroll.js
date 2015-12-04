@@ -518,4 +518,4 @@
 		speed: 30,
 		scrollPagePercent: .8
 	}
-}(jQuery, funthis);
+}(jQuery, this);
