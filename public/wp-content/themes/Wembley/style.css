@@ -2175,6 +2175,10 @@ li.indent {
 	#twitter-widget-1 {
 		height: 291px !important;
 	}
+
+	.footer-right p.info {
+		text-align: center !important;
+	}
 }
 
 @media (max-width: 462px) {
