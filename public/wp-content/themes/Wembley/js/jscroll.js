@@ -42,11 +42,11 @@
 				}, function() {
 					$.removeClass("jspHover")
 				}).bind("mousedown.jsp", function(b) {
-					// a("html").bind("dragstart.jsp selectstart.jsp", G), $.addClass("jspActive");
-					// var c = b.pageY - $.position().top;
-					// return a("html").bind("mousemove.jsp", function(a) {
-					// 	r(a.pageY - c, !1)
-					// }).bind("mouseup.jsp mouseleave.jsp", q), !1
+					a("html").bind("dragstart.jsp selectstart.jsp", G), $.addClass("jspActive");
+					var c = b.pageY - $.position().top;
+					return a("html").bind("mousemove.jsp", function(a) {
+						r(a.pageY - c, !1)
+					}).bind("mouseup.jsp mouseleave.jsp", q), !1
 				}), h())
 			}
 
@@ -63,11 +63,11 @@
 				}, function() {
 					bb.removeClass("jspHover")
 				}).bind("mousedown.jsp", function(b) {
-					// a("html").bind("dragstart.jsp selectstart.jsp", G), bb.addClass("jspActive");
-					// var c = b.pageX - bb.position().left;
-					// return a("html").bind("mousemove.jsp", function(a) {
-					// 	t(a.pageX - c, !1)
-					// }).bind("mouseup.jsp mouseleave.jsp", q), !1
+					a("html").bind("dragstart.jsp selectstart.jsp", G), bb.addClass("jspActive");
+					var c = b.pageX - bb.position().left;
+					return a("html").bind("mousemove.jsp", function(a) {
+						t(a.pageX - c, !1)
+					}).bind("mouseup.jsp mouseleave.jsp", q), !1
 				}), nb = T.innerWidth(), j())
 			}
 
@@ -166,7 +166,7 @@
 			}
 
 			function q() {
-				// a("html").unbind("dragstart.jsp selectstart.jsp mousemove.jsp mouseup.jsp mouseleave.jsp"), $ && $.removeClass("jspActive"), bb && bb.removeClass("jspActive")
+				a("html").unbind("dragstart.jsp selectstart.jsp mousemove.jsp mouseup.jsp mouseleave.jsp"), $ && $.removeClass("jspActive"), bb && bb.removeClass("jspActive")
 			}
 
 			function r(a, b) {

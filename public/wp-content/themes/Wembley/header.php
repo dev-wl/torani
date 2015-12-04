@@ -131,6 +131,7 @@
 	<div id="content" class="site-content row">
 
 <script>
+	$(document).unbind('mousemove');
 	if($(window).width() < 1100) {
 		$('#maillist').insertAfter('.pushy .searchbox');
 	} else {
