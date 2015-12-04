@@ -2199,6 +2199,7 @@ li.indent {
 	#maillist form input[type="text"] {
 		padding-left: 0px;
 		width: 145px;
+		letter-spacing: -0.3px;
 	}
 
 	.feed {
