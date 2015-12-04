@@ -2064,6 +2064,10 @@ li.indent {
 		margin-top: 0px;
 	}
 
+	#main {
+		padding-top: 58px;
+	}
+
 	#main .grid {
 		/*display: none;*/
 	}
@@ -2186,6 +2190,7 @@ li.indent {
 }
 
 @media (max-width: 462px) {
+
 	#maillist {
 		width: 100%;
 	}
