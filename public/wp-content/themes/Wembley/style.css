@@ -2181,7 +2181,7 @@ li.indent {
 	}
 
 	#bottom .row {
-		.msx-width: 100%;
+		max-width: 100%;
 	}
 }
 
