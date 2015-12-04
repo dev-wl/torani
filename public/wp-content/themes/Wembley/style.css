@@ -2179,6 +2179,10 @@ li.indent {
 	.footer-right p.info {
 		text-align: center !important;
 	}
+
+	#bottom .row {
+		.msx-width: 100%;
+	}
 }
 
 @media (max-width: 462px) {
