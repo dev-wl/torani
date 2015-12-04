@@ -2065,7 +2065,7 @@ li.indent {
 	}
 
 	#main {
-		padding-top: 58px;
+		padding-top: 58px !important;
 	}
 
 	#main .grid {
