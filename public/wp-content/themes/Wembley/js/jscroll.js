@@ -486,7 +486,7 @@
 		})
 	}, a.fn.jScrollPane.defaults = {
 		showArrows: !1,
-		maintainPosition: !0,
+		maintainPosition: !1,
 		stickToBottom: !1,
 		stickToRight: !1,
 		clickOnTrack: !0,
