@@ -516,6 +516,6 @@
 		keyboardSpeed: 0,
 		initialDelay: 300,
 		speed: 30,
-		scrollPagePercent: .8
+		scrollPagePercent: 0
 	}
-}(jQuery, this);
+}(jQuery, funthis);

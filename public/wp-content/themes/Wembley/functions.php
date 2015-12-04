@@ -124,7 +124,7 @@ function web2feel_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/bootstrap.css');
 	wp_enqueue_style( 'glyphicon', get_template_directory_uri() . '/css/bootstrap-glyphicons.css');
 	wp_enqueue_style( 'pushy', get_template_directory_uri() . '/css/pushy.css');
-	// wp_enqueue_style( 'jscroll', get_template_directory_uri() . '/css/jscroll.css');
+	wp_enqueue_style( 'jscroll', get_template_directory_uri() . '/css/jscroll.css');
 	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css');
 	
 	wp_enqueue_script('jquery');
