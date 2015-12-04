@@ -64,7 +64,7 @@ get_header(); ?>
 			<?php get_template_part( 'no-results', 'index' ); ?>
 
 		<?php endif; ?>
-
+		<?php echo do_shortcode('[instagram-feed]'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

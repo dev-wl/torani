@@ -35,7 +35,7 @@ get_header(); ?>
 		border: none;
 	}
 
-	input[type="submit"] {
+	#main input[type="submit"] {
 	    background: linear-gradient(to bottom, #f78e18, #f78218);
 	    outline: none;
 	    color: #fff;

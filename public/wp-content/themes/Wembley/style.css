@@ -16,6 +16,44 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+@font-face {
+    font-family: 'univers67_condensed_bold';
+    src: url('fonts/univers-condensedbold-webfont.eot');
+    src: url('fonts/univers-condensedbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/univers-condensedbold-webfont.woff2') format('woff2'),
+         url('fonts/univers-condensedbold-webfont.woff') format('woff'),
+         url('fonts/univers-condensedbold-webfont.ttf') format('truetype'),
+         url('fonts/univers-condensedbold-webfont.svg#univers67_condensed_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sabonregular';
+    src: url('fonts/sabon-roman-webfont.eot');
+    src: url('fonts/sabon-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sabon-roman-webfont.woff2') format('woff2'),
+         url('fonts/sabon-roman-webfont.woff') format('woff'),
+         url('fonts/sabon-roman-webfont.ttf') format('truetype'),
+         url('fonts/sabon-roman-webfont.svg#sabonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'univers49LtultraCn';
+    src: url('fonts/univers-lightultracondensed-webfont.eot');
+    src: url('fonts/univers-lightultracondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/univers-lightultracondensed-webfont.woff2') format('woff2'),
+         url('fonts/univers-lightultracondensed-webfont.woff') format('woff'),
+         url('fonts/univers-lightultracondensed-webfont.ttf') format('truetype'),
+         url('fonts/univers-lightultracondensed-webfont.svg#univers49LtultraCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* =Reset
 -------------------------------------------------------------- */
@@ -46,6 +84,7 @@ html {
 }
 body {
 	background: #fafafa;
+	font-family: "sabonregular";
 }
 article,
 aside,
@@ -576,6 +615,7 @@ header#masthead .menu ul li {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 800;
+	font-family: "univers67_condensed_bold";
 }
 
 .grid-item { 
@@ -788,6 +828,7 @@ ul#topmenu li a {
 
 h2.box-title a:link, h2.box-title a:visited {
 	color: #705944 !important;
+	font-family: "univers49LtultraCn";
 }
 
 #mobnav {
@@ -798,6 +839,7 @@ h2.box-title a:link, h2.box-title a:visited {
 	/*margin-top: 30px;*/
 	width: 80%;
 	margin: 32px auto;
+	font-family: "sabonregular";
 }
 
 .recipe h2.box-title a:link {
@@ -950,6 +992,7 @@ a.buy:hover {
 	margin-left: 200px;
 	color: #fff;
 	font-size: 18px;
+	font-family: "univers67_condensed_bold";
 }
 
 .footer-left a {
@@ -976,6 +1019,7 @@ a.buy:hover {
 .footer-right {
 	float: right;
 	padding-right: 50px;
+	font-family: "univers67_condensed_bold";
 }
 
 .footer-right a:nth-child(1) p {
@@ -1022,6 +1066,8 @@ p.copy {
 	background-color: transparent;
 	float: left;
 	font-size: 100%;
+	font-family: univers67_condensed_bold;
+	letter-spacing: 0px;
 }
 
 .submit-wrapper {
@@ -1275,7 +1321,7 @@ label.fb {
 .feed .feed-header h1 {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 36px;
 	margin-bottom: 5px;
 }
 
@@ -1318,7 +1364,7 @@ label.fb {
 
 article.post.type-post.status-publish.format-standard h2 {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 28px;
 	width: 100%;
 }
 
@@ -1428,12 +1474,14 @@ h1.page-title {
 	color: #705944 !important;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-size: 40px;
+	font-size: 36px !important;
 	display: inline-block;
 	float: left;
 	padding-right: 15px;
 	width: 19%;
 	margin: 0;
+	font-family: "univers49LtultraCn";
+	letter-spacing: 0px;
 }
 
 .description {
@@ -1938,6 +1986,7 @@ li.indent {
 		width: 20%;
 		text-align: center !important;
 		margin-bottom: 0px !important;
+		font-family: "univers49LtultraCn";
 	}
 
 	.flex-main article {
