@@ -53,7 +53,7 @@
 			function h() {
 				fb.height(hb + "px"), ab = 0, gb = P.verticalGutter + fb.outerWidth(), Q.width(R - gb - tb);
 				try {
-					0 === eb.position().left && Q.css("margin-left", gb + "px")
+					0 === eb.position().left && Q.css("margin-left", 0 + "px")
 				} catch (a) {}
 			}
 
@@ -486,7 +486,7 @@
 		})
 	}, a.fn.jScrollPane.defaults = {
 		showArrows: !1,
-		maintainPosition: !1,
+		maintainPosition: !0,
 		stickToBottom: !1,
 		stickToRight: !1,
 		clickOnTrack: !0,
