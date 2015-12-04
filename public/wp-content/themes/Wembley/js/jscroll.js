@@ -44,7 +44,7 @@
 				}).bind("mousedown.jsp", function(b) {
 					a("html").bind("dragstart.jsp selectstart.jsp", G), $.addClass("jspActive");
 					var c = b.pageY - $.position().top;
-					return a("html").bind("mousedown.jsp", function(a) {
+					return a("html").bind("mousemove.jsp", function(a) {
 						r(a.pageY - c, !1)
 					}).bind("mouseup.jsp mouseleave.jsp", q), !1
 				}), h())
@@ -65,7 +65,7 @@
 				}).bind("mousedown.jsp", function(b) {
 					a("html").bind("dragstart.jsp selectstart.jsp", G), bb.addClass("jspActive");
 					var c = b.pageX - bb.position().left;
-					return a("html").bind("mousedown.jsp", function(a) {
+					return a("html").bind("mousemove.jsp", function(a) {
 						t(a.pageX - c, !1)
 					}).bind("mouseup.jsp mouseleave.jsp", q), !1
 				}), nb = T.innerWidth(), j())
@@ -166,7 +166,7 @@
 			}
 
 			function q() {
-				a("html").unbind("dragstart.jsp selectstart.jsp mousedown.jsp mouseup.jsp mouseleave.jsp"), $ && $.removeClass("jspActive"), bb && bb.removeClass("jspActive")
+				a("html").unbind("dragstart.jsp selectstart.jsp mousemove.jsp mouseup.jsp mouseleave.jsp"), $ && $.removeClass("jspActive"), bb && bb.removeClass("jspActive")
 			}
 
 			function r(a, b) {
@@ -183,7 +183,7 @@
 			}
 
 			function t(a, b) {
-				Z && (0 > a ? a = 0 : a > cb && (a = cb), b === c && (b = P.animateScroll), b ? vb.animate(bb, "left", a, u) : (bb.css("left", a), u(a)))
+				Z && (0 > a ? a = 0 : a > cb && (a = cb), b === c && (b = P.animateScroll), b ? vb.animate(bb, "left", a, u) : (bb.css("left", 0), u(a)))
 			}
 
 			function u(a) {
@@ -192,7 +192,7 @@
 					e = db == cb,
 					f = a / cb,
 					g = -f * (U - R);
-				(xb != b || zb != e) && (xb = b, zb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), w(b, e), Q.css("left", g), d.trigger("jsp-scroll-x", [-g, b, e]).trigger("scroll")
+				(xb != b || zb != e) && (xb = b, zb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), w(b, e), Q.css("left", 0), d.trigger("jsp-scroll-x", [-g, b, e]).trigger("scroll")
 			}
 
 			function v(a, b) {
