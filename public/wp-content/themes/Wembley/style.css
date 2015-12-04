@@ -2095,6 +2095,10 @@ li.indent {
 		margin-top: -4px;
 		margin-bottom: 20px;
 	}
+	
+	.torani-btn {
+	    padding: 6px;
+	}
 
 	.feed {
 		width: 96% !important;
