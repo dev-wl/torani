@@ -1382,6 +1382,8 @@ article.post.type-post.status-publish.format-standard .box-meta {
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-direction: row;
+    -webkit-flex-flow: row wrap;
 }
 
 .sfsi_plus_wicons.shuffeldiv {
