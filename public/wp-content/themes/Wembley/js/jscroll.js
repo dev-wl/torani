@@ -53,7 +53,7 @@
 			function h() {
 				fb.height(hb + "px"), ab = 0, gb = P.verticalGutter + fb.outerWidth(), Q.width(R - gb - tb);
 				try {
-					0 === eb.position().left && Q.css("margin-left", gb + "px")
+					0 === eb.position().left && Q.css("margin-left", 0 + "px")
 				} catch (a) {}
 			}
 
@@ -170,7 +170,7 @@
 			}
 
 			function r(a, b) {
-				Y && (0 > a ? a = 0 : a > _ && (a = _), b === c && (b = P.animateScroll), b ? vb.animate($, "top", a, s) : ($.css("top", a), s(a)))
+				Y && (0 > a ? a = 0 : a > _ && (a = _), b === c && (b = P.animateScroll), b ? vb.animate($, "top", a, s) : ($.css("top", 0), s(a)))
 			}
 
 			function s(a) {
@@ -179,11 +179,11 @@
 					e = ab == _,
 					f = a / _,
 					g = -f * (V - S);
-				(wb != b || yb != e) && (wb = b, yb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), v(b, e), Q.css("top", g), d.trigger("jsp-scroll-y", [-g, b, e]).trigger("scroll")
+				(wb != b || yb != e) && (wb = b, yb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), v(b, e), Q.css("top", 0), d.trigger("jsp-scroll-y", [-g, b, e]).trigger("scroll")
 			}
 
 			function t(a, b) {
-				Z && (0 > a ? a = 0 : a > cb && (a = cb), b === c && (b = P.animateScroll), b ? vb.animate(bb, "left", a, u) : (bb.css("left", a), u(a)))
+				Z && (0 > a ? a = 0 : a > cb && (a = cb), b === c && (b = P.animateScroll), b ? vb.animate(bb, "left", a, u) : (bb.css("left", 0), u(a)))
 			}
 
 			function u(a) {
@@ -192,7 +192,7 @@
 					e = db == cb,
 					f = a / cb,
 					g = -f * (U - R);
-				(xb != b || zb != e) && (xb = b, zb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), w(b, e), Q.css("left", g), d.trigger("jsp-scroll-x", [-g, b, e]).trigger("scroll")
+				(xb != b || zb != e) && (xb = b, zb = e, d.trigger("jsp-arrow-change", [wb, yb, xb, zb])), w(b, e), Q.css("left", 0), d.trigger("jsp-scroll-x", [-g, b, e]).trigger("scroll")
 			}
 
 			function v(a, b) {
@@ -516,6 +516,6 @@
 		keyboardSpeed: 0,
 		initialDelay: 300,
 		speed: 30,
-		scrollPagePercent: 0
+		scrollPagePercent: .8
 	}
 }(jQuery, this);
