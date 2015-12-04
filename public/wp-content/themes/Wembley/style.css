@@ -2180,7 +2180,7 @@ li.indent {
 		text-align: center !important;
 	}
 
-	#bottom .row {
+	.footer #bottom .row {
 		max-width: 100%;
 	}
 }
