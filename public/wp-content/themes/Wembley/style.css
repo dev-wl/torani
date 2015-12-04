@@ -1801,6 +1801,10 @@ li.indent {
 		position: relative;
 	}
 
+	footer#colophon {
+		padding-bottom: 0px !important;
+	}
+
 	.footer-left {
 		margin-top: 0px;
 		margin-left: 0px;
