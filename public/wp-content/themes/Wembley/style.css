@@ -2068,6 +2068,7 @@ li.indent {
 	.jspContainer {
 		overflow: auto !important;
 		overflow-x: hidden !important;
+		height: 100% !important;
 	}
 
 	.jspHorizontalBar, .jspVerticalBar {
