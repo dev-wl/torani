@@ -2065,7 +2065,7 @@ li.indent {
 }
 
 @media (max-width: 750px) {
-	.jspHorizontalBar {
+	.jspHorizontalBar, .jspVerticalBar {
 		display: none;
 	}
 
