@@ -1987,8 +1987,8 @@ li.indent {
 
 	.flex-main article .share-icons {
 		/*max-width: 234px !important;*/
-		width: 100% !important;
-		max-width: 100% !important;
+		width: 1500% !important;
+		/*max-width: 100% !important;*/
 	}
 
 	.description {
