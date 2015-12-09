@@ -290,8 +290,6 @@ SFSI(document).ready(function(s) {
         }), SFSI(this).children(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").hide());
     }), SFSI("body").on("click", function() {
         SFSI(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").hide();
-        // SFSI(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").css('opacity', 0);
-
     }), SFSI(".adminTooltip >a").on("hover", function() {
         SFSI(this).offset().top, SFSI(this).parent("div").find("div.sfsi_tool_tip_2_inr").css("opacity", "1"), 
         SFSI(this).parent("div").find("div.sfsi_tool_tip_2_inr").show();
