@@ -16,6 +16,16 @@ get_header(); ?>
 	setup_postdata( $post );
 ?>
 
+<style>
+	.description {
+		display: block !important;
+	}
+
+	div.sfsi_tool_tip_2 {
+		display: none;
+	}
+</style>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> style="margin-top: 55px;">
 
 		<?php
@@ -44,6 +54,5 @@ get_header(); ?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
-
 
 <?php get_footer(); ?>
