@@ -51,12 +51,4 @@ get_header(); ?>
 
 </article><!-- #post-## -->
 
-<script>
-	$("body").trigger('click');
-	$(document).ready(function() {
-		$("sfsi_plus_widget").trigger('hover');
-		alert('done');
-	});
-</script>
-
 <?php get_footer(); ?>
