@@ -1982,7 +1982,7 @@ li.indent {
 	.flex-main article {
 		margin: 0px auto;
 		padding-left: 1px !important;
-		padding-right: 1px !important;
+		padding-right: 15px !important;
 	}
 
 	.flex-main article .share-icons {
