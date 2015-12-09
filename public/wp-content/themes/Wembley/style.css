@@ -1981,6 +1981,8 @@ li.indent {
 @media (max-width: 746px) {
 	.flex-main article {
 		margin: 0px auto;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
 	}
 
 	.flex-main article .share-icons {
