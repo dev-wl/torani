@@ -53,7 +53,7 @@ get_header(); ?>
 
 <script>
 	$(document).ready(function() {
-		// $(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").hide();
+		$("body").trigger('click');
 	});
 </script>
 
