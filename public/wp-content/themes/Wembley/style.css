@@ -1681,7 +1681,7 @@ li.indent {
 		max-width: 234px;
 	}
 
-	.single-product .options, .blogpost .entry-content, .single-product .share-icons {
+	.single-product .options, .single-product .share-icons {
 		float: none !important;
 		max-width: initial !important;
 		width: 100%;
