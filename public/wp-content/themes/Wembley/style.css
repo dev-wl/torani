@@ -627,7 +627,7 @@ header#masthead .menu ul li {
 .grid-item--width2 { width: 460px; }
 .grid-item--height2 {height: 460px;}
 .grid-item--heightFeed {height: 366px;}
-.grid-item--width3 {width: 900px;}
+.grid-item--width3 {width: 620px;}
 .grid-item--widthFeed {width: 442px;}
 
 .flipper_container {
@@ -1121,7 +1121,8 @@ p.copy {
 .sl-wrapper {
 	height: 603px;
 	position: relative;
-	width: 965px;
+	/*width: 965px;*/
+	width: 852px;
 	/*background-color: #ccc;*/
 	background-color: transparent;
 	margin-bottom: 80px;
@@ -1313,7 +1314,7 @@ label.fb {
 }
 
 .feed {
-	width: 442px;
+	width: 302px;
 	background-color: green;
 	padding: 0px 15px;
 }
@@ -1351,7 +1352,7 @@ label.fb {
 }
 
 .wff-row .wff-facebook-feed-title-div {
-	width: 78%;
+	width: 70%;
 }
 
 .wff-feed-wrapper a:link {
@@ -1366,11 +1367,13 @@ article.post.type-post.status-publish.format-standard h2 {
 	display: inline-block;
 	font-size: 28px;
 	width: 100%;
+	text-align: left !important;
 }
 
 article.post.type-post.status-publish.format-standard .box-meta {
 	text-align: justify;
-	max-width: 234px;
+	/*max-width: 234px;*/
+	max-width: 100%;
 	margin: 0px auto;
 }
 
@@ -1393,12 +1396,14 @@ article.post.type-post.status-publish.format-standard .box-meta {
 span.share {
 	text-transform: uppercase;
 	float: left;
-	margin-top: 7px;
+	margin-top: 5px;
+	font-family: "univers49LtultraCn";
+	font-size: 21px;
 }
 
 .share-icons {
 	/*margin: 0px 14px;*/
-	max-width: 234px;
+	max-width: 281px;
 	margin: 0px auto;
 }
 
@@ -1430,7 +1435,7 @@ span.share {
 }
 
 .options {
-	max-width: 234px;
+	max-width: 281px;
 	margin: 0px auto;
 }
 
@@ -1438,16 +1443,18 @@ span.share {
 	float: left;
 	max-width: 42% !important;
 	margin-right: 30px;
-	min-width: 21%;
+	/*min-width: 21%;*/
 }
 
 .single-product .image-block .share-icons {
 	max-width: none;
+	min-width: 225px;
+	margin-top: 7px;
 }
 
 .single-product .general{
 	float: left;
-	width: 55%;
+	width: 54%;
 }
 
 .single-product .general .box-meta {
@@ -1455,6 +1462,7 @@ span.share {
 }
 
 .single-product .general h2.box-title, .blogpost .entry-content .description h2.page-title {
+	font-family: "univers49LtultraCn";
 	font-size: 32px !important;
 	margin-bottom: 12px;
 	color: #705944;
@@ -1577,6 +1585,10 @@ li.indent {
 
 .radio-btns label {
 	margin-right: 10px !important;
+}
+
+.jspHorizontalBar {
+	display: none;
 }
 
 @media (max-width: 1279px) and(max-device-width: 1279px) {
@@ -2049,9 +2061,14 @@ li.indent {
 }
 
 @media (max-width: 750px) {
+	.jspHorizontalBar {
+		display: none;
+	}
+
 	.single-post .image-block {
 		float: initial !important;
 		margin: 0px auto;
+		min-width: 100%;
 	}
 
 	.grid-item:nth-child(2) {

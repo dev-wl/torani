@@ -31,7 +31,7 @@
 			<div class="site-info">
 				<div class="fcred col-12">
 					<div class="footer-left">
-						FOLLOW US ON <a href="http://twitter.com/"><img src="/wp-content/themes/Wembley/twitter.png" /></a> <a href="http://facebook.com"><img src="/wp-content/themes/Wembley/facebook.png" /></a> <a href="">Privacy Policy</a>
+						FOLLOW US ON <a href="http://twitter.com/"><img src="/wp-content/themes/Wembley/twitter.png" /></a> <a href="http://facebook.com"><img src="/wp-content/themes/Wembley/facebook.png" /></a> <a href="/?p=498">Privacy Policy</a>
 					</div>
 					<div class="footer-right">
 						<a href="#"><p class="info">VISIT TORANI.COM</p></a>

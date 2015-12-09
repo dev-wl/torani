@@ -23,10 +23,10 @@ get_header(); ?>
 	}
 </style>
 
-	<div class="col-md-12 intro-me clearfix">
+	<!-- <div class="col-md-12 intro-me clearfix">
 		<h2> <?php echo ft_of_get_option('fabthemes_welcome_title'); ?></h2>
 		<p> <?php echo ft_of_get_option('fabthemes_welcome_text'); ?> </p>
-	</div>
+	</div> -->
 	
 	
 	<div id="primary" class="content-area ">
