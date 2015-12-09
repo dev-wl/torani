@@ -1681,10 +1681,15 @@ li.indent {
 		max-width: 234px;
 	}
 
-	.blogpost .image-block, .single-product .options, .blogpost .entry-content, .single-product .share-icons {
+	.single-product .options, .blogpost .entry-content, .single-product .share-icons {
 		float: none !important;
 		max-width: initial !important;
 		width: 100%;
+	}
+
+	.blogpost .image-block {
+		float: left;
+		max-width: 50%;
 	}
 
 	.single-product .general {
