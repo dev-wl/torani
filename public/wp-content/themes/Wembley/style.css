@@ -2066,7 +2066,7 @@ li.indent {
 
 @media (max-width: 750px) {
 	.jspContainer {
-		width: 1000% !important;
+		overflow: auto !important;
 	}
 
 	.jspHorizontalBar, .jspVerticalBar {
