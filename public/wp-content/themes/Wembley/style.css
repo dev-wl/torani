@@ -1471,8 +1471,8 @@ span.share {
 }
 
 .blogpost .description {
-	width: 100%;
-	margin-left: 0px !important;
+	/*width: 100%;
+	margin-left: 0px !important;*/
 	margin-bottom: 15px;
 }
 
