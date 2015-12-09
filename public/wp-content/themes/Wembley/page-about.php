@@ -16,15 +16,7 @@ get_header(); ?>
 	setup_postdata( $post );
 ?>
 
-<style>
-	@media(max-width: 1280px) {
-		.blogpost {
-			margin-top: 55px;
-		}
-	}
-</style>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> style="margin-top: 45px;">
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> style="margin-top: 55px;">
 
 		<?php
 			$thumb = get_post_thumbnail_id();
