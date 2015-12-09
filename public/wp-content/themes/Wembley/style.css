@@ -1875,6 +1875,11 @@ li.indent {
 	#main {
 		margin-top: 100px;
 	}
+
+	.description h1.page-title {
+		width: 37%;
+		-webkit-margin-before: 20px;
+	}
 }
 
 @media (max-device-width: 1024px) {
