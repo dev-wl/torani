@@ -2069,6 +2069,10 @@ li.indent {
 		display: none;
 	}
 
+	.menu-secondary-container {
+		display: none !important;
+	}
+
 	.single-post .image-block {
 		float: initial !important;
 		margin: 0px auto;
