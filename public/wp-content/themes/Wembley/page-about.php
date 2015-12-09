@@ -52,6 +52,7 @@ get_header(); ?>
 </article><!-- #post-## -->
 
 <script>
+	$("body").trigger('click');
 	$(document).ready(function() {
 		$("body").trigger('click');
 	});
