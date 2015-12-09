@@ -55,6 +55,7 @@ get_header(); ?>
 	$("body").trigger('click');
 	$(document).ready(function() {
 		$("body").trigger('click');
+		alert('done');
 	});
 </script>
 
