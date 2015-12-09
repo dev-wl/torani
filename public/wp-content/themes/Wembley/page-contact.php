@@ -105,57 +105,35 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<!-- BEGIN DIRECT MAIL SUBSCRIBE FORM -->
-			<link rel="stylesheet" type="text/css" href="https://www.dm-mailinglist.com/subscribe_forms/embed.css?v=2&f=bf05580c&sbg=1" media="all">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-			<script src="https://www.dm-mailinglist.com/subscribe_forms/localized.js" charset="UTF-8"></script>
-			<script src="https://www.dm-mailinglist.com/subscribe_forms/subscribe_embed.js" charset="UTF-8"></script>
+			<!-- Begin MailChimp Signup Form -->
 			<div style="visibility:hidden;">
-			<form method="post" action="https://www.dm-mailinglist.com/subscribe" data-directmail-use-ajax="1" data-form-id="bf05580c" accept-charset="UTF-8" id="bf05580c">
-			<input type="hidden" name="email"></input>
-			<input type="hidden" name="form_id" value="bf05580c"></input>
-			<div>
-			<table>
-			<tr>
-			<td colspan=1>Torani Coffee Newsletter Subscription</td>
-			</tr>
-			<tr>
-			<td colspan=1></td>
-			</tr>
-			<tr>
-			<td>
-			<label for="directmail-bf05580c-first_name">First Name:</label>
-			<input type="text" id="directmail-bf05580c-first_name" name="first_name" value="" placeholder="First Name" ></input>
-			</td>
-			</tr>
-			<tr>
-			<td>
-			<label for="directmail-bf05580c-last_name">Last Name:</label>
-			<input type="text" id="directmail-bf05580c-last_name" name="last_name" value="" placeholder="Last Name" ></input>
-			</td>
-			</tr>
-			<tr>
-			<td>
-			<label for="directmail-bf05580c-custom_1">Country:</label>
-			<input type="text" id="directmail-bf05580c-custom_1" name="custom_1" value="" placeholder="Country" ></input>
-			</td>
-			</tr>
-			<tr>
-			<td>
-			<label for="directmail-bf05580c-subscriber_email">Email*:</label>
-			<input type="email" id="directmail-bf05580c-subscriber_email" name="subscriber_email" value="" placeholder="Email*" required="required"></input>
-			</td>
-			</tr>
-			<tr>
-			<td>
-			<input type="submit" value="Subscribe"></input>
-			</td>
-			</tr>
-			</table>
+				<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
+				<div id="mc_embed_signup">
+					<form action="//coffeemarvel.us8.list-manage.com/subscribe/post?u=533848f743a26d8c40a07bda8&amp;id=5ed4181b04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll">
+						
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-FNAME">First Name </label>
+						<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_533848f743a26d8c40a07bda8_5ed4181b04" tabindex="-1" value=""></div>
+					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    </div>
+					</form>
+				</div>
 			</div>
-			</form>
-			</div>
-			<!-- END DIRECT MAIL SUBSCRIBE FORM -->
+
+			<!--End mc_embed_signup-->
+
 			<div class="clearfix"></div>
 
 		</main><!-- #main -->
@@ -190,9 +168,8 @@ get_header(); ?>
 
 	$('.wpcf7 input[type="submit"]').click(function() {
 		theForm = $(this).parent().parent();
-		$('#directmail-bf05580c-first_name').val($(theForm).find('input[type="text"]:eq(0)').val());
-		$('#directmail-bf05580c-custom_1').val($(theForm).find('input[type="text"]:eq(4)').val());
-		$('#bf05580c #directmail-bf05580c-subscriber_email').val($(theForm).find('input[type="email"]').val());
+		$('#mce-FNAME').val($(theForm).find('input[type="text"]:eq(0)').val());
+		$('#mce-EMAIL').val($(theForm).find('input[type="email"]').val());
 
 		if($(theForm).find('input[type="checkbox"]:checked').length == 1) {
 			send = true;
@@ -202,7 +179,7 @@ get_header(); ?>
 	$(document).on('DOMNodeInserted', function(e) {
 	    if ($(e.target).attr('class') == 'wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok') {
 	    	if(send) {
-        		$('#bf05580c').submit();
+        		$('#mc-embedded-subscribe-form').submit();
 	        }
 	    }
 	});

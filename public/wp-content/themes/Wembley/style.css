@@ -1810,7 +1810,7 @@ li.indent {
 	}
 
 	.footer {
-		position: relative;
+		/*position: relative;*/
 	}
 
 	footer#colophon {
