@@ -51,4 +51,10 @@ get_header(); ?>
 
 </article><!-- #post-## -->
 
+<script>
+	$(document).ready(function() {
+		$(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").hide();
+	});
+</script>
+
 <?php get_footer(); ?>
