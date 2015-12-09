@@ -1871,6 +1871,10 @@ li.indent {
 		/*padding-bottom: 100px;*/
 		padding-bottom: 120px;
 	}
+
+	#main {
+		margin-top: 50px;
+	}
 }
 
 @media (max-device-width: 1024px) {
