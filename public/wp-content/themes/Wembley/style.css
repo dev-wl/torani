@@ -1055,7 +1055,7 @@ p.copy {
 	margin-right: 11px;
 }
 
-#maillist form input[type="text"] {
+#maillist form input[type="email"] {
 	border: medium none;
 	width: 165px;
 	height: 29px;
@@ -1724,7 +1724,7 @@ li.indent {
 		height: 31px;
 	}
 
-	#maillist form input[type="text"] {
+	#maillist form input[type="email"] {
 	    width: 151px;
 	    padding-left: 7px;
 	}
@@ -2256,7 +2256,7 @@ li.indent {
 	    margin-right: 0px;
 	}
 
-	#maillist form input[type="text"] {
+	#maillist form input[type="email"] {
 		padding-left: 0px;
 		width: 145px;
 		letter-spacing: -0.3px;

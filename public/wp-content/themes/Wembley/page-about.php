@@ -51,4 +51,14 @@ get_header(); ?>
 
 </article><!-- #post-## -->
 
+<script>
+	$(document).ready(function() {
+		setTimeout(function() {
+			$(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").hide();
+			// $(".sfsiplus_inerCnt").find("div.sfsi_tool_tip_2").show();
+			// alert('done');
+		}, 500);
+	});
+</script>
+
 <?php get_footer(); ?>

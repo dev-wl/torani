@@ -110,7 +110,7 @@ get_header(); ?>
 				<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 
 				<div id="mc_embed_signup">
-					<form action="//coffeemarvel.us8.list-manage.com/subscribe/post?u=533848f743a26d8c40a07bda8&amp;id=5ed4181b04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="//coffeemarvel.us8.list-manage.com/subscribe/post?u=533848f743a26d8c40a07bda8&amp;id=5ed4181b04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					    <div id="mc_embed_signup_scroll">
 						
 					<div class="mc-field-group">

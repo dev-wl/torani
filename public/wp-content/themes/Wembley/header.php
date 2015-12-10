@@ -108,13 +108,9 @@
 			 </nav><!-- #site-navigation -->
 	
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-			<script src="https://www.dm-mailinglist.com/subscribe_forms/localized.js" charset="UTF-8"></script>
-			<script src="https://www.dm-mailinglist.com/subscribe_forms/subscribe_embed.js" charset="UTF-8"></script>
 			 <div id="maillist">
-				<form method="post" action="https://www.dm-mailinglist.com/subscribe" data-directmail-use-ajax="1" data-form-id="bf05580c">
-					<input type="text" placeholder="JOIN OUR MAILING LIST" id="directmail-bf05580c-subscriber_email" name="subscriber_email" value="" required="required"/>
-					<input type="hidden" name="form_id" value="bf05580c"></input>
+				<form action="//coffeemarvel.us8.list-manage.com/subscribe/post?u=533848f743a26d8c40a07bda8&amp;id=5ed4181b04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<input type="email" placeholder="JOIN OUR MAILING LIST" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
 					<div class="submit-wrapper">
 						<input class="submit-button" type="submit" value="SUBMIT" />
 					</div>

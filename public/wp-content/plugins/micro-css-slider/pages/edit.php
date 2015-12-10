@@ -219,7 +219,7 @@ function my_action_javascript() { ?>
 			};
 
 			jQuery.post(ajaxurl, data, function(response) {
-				alert(response);
+				// alert(response);
 			});
 		});
 
