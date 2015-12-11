@@ -1484,6 +1484,9 @@ span.share {
 	background-color: #DC143C;
 	margin: 0px auto;
 	width: 91px;
+}
+
+.single-product .buy-now {
 	display: block;
 }
 
@@ -1507,8 +1510,12 @@ span.share {
 }
 
 .single-product .general{
-	float: left;
-	width: 54%;
+	/*float: left;
+	width: 54%;*/
+
+	width: 48%;
+	max-width: 48%;
+	float: right;
 }
 
 .single-product .general .box-meta {
@@ -1644,6 +1651,10 @@ li.indent {
 
 .jspHorizontalBar {
 	display: none;
+}
+
+ul#topmenu li.current-menu-item a {
+	color: #F23636;
 }
 
 @media (max-width: 1279px) and (max-device-width: 1279px) {

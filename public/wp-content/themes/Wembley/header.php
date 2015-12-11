@@ -22,6 +22,23 @@
 
 <?php wp_head(); ?>
 
+<?php
+	if( in_category( array( 11,12,13 ) ) )
+		$products = 1;
+	else 
+		$products = 0;
+
+	if( in_category( array( 7 ) ) )
+		$recepies = 1;
+	else 
+		$recepies = 0;
+
+	if( is_single())
+		$single = 1;
+	else
+		$single = 0;
+?>
+
 <script>
 	function recheckFooter() {
 		if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
@@ -31,6 +48,19 @@
 		}
 	}
 
+	$(document).ready(function() {
+		if($('#submenu').find('.current-menu-item').length > 0)
+			$('ul#topmenu li:first-child').addClass('current-menu-item');
+		blog = "<?php echo $products; ?>";
+		single = "<?php echo $single; ?>";
+		recepies = "<?php echo $recepies; ?>";
+		if(blog == 1)
+			$('ul#topmenu li:first-child').addClass('current-menu-item');
+		else if(recepies == 1)
+			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
+		else if(single == 1)
+			$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
+	});
 
 	$(window).on('load', function() {
 		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").mouseenter(function() {
