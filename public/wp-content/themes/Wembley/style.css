@@ -2234,7 +2234,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.flex-main article a img.img-responsive {
-	    max-width: 220px;
+	    display: none;
 	}
 
 	.mobile {
