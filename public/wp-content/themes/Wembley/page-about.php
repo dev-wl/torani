@@ -21,7 +21,7 @@ get_header(); ?>
 		display: block !important;
 	}
 
-	#content .article.post {
+	#content .article.blogpost {
 		margin-top: 1080px;
 	}
 
