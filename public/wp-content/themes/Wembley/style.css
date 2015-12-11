@@ -1391,7 +1391,7 @@ label.fb {
 
 .wff-feed-wrapper {
 	height: 291px;
-    /*overflow: auto;*/
+    overflow: auto;
     background-color: #fff;
     padding: 0px 5px;
 }
