@@ -2230,7 +2230,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.wff-row .wff-facebook-feed-title-div {
-		width: 64%;
+		width: 64% !important;
 	}
 }
 
