@@ -1794,11 +1794,6 @@ li.indent {
 		margin-bottom: 10px;
 		margin: 0px auto !important;
 	}
-
-	.footer-right p.copy {
-		width: 40% !important;
-	}
-
 }
 
 @media (max-width: 1110px) {
@@ -1980,6 +1975,10 @@ li.indent {
 		width: 80%;
 		margin: 0px auto !important;
 		float: initial;
+	}
+
+	.footer-right p.copy {
+		width: 40% !important;
 	}
 }
 
