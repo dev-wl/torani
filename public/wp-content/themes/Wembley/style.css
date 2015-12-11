@@ -1168,7 +1168,7 @@ p.copy {
 
 /*slider*/
 .sl-wrapper {
-	height: 603px !important;
+	height: 603px;
 	position: relative;
 	/*width: 965px;*/
 	width: 852px;
@@ -1748,6 +1748,10 @@ ul#topmenu li.current-menu-item a {
 @media (device-width: 1280px) and (min-width: 1116px) {
 	.grid-item--width3 {
 		width: 800px;
+	}
+
+	.sl-wrapper {
+		height: 603px !important;
 	}
 }
 
