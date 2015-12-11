@@ -13,7 +13,7 @@
 
 get_header(); ?>
 <style type="text/css">
-	/*#main {
+	#main {
 		margin-top: 0px;
 		padding-top: 0px;
 	}
@@ -68,7 +68,7 @@ get_header(); ?>
 			width: 80%;
 		    margin: 0px auto;
 		}
-	}*/
+	}
 </style>
 
 	<div class="col-md-12 intro-me clearfix">
