@@ -19,11 +19,11 @@ get_header(); ?>
 	}
 
 	#content .article .blogpost {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 
 	#page {
-		padding-bottom: 150px !important;
+		padding-bottom: 100px !important;
 	}
 
 	.description {
