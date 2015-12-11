@@ -82,8 +82,23 @@
 <!-- <div class="menu-btn"><i class="glyphicon glyphicon-cog"></i></div> -->
 	
 	<header id="masthead" class="site-header clearfix" role="banner">
-		<div class="container" style="width: 100%;max-width: 100%;"> <div class="row"> 
-			<div class="col-xs-12 the_logo">
+		<div class="red-header">
+			<div id="logo">
+				<img src="/wp-content/themes/Wembley/logo.png" width="124" />
+			</div>
+			
+			<div id='red-right'>
+				<p>SINGLE SERVE BEVERAGE CUPS</p> 
+				<img src="/wp-content/themes/Wembley/header_cups.png" width="124" />
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="container" style="width: 100%;max-width: 100%;">
+
+		 <div class="row"> 
+			<!-- <div class="col-xs-12 the_logo">
 				<div class="site-branding">
 
 	<?php if (get_theme_mod(FT_scope::tool()->optionsName . '_logo', '') != '') { ?>
@@ -93,7 +108,7 @@
 	<?php } ?>
 
 				</div>
-		</div>
+		</div> -->
 			
 			<div class="col-lg-12 col-md-12 col-xs-12">
 			<div class="mobilenavi">

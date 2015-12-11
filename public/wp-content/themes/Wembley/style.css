@@ -576,6 +576,41 @@ body, #page {
 	min-height: 100vh;
 }
 
+.red-header {
+	height: 100px;
+	background: linear-gradient(to top, #952930, #F23636 );
+	overflow: hidden;
+	padding-left: 100px;
+	padding-right: 50px;
+}
+
+.red-header #logo {
+	float: left;
+}
+
+#red-right {
+	float: right;
+	height: 100%;
+    display: table;
+}
+
+#red-right p {
+	font-family: univers49LtultraCn;
+	color: #fff;
+	font-size: 27px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#red-right img {
+	margin-top: 9px;
+}
+ 
+.container .row {
+	background: transparent url("/wp-content/themes/Wembley/header-bg.jpg") repeat-x scroll left top;
+	min-height: 44px;
+}
+
 img.product {
 	max-width: 50% !important;
 	margin: auto;
@@ -585,9 +620,14 @@ header#masthead {
 	position: fixed;
 	width: 100%;
 	z-index: 9000;
-	background: transparent url("/wp-content/themes/Wembley/header-bg.jpg") repeat-x scroll left top;
+	/*background: transparent url("/wp-content/themes/Wembley/header-bg.jpg") repeat-x scroll left top;*/
 	min-height: 20px;
-	height: 47px;
+	height: 40px;
+}
+
+#masthead .container {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 
 .the_logo {
@@ -731,11 +771,11 @@ nav#submenu {
 	width: 100%;
 	height: 192px;
 	position: absolute;
-	margin-top: 45px;
+	margin-top: 43px;
 	background: transparent url("/wp-content/themes/Wembley/product-filter-bg.png") repeat scroll left top;
 }
 a#blogname {
-	background: transparent url("/wp-content/themes/Wembley/torani-logo.png") no-repeat scroll left top;
+	background: transparent url("/wp-content/themes/Wembley/logo.png") no-repeat scroll left top;
 	position: absolute;
 	z-index: 1000;
 	width: 164px;
@@ -755,7 +795,7 @@ nav#submenu li {
 	position: absolute !important;
 }
 #site-navigation ul#topmenu {
-	margin-left: 200px;
+	margin-left: 41px;
 }
 
 ul#topmenu li a {
@@ -765,7 +805,7 @@ ul#topmenu li a {
 #menu-secondary {
 	/*max-width: 1293px;*/
 	/*margin-left: auto;*/
-	margin-left: 205px;
+	margin-left: 44px;
 	color: #705944;
 	margin-top: 40px;
 }
@@ -1018,8 +1058,10 @@ a.buy:hover {
 
 .footer-right {
 	float: right;
+	text-align: right;
 	padding-right: 50px;
 	font-family: "univers67_condensed_bold";
+	color: #fff;
 }
 
 .footer-right a:nth-child(1) p {
@@ -1048,7 +1090,8 @@ p.copy {
 #maillist form {
 	display: block;
 	width: 250px;
-	background: #CD2026 url("/wp-content/themes/Wembley/header-email-bg.png") repeat-x scroll left top;
+	/*background: #CD2026 url("/wp-content/themes/Wembley/header-email-bg.png") repeat-x scroll left top;*/
+	background: #fff;
 	float: right;
 	margin: auto;
 	margin-top: 7px;
@@ -1060,7 +1103,7 @@ p.copy {
 	width: 165px;
 	height: 29px;
 	font-size: 18px;
-	color: #FFF;
+	color: #C2BEBE;
 	padding-left: 13px;
 	letter-spacing: 1px;
 	background-color: transparent;
@@ -1081,11 +1124,14 @@ p.copy {
 }
 
 .submit-button {
-	background: transparent url("/wp-content/themes/Wembley/submit_yellow_small_rectangle.jpg") no-repeat scroll left top;
+	/*background: transparent url("/wp-content/themes/Wembley/submit_yellow_small_rectangle.jpg") no-repeat scroll left top;*/
+	background: transparent url("/wp-content/themes/Wembley/button.png") no-repeat scroll left top;
 	width: 70px;
 	height: 22px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
+	color: #e68e90;
 	border: medium none;
+	font-family: univers67_condensed_bold;
 	margin: 4px 0px 0px 7px;
 }
 
@@ -1098,6 +1144,7 @@ p.copy {
 	overflow: inherit;
 	background-color: #EAE4D8;
 }
+
 .footer {
 	width: 100%;
 	position: fixed;
@@ -1107,6 +1154,7 @@ p.copy {
 }
 #content {
 	padding-bottom: 122px;
+	margin-top: 48px;
 }
 #darkener {
 	position: absolute;
@@ -1841,9 +1889,13 @@ li.indent {
 	}
 
 	.footer-right p.copy {
-		width: 50%;
+		width: 93%;
 		margin: 0px auto;
 		float: none;
+	}
+
+	.footer-right p:nth-child(1) {
+		text-align: center;
 	}
 
 	#content {
@@ -1961,7 +2013,7 @@ li.indent {
 
 @media (min-width: 768px) and (max-width: 1280px) {
 	#menu-secondary {
-		width: 68%;
+		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -2111,12 +2163,33 @@ li.indent {
 }
 
 @media (max-width: 640px) {
+	.red-header {
+		padding: 0px !important;
+	}
+
+	#red-right {
+		width: 223px;
+	    margin-top: 34px;
+	}
+
+	#red-right p {
+		float: left;
+		font-size: 21px;
+		margin-top: 8px;
+	}
+
+	#red-right img {
+		float: right;
+	    width: 73px;
+	    margin-top: 0px !important;
+	}
+
 	#main {
 		margin-top: 0px;
 	}
 
 	#main {
-		padding-top: 58px !important;
+		padding-top: 100px !important;
 	}
 
 	#main .grid {

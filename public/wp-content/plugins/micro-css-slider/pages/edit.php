@@ -79,12 +79,11 @@
 	// print_r(wp_upload_dir());
 ?>
 
-<label for="upload_image" class="new"><a>Add new slide</a>
+<label for="upload_image" class="slide-upd">Add new slide</label>
 <form action="" enctype="multipart/form-data" method="POST" id="newslide">
 	<input id="upload_image" type="file" id="newslide_file" name="userfile" value=""  onChange="submitForm('newslide');"/>
 	<input id="upload_image_button" type="submit" value="Upload Image" />
 </form>
-</label>
 
 <div id="ccc"></div>
 
@@ -135,13 +134,14 @@
 
 		<a class="slide-delete" id="slide-<?php echo $cleanedObject->post_parent; ?>">Delete slilde</a>
 		
-		<label for="update-image<?php echo $cleanedObject->post_parent; ?>" class="slide-image-update" data-id="slide-<?php echo $cleanedObject->post_parent; ?>"><a class="slide-upd">Update image</a>
-		<form action="" enctype="multipart/form-data" method="POST" class="update" id="updateSlide<?php echo $cleanedObject->post_parent;?>">
-			<input id="update-image<?php echo $cleanedObject->post_parent; ?>" type="file" name="userfile" value="" onchange="submitForm('updateSlide<?php echo $cleanedObject->post_parent;?>')" />
-			<input type="text" name="update" value="<?php echo $cleanedObject->post_parent;?>" />
-			<input id="update-image_button" type="submit" value="Upload Image" />
+		<label for="update-image<?php echo $cleanedObject->post_parent; ?>" class="slide-image-update slide-upd" data-id="slide-<?php echo $cleanedObject->post_parent; ?>">Update image</label>
+		
+			<form action="" enctype="multipart/form-data" method="POST" class="update" id="updateSlide<?php echo $cleanedObject->post_parent;?>">
+				<input id="update-image<?php echo $cleanedObject->post_parent; ?>" type="file" name="userfile" value="" onchange="submitForm('updateSlide<?php echo $cleanedObject->post_parent;?>')" />
+				<input type="text" name="update" value="<?php echo $cleanedObject->post_parent;?>" />
+				<input id="update-image_button" type="submit" value="Upload Image" />
 			</form>
-		</label>
+		
 	</div>
 	
 	<?php endforeach; ?>

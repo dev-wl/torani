@@ -34,8 +34,9 @@
 						FOLLOW US ON <a href="http://twitter.com/"><img src="/wp-content/themes/Wembley/twitter.png" /></a> <a href="http://facebook.com"><img src="/wp-content/themes/Wembley/facebook.png" /></a> <a href="/?p=498">Privacy Policy</a>
 					</div>
 					<div class="footer-right">
+						<p>For more information on all Torani products</p>
 						<a href="#"><p class="info">VISIT TORANI.COM</p></a>
-						<p class="copy">Torani is a trademark of R. Torre &amp; company and is used under license to Single Cup Coffee</p>
+						<p class="copy">Torani is a trademark of R. Torre &amp; Company and is used under license to Single Cup Coffee</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>		

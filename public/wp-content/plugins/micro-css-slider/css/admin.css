@@ -47,12 +47,13 @@ label.new a {
 	color: #fff;
 }
 
-label form {
+form.update, form#newslide {
 	display: none;
 }
 
 label.slide-image-update {
-	vertical-align: text-top;
+	/*vertical-align: text-top;*/
+	margin-top: 7px;
 }
 
 .slide-upd, .slide-delete, .btn {
