@@ -1481,10 +1481,14 @@ span.share {
 
 .buy-now {
 	background-color: #DC143C;
+	margin: 0px auto;
+	width: 91px;
+	display: block;
 }
 
 .options {
-	max-width: 281px;
+	/*max-width: 281px;*/
+	width: 100%;
 	margin: 0px auto;
 }
 
