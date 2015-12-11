@@ -2207,7 +2207,7 @@ ul#topmenu li.current-menu-item a {
 
 @media (max-width: 640px) and (orientation: portrait) {
 	.footer-right p.copy {
-	    width: 93% !important;
+	    width: 90% !important;
         font-size: 6px;
 	}
 }
