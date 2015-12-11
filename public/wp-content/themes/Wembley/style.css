@@ -2265,6 +2265,7 @@ ul#topmenu li.current-menu-item a {
 
 	.single-product .general .share-icons {
 		width: initial !important;
+		max-width: initial !important;
 	}
 
 	.buy-now {
