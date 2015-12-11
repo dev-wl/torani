@@ -23,14 +23,14 @@ get_header(); ?>
 
 
 	#content .article .blogpost {
-		margin-top: 80px;
+		margin-top: 1080px;
 	}
 
 	#page {
-		padding-bottom: 50px !important;
+		padding-bottom: 1050px !important;
 	}
 
-	
+
 </style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> style="margin-top: 55px;">
