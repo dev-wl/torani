@@ -1723,6 +1723,11 @@ li.indent {
 	/*end of grid*/
 }
 
+@media (device-width: 1280px) and (min-width: 1116px) {
+	.grid-item--width3 {
+		width: 800px;
+	}
+}
 
 @media (max-width: 1280px) {
 	.flex-main .share-icons {
