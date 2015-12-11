@@ -2205,7 +2205,11 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.footer-right p.copy {
-	    width: 60% !important;
+	    width: 58% !important;
+	}
+
+	#darkener {
+		height: 180px;
 	}
 }
 
