@@ -2203,18 +2203,20 @@ ul#topmenu li.current-menu-item a {
 	.flex-main article a img.img-responsive {
 	    max-width: 200px;
 	}
+
+	.footer-right p.copy {
+	    width: 100% !important;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
-	
-}
-
-@media (max-width: 640px) {
 	.footer-right p.copy {
 	    width: 85% !important;
         font-size: 6px;
 	}
-	
+}
+
+@media (max-width: 640px) {
 	.red-header {
 		padding: 0px !important;
 	}
