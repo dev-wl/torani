@@ -33,7 +33,7 @@
 
 
 	$(window).on('load', function() {
-		$("#topmenu li:first-child, #submenu, #submenu li").mouseenter(function() {
+		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").mouseenter(function() {
 			if($(window).width() < 640)
 				return;
 			$('#submenu').css('display', 'block');
