@@ -1457,7 +1457,8 @@ span.share {
 }
 
 .sfsi_plus_widget .sfsiplus_norm_row {
-	width: 188px !important;
+	/*width: 188px !important;*/
+	width: 131px !important;
 	position: relative !important;
 }
 
@@ -1576,7 +1577,8 @@ h1.page-title {
 }
 
 .single-product .share-icons {
-	max-width: 320px;
+	/*max-width: 320px;*/
+	max-width: 166px !important;
 }
 
 .single-product .general .share-icons {
