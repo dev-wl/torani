@@ -2205,6 +2205,12 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
+@media (max-width: 640px) and (orientation: portrait) {
+	.footer-right p.copy {
+	    width: 97%;
+	}
+}
+
 @media (max-width: 640px) {
 	.red-header {
 		padding: 0px !important;
