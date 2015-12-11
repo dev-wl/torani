@@ -121,7 +121,7 @@
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<div class="red-header">
 			<div id="logo">
-				<img src="/wp-content/themes/Wembley/logo.png" width="124" />
+				<a href="/"><img src="/wp-content/themes/Wembley/logo.png" width="124" /></a>
 			</div>
 			
 			<div id='red-right'>
