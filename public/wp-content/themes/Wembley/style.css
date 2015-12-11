@@ -2228,6 +2228,10 @@ ul#topmenu li.current-menu-item a {
 	    width: 85% !important;
         font-size: 6px;
 	}
+
+	.wff-row .wff-facebook-feed-title-div {
+		width: 64%;
+	}
 }
 
 @media (max-width: 640px) {
