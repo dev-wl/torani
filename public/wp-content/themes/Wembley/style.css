@@ -1168,7 +1168,7 @@ p.copy {
 
 /*slider*/
 .sl-wrapper {
-	height: 603px;
+	height: 603px !important;
 	position: relative;
 	/*width: 965px;*/
 	width: 852px;
