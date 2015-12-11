@@ -18,6 +18,12 @@ get_header(); ?>
 		padding-top: 0px;
 	}
 
+	@media (max-width: 640px) and (orientation: portrait) {
+		.description h1.page-title {
+		    width: 100% !important;
+		}
+	}
+
 	.description {
 		margin-bottom: 20px;
 		justify-content: initial !important;
