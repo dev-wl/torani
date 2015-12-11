@@ -20,6 +20,17 @@ get_header(); ?>
 	.description {
 		display: block !important;
 	}
+
+
+	#content .article .blogpost {
+		margin-top: 80px;
+	}
+
+	#page {
+		padding-bottom: 50px !important;
+	}
+
+	
 </style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> style="margin-top: 55px;">
