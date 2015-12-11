@@ -2258,7 +2258,7 @@ ul#topmenu li.current-menu-item a {
 		/*display: none;*/
 	}
 
-	.single-product .general {
+	.single-product .general, .post .entry-content {
 		width: initial;
 		max-width: initial;
 	}
