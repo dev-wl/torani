@@ -2258,9 +2258,13 @@ ul#topmenu li.current-menu-item a {
 		/*display: none;*/
 	}
 
-	.single-product .general, .post .entry-content, .single-product .general .share-icons {
+	.single-product .general, .post .entry-content {
 		width: initial;
 		max-width: initial;
+	}
+
+	.single-product .general .share-icons {
+		width: initial !important;
 	}
 
 	.buy-now {
