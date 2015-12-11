@@ -1917,6 +1917,8 @@ ul#topmenu li.current-menu-item a {
 		font-size: 10px;
 		width: 100%;
 		margin-bottom: 10px;
+	    min-width: 100%;
+	    width: 306px;
 	}
 
 	.footer-right {
