@@ -19,11 +19,7 @@ get_header(); ?>
 	}
 
 	#content .article .blogpost {
-		margin-top: 80px;
-	}
-
-	#page {
-		padding-bottom: 50px !important;
+		margin-top: 50px;
 	}
 
 	.description {
