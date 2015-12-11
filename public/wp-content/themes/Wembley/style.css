@@ -1592,6 +1592,10 @@ h1.page-title {
 	height: 50px;
 }
 
+article.col-lg-4.col-md-4.col-sm-6.col-xs-12 .share-icons {
+	max-width: initial;
+}
+
 .single-product .options {
 	width: 192px;
 }
