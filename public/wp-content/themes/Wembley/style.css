@@ -879,6 +879,7 @@ h2.box-title a:link, h2.box-title a:visited {
 	/*margin-top: 30px;*/
 	width: 80%;
 	margin: 32px auto;
+	padding-top: 100px !important;
 	font-family: "sabonregular";
 }
 
