@@ -18,6 +18,14 @@ get_header(); ?>
 		padding-top: 0px;
 	}
 
+	#content .article .blogpost {
+		margin-top: 100px;
+	}
+
+	#page {
+		padding-bottom: 150px !important;
+	}
+
 	.description {
 		margin-bottom: 20px;
 		justify-content: initial !important;
