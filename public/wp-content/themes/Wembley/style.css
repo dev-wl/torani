@@ -1736,7 +1736,7 @@ li.indent {
 	}
 }
 
-@media (min-device-width: 1100px) and (min-width: 835px) and (max-width: 925px) {
+@media (min-device-width: 1100px) and (min-width: 835px) and (max-width: 1105px) {
 	h1.page-title {
 		width: 49%;
 	}
