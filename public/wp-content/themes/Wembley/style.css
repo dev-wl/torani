@@ -1787,12 +1787,16 @@ li.indent {
 	}
 
 	#darkener {
-		height: 152px;
+		height: 167px;
 	}
 
 	article .image-block img {
 		margin-bottom: 10px;
 		margin: 0px auto !important;
+	}
+
+	.footer-right p.copy {
+		width: 40% !important;
 	}
 
 }
