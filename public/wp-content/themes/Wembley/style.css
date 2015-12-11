@@ -1396,6 +1396,10 @@ label.fb {
     padding: 0px 5px;
 }
 
+.wff-fb-item {
+	overflow: initial !important;
+}
+
 .wff-feed-wrapper p.post-desc {
 	color: #000;
 }
