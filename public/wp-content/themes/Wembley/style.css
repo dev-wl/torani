@@ -1994,6 +1994,7 @@ ul#topmenu li.current-menu-item a {
 	.sl-wrapper {
 		position: relative !important;
 		width: 80%;
+		height: 300px !important;
 		float: initial;
 		margin: 0px auto;
 	}
