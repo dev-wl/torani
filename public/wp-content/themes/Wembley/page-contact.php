@@ -14,7 +14,7 @@
 get_header(); ?>
 <style type="text/css">
 	#main {
-		margin-top: 0px;
+		margin-top: -40px;
 		padding-top: 0px;
 	}
 
