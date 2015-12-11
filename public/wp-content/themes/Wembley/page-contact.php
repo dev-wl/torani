@@ -23,7 +23,7 @@ get_header(); ?>
 	}
 
 	#page {
-		padding-bottom: 100px !important;
+		padding-bottom: 50px !important;
 	}
 
 	.description {
