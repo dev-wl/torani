@@ -1978,7 +1978,7 @@ ul#topmenu li.current-menu-item a {
 
 @media (max-device-width: 1024px) {
 	#main {
-		padding-left: 20px;
+		/*padding-left: 20px;*/
 	}
 
 	.grid-item:nth-child(2) {
