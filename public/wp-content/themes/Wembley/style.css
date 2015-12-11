@@ -2269,7 +2269,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	article .image-block img {
-		margin-bottom: 10px;
+		margin-bottom: 10px !important;
 	}
 
 	.buy-now {
