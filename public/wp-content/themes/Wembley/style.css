@@ -2233,6 +2233,10 @@ ul#topmenu li.current-menu-item a {
 		/*display: none;*/
 	}
 
+	.flex-main article a img.img-responsive {
+	    max-width: 220px;
+	}
+
 	.mobile {
 		/*display: block;*/
 	}
