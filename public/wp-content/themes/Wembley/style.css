@@ -2268,6 +2268,10 @@ ul#topmenu li.current-menu-item a {
 		max-width: initial !important;
 	}
 
+	article .image-block img {
+		margin-bottom: 10px;
+	}
+
 	.buy-now {
 		width: 82px;
 	}
