@@ -2239,6 +2239,11 @@ ul#topmenu li.current-menu-item a {
 		/*display: none;*/
 	}
 
+	.single-product .general {
+		width: initial;
+		max-width: initial;
+	}
+
 	.mobile {
 		/*display: block;*/
 	}
