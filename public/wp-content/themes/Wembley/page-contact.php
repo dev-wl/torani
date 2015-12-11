@@ -18,12 +18,6 @@ get_header(); ?>
 		padding-top: 0px;
 	}
 
-	@media (max-width: 640px) and (orientation: portrait) {
-		.description h1.page-title {
-		    width: 100% !important;
-		}
-	}
-
 	.description {
 		margin-bottom: 20px;
 		justify-content: initial !important;
@@ -55,16 +49,6 @@ get_header(); ?>
 	   box-shadow: 0px 0px 7px 0px inset;
 	}
 
-	@media (max-width: 462px) {
-		h1.page-title {
-			width: 50% !important;
-		}
-
-		.column {
-		    margin: 0px 0px 0px 47px;
-		}
-	}
-
 	@media (max-width: 746px) {
 		.description h1.page-title {
 			width: 50% !important;
@@ -75,6 +59,24 @@ get_header(); ?>
 		    margin: 0px auto;
 		}
 	}
+
+	@media (max-width: 640px) and (orientation: portrait) {
+		.description h1.page-title {
+		    width: 100% !important;
+		}
+	}
+
+	@media (max-width: 462px) {
+		h1.page-title {
+			width: 50% !important;
+		}
+
+		.column {
+		    margin: 0px 0px 0px 47px;
+		}
+	}
+
+	
 </style>
 
 	<div class="col-md-12 intro-me clearfix">
