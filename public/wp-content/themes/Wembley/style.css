@@ -2454,6 +2454,7 @@ ul#topmenu li.current-menu-item a {
 	.footer-left {
 		/*width: 100%;
 		min-width: 100%;*/
+		width: 80%;
 		min-width: 80%;
 	    margin: 4px auto;
 	}
