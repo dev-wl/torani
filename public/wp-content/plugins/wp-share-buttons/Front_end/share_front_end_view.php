@@ -87,7 +87,7 @@ ob_start();
 						}
 												?>
 						<div id="huge-it-share-buttons-top" class="huge-it-share-buttons <?php if($param_values['share_button_block_has_background'] != 'on'){echo 'nobackground'; } ?>">
-							<h3><?php echo $param_values['share_button_title_text']; ?></h3>
+							<h3><?php //echo $param_values['share_button_title_text']; ?></h3>
 							<ul class="huge-it-share-buttons-list">		
 								
 								<?php
