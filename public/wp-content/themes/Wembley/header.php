@@ -99,7 +99,10 @@
 		});
 
 		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").on('touchend', function() {
-			// alert('a');
+			$('#submenu').css('display', 'block');
+			setTimeout(function() {
+				$('#submenu').css('display', 'block');
+			}, 1500);
 		})
 
 		$('ul#topmenu li a').css('text-transform', 'uppercase');
