@@ -1961,10 +1961,13 @@ ul#topmenu li.current-menu-item a {
 		margin-bottom: 10px;
 	    /*min-width: 100%;*/
 	    width: 306px;
+	    padding-left: 28px;
+	    margin-top: 8px;
 	}
 
 	.footer-right {
 		padding-right: 0px;
+		padding-right: 28px;
 		/*float: none;*/
 	}
 
