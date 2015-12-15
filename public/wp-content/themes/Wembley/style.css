@@ -1531,7 +1531,7 @@ ul.huge-it-share-buttons-list {
 	max-width: 100% !important;
 }
 
-.box-meta #huge-it-share-buttons-top, article > #huge-it-share-buttons-top {
+.box-meta #huge-it-share-buttons-top, article .entry-content #huge-it-share-buttons-top {
 	display: none;
 }
 
