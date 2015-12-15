@@ -2053,11 +2053,11 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.feed:nth-child(3) {
-		left: 9%;
+		left: 9% !important;
 	}
 
 	.feed:last-child {
-		left: 50%;
+		left: 50% !important;
 	}
 }
 
@@ -2103,7 +2103,7 @@ ul#topmenu li.current-menu-item a {
 	}*/
 
 	.feed {
-		left: 9%;
+		left: 9% !important;
 	}
 }
 
