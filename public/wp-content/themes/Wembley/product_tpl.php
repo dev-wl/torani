@@ -20,7 +20,7 @@
 		<div class="box-meta"><?php the_excerpt(); ?></div>	
 		<!-- <div class="box-meta"><?php the_category(', '); ?></div> -->
 		<div class="share-icons">
-			<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
+			<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 		</div>
 		<div class="options">
 			<a href="<?php the_permalink(); ?>" class="torani-btn read-more">READ MORE</a>

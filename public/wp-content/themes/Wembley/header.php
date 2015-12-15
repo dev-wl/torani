@@ -49,6 +49,10 @@
 	}
 
 	$(document).ready(function() {
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			recheckFooter();
+		}
+
 		if($('#submenu').find('.current-menu-item').length > 0)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
 		blog = "<?php echo $products; ?>";
@@ -67,6 +71,23 @@
 			else
 				$('.red-header').show();
 		});
+
+		$('.footer').css('display', 'block');
+
+		if($('body').find('ul.huge-it-share-buttons-list')) {
+			// $('.huge-it-share-buttons.nobackground li:eq(4) a').css('background-image', 'url("/wp-content/themes/Wembley/inst.png")');
+			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').attr('href', 'https://www.instagram.com/toranisinglecup/');
+		}
+		// a.PIN_1450106357213_pin_it_button_en_20_gray {
+		//     background-image: url("/wp-content/themes/Wembley/pinterest-icon.png") !important;
+		// }
+
+		// a.PIN_1450106357213_pin_it_button_20 {
+		// 	background-size: 21px 21px !important;
+		// 	height: 20px !important;
+		// 	width: 21px !important;
+		// 	background-position: 0px -23px;
+		// }
 	});
 
 	$(window).on('load', function() {
@@ -192,6 +213,14 @@
 			$('#maillist').insertAfter('nav#site-navigation');
 		}
 	});
+
+	if(/Android|iPad/i.test(navigator.userAgent) ) {
+		$(document).ready(function() {
+			if($("#content").height() < $(window).height()) {
+				$('html, body, #page').css('height', '100%');
+			}
+		});
+	}
 	
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		// $('#maillist').insertAfter('.pushy .searchbox');
@@ -200,5 +229,10 @@
 	}
 
 	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+
+	$('body').bind('touchmove', function(e){
+		if($('.pushy').hasClass('pushy-open'))
+			e.preventDefault();
+	});
 
 </script>

@@ -24,7 +24,7 @@ get_header(); ?>
 				<div class="image-block">
 					<img class="img-responsive" src="<?php echo $image ?>"/>
 					<div class="share-icons">
-						<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
+						<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 					</div>
 				</div>
 			<?php endif; ?>	
@@ -35,7 +35,7 @@ get_header(); ?>
 				</div>
 				<div class="box-meta"><?php the_content(); ?></div>	
 				<div class="share-icons">
-					<span class="share">share</span> <?php echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
+					<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 				</div>
 				<div class="options">
 					<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now" target="_blank">BUY NOW</a>
