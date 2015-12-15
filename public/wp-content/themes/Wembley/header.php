@@ -98,10 +98,9 @@
 			$('#submenu').css('display', 'block');
 		});
 
-		$('body').on('touchend', function(e) {
-			if($(e.target.tagname !== 'a')
-				$('#submenu').css('display', 'none');	
-		});
+		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").on('touchend', function() {
+			alert('a');
+		})
 
 		$('ul#topmenu li a').css('text-transform', 'uppercase');
 
