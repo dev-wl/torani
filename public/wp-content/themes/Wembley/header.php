@@ -41,6 +41,7 @@
 
 <script>
 	function recheckFooter() {
+		$('html, body').css('height', 'auto');
 		if($('#page .container:eq(1)').height() < $(window).height() - $('.footer').height()) {
 			$('.footer').css('position', 'fixed');
 		} else {
