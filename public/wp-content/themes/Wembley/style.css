@@ -2061,6 +2061,12 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
+@media (device-width: 768px) and (orientation: landscape) { 
+	.feed {
+		width: 386px;
+	}
+}
+
 @media (min-width: 730px) and (max-width: 990px) {
 	.sl-wrapper {
 		position: relative !important;
