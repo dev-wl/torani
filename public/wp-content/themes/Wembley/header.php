@@ -101,7 +101,7 @@
 		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").on('touchend', function() {
 			$('#submenu').css('display', 'block');
 			setTimeout(function() {
-				alert('a');
+				$('#submenu').css('display', 'none');
 			}, 1500);
 		})
 
