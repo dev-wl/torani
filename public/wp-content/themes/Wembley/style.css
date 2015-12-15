@@ -2039,7 +2039,7 @@ ul#topmenu li.current-menu-item a {
 		/*width: 475px;*/
 		/*width: 419px;*/
 		width: 208px;
-		left: initial !important;
+		left: initial;
 	}
 
 	.feed:last-child {
@@ -2089,7 +2089,7 @@ ul#topmenu li.current-menu-item a {
 	}*/
 
 	.feed {
-		left: 9% !important;
+		left: 9%;
 	}
 }
 
