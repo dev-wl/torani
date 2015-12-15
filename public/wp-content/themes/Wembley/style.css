@@ -2048,7 +2048,7 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (device-width: 768px) and (orientation: portrait) {
-	.feed:nth-child(1) {
+	.feed:nth-child(3) {
 		display: none;
 	}
 }
