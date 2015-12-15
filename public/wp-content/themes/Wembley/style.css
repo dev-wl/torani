@@ -1778,7 +1778,7 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
-@media (device-width: 1024px) and (orientation: landscape) {
+@media (device-width: 768px) and (orientation: landscape) {
 	nav#site-navigation {
 		display: block;
 	}
