@@ -186,9 +186,9 @@
 				<nav id="submenu">
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>
-				<!-- <nav id="submenu-buynow">
-					<?php //wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
-				</nav> -->	
+				<nav id="submenu-buynow">
+					<?php wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
+				</nav>
 			 </nav><!-- #site-navigation -->
 	
 
