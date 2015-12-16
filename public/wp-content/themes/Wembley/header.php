@@ -80,16 +80,7 @@
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').attr('href', 'https://www.instagram.com/toranisinglecup/');
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').css('border-radius', '3px');
 		}
-		// a.PIN_1450106357213_pin_it_button_en_20_gray {
-		//     background-image: url("/wp-content/themes/Wembley/pinterest-icon.png") !important;
-		// }
 
-		// a.PIN_1450106357213_pin_it_button_20 {
-		// 	background-size: 21px 21px !important;
-		// 	height: 20px !important;
-		// 	width: 21px !important;
-		// 	background-position: 0px -23px;
-		// }
 	});
 
 	$(window).on('load', function() {
@@ -195,9 +186,9 @@
 				<nav id="submenu">
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>
-				<nav id="submenu-buynow">
+<!-- 				<nav id="submenu-buynow">
 					<?php wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
-				</nav>	
+				</nav>	 -->
 			 </nav><!-- #site-navigation -->
 	
 
