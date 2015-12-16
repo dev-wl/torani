@@ -2316,6 +2316,7 @@ ul#topmenu li.current-menu-item a {
 	.site-info .footer-right p.copy {
 		width: 100% !important;
 		margin: initial !important;
+		font-size: 7px;
 	}
 }
 
