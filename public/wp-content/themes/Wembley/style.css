@@ -1797,7 +1797,8 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.sl-wrapper {
-		height: 603px !important;
+		/*height: 603px !important;*/
+		height: 499px !important;
 	}
 }
 
