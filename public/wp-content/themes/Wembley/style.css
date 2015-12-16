@@ -2312,6 +2312,11 @@ ul#topmenu li.current-menu-item a {
 	#darkener {
 		height: 180px;
 	}
+
+	.site-info .footer-right p.copy {
+		width: 100% !important;
+		margin: initial !important;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -2599,7 +2604,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.site-info .footer-right p.copy {
-		width: 100% !important;
+		width: 94% !important;
 		margin: initial !important;
 	}
 }
