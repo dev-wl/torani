@@ -55,7 +55,7 @@ get_header(); ?>
 		</div><!-- header -->
 		<?php echo get_the_content(); ?>
 		<div class="share-icons">
-			<span class="share">share</span> <?php echo echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
+			<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 		</div>
 	</div><!-- .entry-content -->
 
