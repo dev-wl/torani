@@ -1782,7 +1782,7 @@ ul#topmenu li.current-menu-item a {
 
 @media (max-device-width: 1280px) {
 	.site-footer {
-		padding-top: 19px !important;
+		padding-top: 23px !important;
 		padding-bottom: 0px !important;
 	}
 }
