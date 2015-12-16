@@ -186,6 +186,9 @@
 		</div> -->
 			
 			<div class="col-lg-12 col-md-12 col-xs-12">
+			<div class="mobilenavi">
+				<div id="mobnav"></div>
+			</div>
 			
 			 <nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary','container_class' => 'topmenu','menu_id'=>'topmenu' ) ); ?>
@@ -246,7 +249,7 @@
 	}
 
 	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
-	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(1)').addClass('indent');
 
 	$('body').bind('touchmove', function(e){
 		if($('.pushy').hasClass('pushy-open'))
