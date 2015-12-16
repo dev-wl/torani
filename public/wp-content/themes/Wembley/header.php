@@ -97,7 +97,8 @@
 			if($(window).width() < 640)
 				return;
 			$('#submenu').css('display', 'block');
-
+		});
+		
 		$("#topmenu li:nth-child(2), #topmenu li:nth-child(2)").mouseenter(function() {
 			if($(window).width() < 640)
 				return;
