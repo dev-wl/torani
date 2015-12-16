@@ -186,9 +186,9 @@
 				<nav id="submenu">
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>
-				<nav id="submenu-buynow">
-					<?php wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
-				</nav>	
+				<!-- <nav id="submenu-buynow">
+					<?php //wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
+				</nav> -->	
 			 </nav><!-- #site-navigation -->
 	
 
@@ -239,8 +239,8 @@
 		window.addEventListener('orientationchange', recheckFooter);
 	}
 
-	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
-	$('#buy-now-mobile li').insertAfter('.pushy #topmenu li:eq(1)').addClass('indent');
+	// $('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+	// $('#buy-now-mobile li').insertAfter('.pushy #topmenu li:eq(1)').addClass('indent');
 
 	$('body').bind('touchmove', function(e){
 		if($('.pushy').hasClass('pushy-open'))
