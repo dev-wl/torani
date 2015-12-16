@@ -240,6 +240,7 @@
 	}
 
 	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+	$('#buy-now-mobile li').insertAfter('.pushy #topmenu li:eq(1)').addClass('indent');
 
 	$('body').bind('touchmove', function(e){
 		if($('.pushy').hasClass('pushy-open'))
