@@ -36,7 +36,7 @@ get_header(); ?>
 							</div>
 					</article>
 
-					<?php if($i == 2) : ?>
+					<?php if($i == 3) : ?>
 						<div style="clear:both;"></div>
 						<?php $i = 0; endif; ?>
 			<?php } endforeach;
