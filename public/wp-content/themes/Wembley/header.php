@@ -222,6 +222,7 @@
 <script>
 	$(document).unbind('mousemove');
 	if($(window).width() < 1100) {
+		alert('less');
 		$('#maillist').insertAfter('.pushy .searchbox');
 	}
 	 // else {
