@@ -820,6 +820,9 @@ ul#topmenu li a {
 	margin-left: 60px;
 }
 
+#menu-buy-now li div img {
+	display: none;
+}
 
 #menu-secondary li div img {
 	background: url("/wp-content/themes/Wembley/product-filter-icons.png") left 0px;

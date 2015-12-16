@@ -130,6 +130,8 @@
 			}, 500);
 		});
 
+		$('#submenu-buynow li div a').unwrap();
+
 		$("#submenu li").click(function() {
 			$(window).location = $(this).find('a').attr('href');
 		});
