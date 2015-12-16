@@ -186,9 +186,9 @@
 				<nav id="submenu">
 					<?php wp_nav_menu( array('menu' => 'secondary', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
 				</nav>
-<!-- 				<nav id="submenu-buynow">
+				<nav id="submenu-buynow">
 					<?php wp_nav_menu( array('menu' => 'buy-now', 'before' => '<div><img src="/wp-content/themes/Wembley/Transparent.png"/>',) ); ?>
-				</nav>	 -->
+				</nav>	
 			 </nav><!-- #site-navigation -->
 	
 
@@ -202,7 +202,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>
-			</div>
+		</div>
 		</div></div>
 		
 	</header><!-- #masthead -->
