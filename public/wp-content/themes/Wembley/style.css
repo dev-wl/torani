@@ -825,7 +825,7 @@ ul#topmenu li a {
 }
 
 #menu-buy-now li a {
-	width: initial;
+	width: initial !important;
 }
 
 #menu-secondary li div img {
