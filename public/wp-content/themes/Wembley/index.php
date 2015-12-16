@@ -39,7 +39,7 @@ get_header(); ?>
 				?>
 				<div class="column"><p><?php echo $cat_text; ?></p></div><div class="clearfix"></div>
 			</div>
-		<?php query_posts($query_string . '&cat=-11, -12, -13, -4, -2, -7, -14, -6' ); ?>
+		<?php query_posts($query_string . '&cat=-11, -12, -13, -4, -2, -7, -14, -6, -16' ); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
