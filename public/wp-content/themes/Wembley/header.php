@@ -248,7 +248,7 @@
 		window.addEventListener('orientationchange', recheckFooter);
 	}
 
-	// $('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
+	$('#secondary-mobile li').insertAfter('.pushy #topmenu li:eq(0)').addClass('indent');
 
 	$('body').bind('touchmove', function(e){
 		if($('.pushy').hasClass('pushy-open'))
