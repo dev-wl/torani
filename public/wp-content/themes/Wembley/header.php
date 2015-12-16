@@ -222,17 +222,16 @@
 <script>
 	$(document).unbind('mousemove');
 	if($(window).width() < 1100) {
-		alert('less');
 		$('#maillist').insertAfter('.pushy .searchbox');
-	} /*else {
+	} else {
 		$('#maillist').insertAfter('nav#site-navigation');
-	}*/
+	}
 	$(window).on('resize', function() {
 		if($(window).width() < 1100) {
 			$('#maillist').insertAfter('.pushy .searchbox');
-		}/* else {
+		} else {
 			$('#maillist').insertAfter('nav#site-navigation');
-		}*/
+		}
 	});
 
 	if(/Android|iPad/i.test(navigator.userAgent) ) {
