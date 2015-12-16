@@ -13,7 +13,7 @@
 		<aside class="widget widget_categories">
 			<h1 class="widget-title">NAVIGATION</h1>
 			<?php //wp_nav_menu( array( 'menu_id'=>'topmenu' ) ); ?>
-			<?php //wp_nav_menu( array( 'menu'=>'secondary', 'menu_id' => 'secondary-mobile' ) ); ?>
+			<?php wp_nav_menu( array( 'menu'=>'secondary', 'menu_id' => 'secondary-mobile' ) ); ?>
 			<?php //wp_nav_menu( array( 'menu'=>'buy-now', 'menu_id' => 'buy-now-mobile' ) ); ?>
 		</aside>
 	</div>
