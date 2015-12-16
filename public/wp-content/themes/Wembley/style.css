@@ -802,7 +802,7 @@ ul#topmenu li a {
 	font-weight: 400;
 }
 
-#menu-secondary {
+#menu-secondary, #menu-buy-now {
 	/*max-width: 1293px;*/
 	/*margin-left: auto;*/
 	margin-left: 44px;
@@ -814,7 +814,7 @@ ul#topmenu li a {
 	
 }
 
-#menu-secondary li div {
+#menu-secondary li div, #menu-buy-now li div {
 	text-align: center;
 	width: 112px;
 	margin-left: 60px;
@@ -829,7 +829,7 @@ ul#topmenu li a {
 	margin: auto;*/
 }
 
-#menu-secondary li a {
+#menu-secondary li a, #menu-buy-now li a {
 	color: #705944;
 	/*margin-top: 44px;*/
 	display: block;
@@ -1874,7 +1874,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 
-	#site-navigation, #submenu {
+	#site-navigation, #submenu, #submenu-buynow  {
 		display: none;
 	}
 
@@ -2130,7 +2130,7 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
-	#menu-secondary {
+	#menu-secondary, #menu-buy-now {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
