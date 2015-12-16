@@ -78,6 +78,7 @@
 		if($('body').find('ul.huge-it-share-buttons-list')) {
 			// $('.huge-it-share-buttons.nobackground li:eq(4) a').css('background-image', 'url("/wp-content/themes/Wembley/inst.png")');
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').attr('href', 'https://www.instagram.com/toranisinglecup/');
+			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').css('border-radius', '3px');
 		}
 		// a.PIN_1450106357213_pin_it_button_en_20_gray {
 		//     background-image: url("/wp-content/themes/Wembley/pinterest-icon.png") !important;
