@@ -2492,8 +2492,12 @@ ul#topmenu li.current-menu-item a {
 	.footer-left {
 		/*width: 100%;
 		min-width: 100%;*/
-		width: 301px;
+		width: 178px;
 	    margin: 4px auto;
+	}
+
+	.footer-left a:nth-child(3) {
+		font-size: 9px;
 	}
 
 	.footer-right {
