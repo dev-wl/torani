@@ -130,7 +130,7 @@
 			}, 500);
 		});
 
-		// $('#submenu-buynow li div a').unwrap();
+		$('#submenu-buynow li div a').unwrap();
 
 		$("#submenu li").click(function() {
 			$(window).location = $(this).find('a').attr('href');
@@ -223,9 +223,10 @@
 	$(document).unbind('mousemove');
 	if($(window).width() < 1100) {
 		$('#maillist').insertAfter('.pushy .searchbox');
-	} else {
-		$('#maillist').insertAfter('nav#site-navigation');
 	}
+	 // else {
+		// $('#maillist').insertAfter('nav#site-navigation');
+	// }
 	$(window).on('resize', function() {
 		if($(window).width() < 1100) {
 			$('#maillist').insertAfter('.pushy .searchbox');
