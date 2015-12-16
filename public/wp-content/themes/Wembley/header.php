@@ -126,7 +126,7 @@
 
 		$('#submenu, #submenu-buynow').mouseleave(function(){
 			setTimeout(function() {
-				$('#submenu').css('display', 'none');
+				$('#submenu, #submenu-buynow').css('display', 'none');
 			}, 500);
 		});
 
