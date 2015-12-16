@@ -1824,7 +1824,8 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.single-product .general {
-		float: left;
+		/*float: left;*/
+		float: right;
 		width: 54%;
 	}
 
