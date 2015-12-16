@@ -766,7 +766,7 @@ p.socials .tw, p.socials .ig, p.socials .pt{
 }
 
 
-nav#submenu {
+nav#submenu, nav#submenu-buynow {
 	display: none;
 	width: 100%;
 	height: 147px;
@@ -783,11 +783,11 @@ a#blogname {
 	box-shadow: 2px 7px 27px 0px #000;
 }
 
-nav#submenu li:hover a {
+nav#submenu li:hover a, nav#submenu-buynow li:hover a{
 	color: #C5161E;
 }
 
-nav#submenu li {
+nav#submenu li, nav#submenu-buynow li {
 	cursor: pointer;
 }
 
