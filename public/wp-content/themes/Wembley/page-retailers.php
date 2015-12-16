@@ -6,7 +6,7 @@ get_header(); ?>
 
 			<?php
             global $post;
-            $args = array('category' => 7, 'numberposts' => 31 );
+            $args = array('category' => 16, 'numberposts' => -1 );
             $myposts = get_posts( $args );
             $i = 0;
 			foreach ( $myposts as $post ) : {
@@ -41,7 +41,7 @@ get_header(); ?>
 						<?php $i = 0; endif; ?>
 			<?php } endforeach;
             wp_reset_postdata(); ?>
-			
+
 		</main>
 	</div>
 

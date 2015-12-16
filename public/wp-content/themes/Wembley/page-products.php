@@ -17,7 +17,7 @@ get_header(); ?>
 			
 			<?php
             global $post;
-            $args = array('category' => 2, 'numberposts' => 31 );
+            $args = array('category' => 2, 'numberposts' => -1 );
             $myposts = get_posts( $args );
             $i = 0;
 			foreach ( $myposts as $post ) : {
