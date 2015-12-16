@@ -849,7 +849,7 @@ ul#topmenu li a {
 }
 
  #menu-buy-now {
- 	margin-left: 181px;
+ 	margin-left: 181px !important;
  }
 
 .products-all div img {
