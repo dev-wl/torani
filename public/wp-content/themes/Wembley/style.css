@@ -2505,6 +2505,10 @@ ul#topmenu li.current-menu-item a {
 		text-align: center;
 	}
 
+	.fcred.col-12 {
+		width: 320px;
+	}
+
 	#darkener {
 		height: 181px;
 	}
