@@ -820,8 +820,12 @@ ul#topmenu li a {
 	margin-left: 60px;
 }
 
-#menu-buy-now li div img {
+#menu-buy-now li img {
 	display: none;
+}
+
+#menu-buy-now li {
+	width: initial;
 }
 
 #menu-secondary li div img {
