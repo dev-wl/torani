@@ -98,7 +98,7 @@
 				return;
 			$('#submenu').css('display', 'block');
 		});
-		
+
 		$("#topmenu li:nth-child(2), #topmenu li:nth-child(2)").mouseenter(function() {
 			if($(window).width() < 640)
 				return;
@@ -124,7 +124,7 @@
 		// 	e.preventDefault();
 		// });
 
-		$('#submenu').mouseleave(function(){
+		$('#submenu, #submenu-buynow').mouseleave(function(){
 			setTimeout(function() {
 				$('#submenu').css('display', 'none');
 			}, 500);
