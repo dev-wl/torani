@@ -151,9 +151,9 @@ get_header(); ?>
 							<div class="feed-header">
 								<h1><label class="feed-image tw"></label> twitter</h1>
 							</div>
-								<a class="twitter-timeline"  href="https://twitter.com/Skinnygirl_tea" data-widget-id="644784352090550272">Tweets by @Skinnygirl_tea</a>
+					            <a class="twitter-timeline"  href="https://twitter.com/toranisinglecup" data-widget-id="677043375565049856">Tweets by @toranisinglecup</a>
 					            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						</div>
+          				</div>
 
 						<div class="grid-item grid-item--heightFeed feed fb-feed">
 							<div class="feed-header">
