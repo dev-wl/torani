@@ -1785,6 +1785,10 @@ ul#topmenu li.current-menu-item a {
 		padding-top: 19px !important;
 		padding-bottom: 0px !important;
 	}
+
+	.feed {
+		width: 342px;
+	}
 }
 
 @media (device-width: 1280px) and (min-width: 1116px) {
