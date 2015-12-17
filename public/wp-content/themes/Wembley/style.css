@@ -2111,6 +2111,10 @@ ul#topmenu li.current-menu-item a {
 	.feed {
 		width: 416px;
 	}
+
+	h1.page-title {
+		width: 90%;
+	}
 }
 
 @media (min-width: 730px) and (max-width: 990px) {
