@@ -104,6 +104,13 @@
 		}
 
 		$('#submenu-buynow li:nth-child(1) a, #submenu-buynow li:nth-child(2) a').attr('target', '_blank');
+
+		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
+			if($('#main').find('h1.page-title')) {
+				$('h1.page-title').css('width', '100%');
+				$('.description .colums').css('margin-left', '30px');
+			}
+		}
 	});
 
 	$(window).on('load', function() {
