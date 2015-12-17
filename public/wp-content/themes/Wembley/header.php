@@ -37,6 +37,11 @@
 		$single = 1;
 	else
 		$single = 0;
+
+	if( in_category( array( 16 ) ) )
+		$retailer = 1;
+	else 
+		$retailer = 0;
 ?>
 
 <script>
@@ -65,6 +70,8 @@
 			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
 		else if(single == 1)
 			$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
+		else if(single == 16)
+			$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');
 
 		$(window).on('scroll', function() {
 			if($(window).scrollTop() > 100)
