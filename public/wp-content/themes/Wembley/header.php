@@ -93,6 +93,14 @@
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').css('border-radius', '3px');
 		}
 
+		if(/iPad/i.test(navigator.userAgent) ) {
+			window.addEventListener('orientationchange', function() {
+			 if($(window).width() > $(window).height()){
+			 	$('.pushy').removeClass('pushy-open').addClass('pushy-left');
+			 }
+			});
+		}
+
 	});
 
 	$(window).on('load', function() {
