@@ -1065,8 +1065,12 @@ a.buy:hover {
 	font-size: 14px;
 }
 
-.footer-left a:visited, .footer-left a:hover, .footer-left a:link {
+.footer-left a:visited, .footer-left a:hover {
 	color: #fff !important;
+}
+
+.footer-left a:link {
+	color: #fff;
 }
 
 .footer-right {
