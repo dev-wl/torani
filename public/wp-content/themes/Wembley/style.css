@@ -2324,6 +2324,10 @@ ul#topmenu li.current-menu-item a {
 	.grid-item:nth-child(2) {
 		/*top: 0px !important;*/
 	}
+
+	.single-product .image-block .share-icons {
+		float: left !important;
+	}
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
