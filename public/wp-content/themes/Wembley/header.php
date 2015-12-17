@@ -97,6 +97,7 @@
 			window.addEventListener('orientationchange', function() {
 			 if($(window).width() > $(window).height()){
 			 	$('.pushy').removeClass('pushy-open').addClass('pushy-left');
+			 	$('.pushy').removeClass('pushy-active');
 			 }
 			});
 		}
