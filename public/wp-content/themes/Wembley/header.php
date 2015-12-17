@@ -98,7 +98,7 @@
 			 if($(window).width() > $(window).height()){
 			 	$('.pushy').removeClass('pushy-open').addClass('pushy-left');
 			 	$('.body').removeClass('pushy-active');
-			 	$('#page').removeClass('container-push');
+			 	$('#page.hfeed').removeClass('container-push');
 			 }
 			});
 		}
