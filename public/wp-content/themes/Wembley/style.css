@@ -1819,7 +1819,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.description h1.page-title {
-		width: 20%;
+		width: 20% !important;
 	}
 }
 
