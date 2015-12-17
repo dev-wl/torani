@@ -67,7 +67,9 @@
 		single = "<?php echo $single; ?>";
 		recepies = "<?php echo $recepies; ?>";
 		retailer = "<?php echo $retailer; ?>";
-		if(blog == 1)
+		if(window.location.indexOf('privacy-policy') > -1)
+			$('.footer-left a:nth-child(3)').css('color', "#F23636" );
+		else if(blog == 1)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
 		else if(recepies == 1)
 			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
