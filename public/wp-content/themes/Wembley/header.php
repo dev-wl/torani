@@ -107,7 +107,7 @@
 
 		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
 			if($('#main').find('h1.page-title')) {
-				$('h1.page-title').css('width', '100%');
+				$('h1.page-title').css('width', '100% !important');
 				$('.description .colums').css('margin-left', '30px');
 			}
 		}
