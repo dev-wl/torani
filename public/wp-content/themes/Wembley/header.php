@@ -103,6 +103,7 @@
 			});
 		}
 
+		$('#submenu-buynow li:nth-child(1) a, #submenu-buynow li:nth-child(2) a').attr('target', '_blank');
 	});
 
 	$(window).on('load', function() {
