@@ -1583,6 +1583,7 @@ h1.page-title {
 	margin: 0;
 	font-family: "univers49LtultraCn";
 	letter-spacing: 0px;
+	-webkit-text-stroke: 0.35px;
 }
 
 .description {
