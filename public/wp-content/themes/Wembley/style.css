@@ -2316,7 +2316,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.single-post .image-block {
-		float: initial !important;
+		/*float: initial !important;*/
 		margin: 0px auto;
 		min-width: 100%;
 	}
