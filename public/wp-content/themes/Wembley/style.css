@@ -1800,7 +1800,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.footer-left {
-		margin-top: 0px;
+		margin-top: 0px !important;
 	}
 
 	.footer-right p {
