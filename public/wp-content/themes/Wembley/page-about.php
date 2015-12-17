@@ -26,7 +26,7 @@ get_header(); ?>
 	}
 
 	#page {
-		padding-bottom: 150px !important;
+		/*padding-bottom: 150px !important;*/
 	}
 
 
