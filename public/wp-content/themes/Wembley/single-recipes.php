@@ -60,7 +60,7 @@ get_header(); ?>
 <script>
 	// $('#main.site-main .recipe img').appendTo($('.post_images'));
 	// $('#page').addClass('single-details');
-	$('.post .share-icons:eq(0)').width($('.img-responsive').width());
+	$('.post .share-icons:eq(0)').width('100%'); //$('.img-responsive').width());
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
