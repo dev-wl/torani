@@ -118,9 +118,15 @@
 		// 	e.preventDefault();
 		// });
 
-		$('#submenu, #submenu-buynow').mouseleave(function(){
+		$('#submenu').mouseleave(function(){
 			setTimeout(function() {
-				$('#submenu, #submenu-buynow').css('display', 'none');
+				$('#submenu').css('display', 'none');
+			}, 500);
+		});
+
+		$('#submenu-buynow').mouseleave(function(){
+			setTimeout(function() {
+				$('#submenu-buynow').css('display', 'none');
 			}, 500);
 		});
 
