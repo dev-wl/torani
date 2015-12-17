@@ -43,7 +43,7 @@ get_header(); ?>
 							</div>
 							<div class="options">
 								<a href="<?php the_permalink(); ?>" class="torani-btn read-more">READ MORE</a>
-								<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now">BUY NOW</a>
+								<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn buy-now" target="_blank">BUY NOW</a>
 							</div>
 					</article>
 
