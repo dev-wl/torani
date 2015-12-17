@@ -38,10 +38,10 @@
 	else
 		$single = 0;
 
-	if( in_category( array( 16 ) ) )
-		$retailer = 1;
-	else 
-		$retailer = 0;
+	// if( in_category( array( 16 ) ) )
+	// 	$retailer = 1;
+	// else 
+	// 	$retailer = 0;
 ?>
 
 <script>
