@@ -22,7 +22,7 @@ get_header(); ?>
 	}
 
 	article.blogpost {
-		margin-top: 180px;
+		margin-top: 130px;
 	}
 
 	#page {
