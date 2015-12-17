@@ -84,16 +84,19 @@
 	});
 
 	$(window).on('load', function() {
-		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li, #submenu-buynow, #submenu-buynow li").mouseenter(function() {
+		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").mouseenter(function() {
 			if($(window).width() < 640)
 				return;
 			$('#submenu').css('display', 'block');
+			$('#submenu-buynow').css('display', 'none');
 		});
 
-		$("#topmenu li:nth-child(2), #topmenu li:nth-child(2)").mouseenter(function() {
+
+		$("#topmenu li:nth-child(2), #topmenu li:nth-child(2),  #submenu-buynow, #submenu-buynow li").mouseenter(function() {
 			if($(window).width() < 640)
 				return;
 			$('#submenu-buynow').css('display', 'block');
+			$('#submenu').css('display', 'none');
 		});
 
 		$("#topmenu li:first-child, #topmenu li:first-child a, #submenu, #submenu li").on('touchend', function() {
