@@ -61,6 +61,8 @@
 
 		if($('#submenu').find('.current-menu-item').length > 0)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
+		if($('#submenu-buynow').find('.current-menu-item').length > 0)
+			$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');
 		blog = "<?php echo $products; ?>";
 		single = "<?php echo $single; ?>";
 		recepies = "<?php echo $recepies; ?>";
