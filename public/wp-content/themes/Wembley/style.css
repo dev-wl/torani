@@ -1798,6 +1798,10 @@ ul#topmenu li.current-menu-item a {
 	#main {
 		width: 65%;
 	}
+
+	.footer-right p {
+		margin-bottom: 0px !important;
+	}
 }
 
 @media (device-width: 1280px) and (min-width: 1116px) {
