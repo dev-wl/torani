@@ -1799,10 +1799,6 @@ ul#topmenu li.current-menu-item a {
 		width: 65%;
 	}
 
-	#main {
-		margin-top: 30px;
-	}
-
 	.footer-left {
 		margin-top: 0px !important;
 	}
@@ -1824,6 +1820,11 @@ ul#topmenu li.current-menu-item a {
 
 	h1.page-title {
 		width: 20% !important;
+	}
+
+	
+	#main {
+		margin-top: 30px;
 	}
 }
 
