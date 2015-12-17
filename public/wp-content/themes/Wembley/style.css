@@ -1794,6 +1794,10 @@ ul#topmenu li.current-menu-item a {
 	.feed {
 		width: 390px;
 	}
+
+	#main {
+		width: 65%;
+	}
 }
 
 @media (device-width: 1280px) and (min-width: 1116px) {
