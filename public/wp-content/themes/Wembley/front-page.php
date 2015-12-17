@@ -226,6 +226,9 @@ get_header(); ?>
 		 $('.flipper_container').css('height', $('.front.face img').height());
 		 $('.sl-wrapper').css('height', $('.slider .slides:eq(0) img').height() + 'px');
 		// $('.feed').css('margin-top', $('.front.face img').height() + 10 + 'px');
+
+		if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
+			$('.sl-wrapper').css('height', '520px');
 	})
 
 	$(window).on('resize', function() {
