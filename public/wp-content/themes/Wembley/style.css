@@ -2359,6 +2359,10 @@ ul#topmenu li.current-menu-item a {
 	.wff-row .wff-facebook-feed-title-div {
 		width: 64% !important;
 	}
+
+	.image-block .share-icons {
+		width: 100 !important;
+	}
 }
 
 @media (max-width: 640px) {
