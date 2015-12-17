@@ -228,7 +228,7 @@ get_header(); ?>
 		// $('.feed').css('margin-top', $('.front.face img').height() + 10 + 'px');
 
 		if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
-			$('.sl-wrapper').css('height', '520px');
+			$('.sl-wrapper').css('height', '530px');
 	})
 
 	$(window).on('resize', function() {
