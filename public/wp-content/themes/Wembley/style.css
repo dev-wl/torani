@@ -2090,6 +2090,14 @@ ul#topmenu li.current-menu-item a {
 		margin-top: 65px;
 	}
 
+	h1.page-title {
+		width: 100%;
+	}
+
+	.column {
+		margin-left: 40px;
+	}
+
 	.feed:nth-child(3) {
 		left: 9% !important;
 	}
