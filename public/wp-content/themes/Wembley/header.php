@@ -70,7 +70,7 @@
 			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
 		else if(single == 1)
 			$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
-		else if(retailer == 1)
+		if(retailer == 1)
 			$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');
 
 		$(window).on('scroll', function() {
