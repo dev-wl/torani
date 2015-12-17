@@ -518,5 +518,5 @@ h3.bothead{
 	text-align: center;
 }
 .fcred,.fcred a{
-	color:#666!important
+	color:#666; /*!important*/
 }
