@@ -511,7 +511,8 @@ h3.bothead{
 
 .site-footer{
 	padding-top:30px;
-	padding-bottom: 30px;
+	/*padding-bottom: 30px;*/
+	padding-bottom: 0px;
 }
 
 .fcred {
