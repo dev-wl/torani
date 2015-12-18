@@ -1701,6 +1701,12 @@ ul#topmenu li.current-menu-item a {
 }
 /*.huge-it-share-buttons.nobackground li:eq(4) a').attr('href', 'http://instagram.com/');*/
 
+@media (max-width: 1400px) {
+	.grid-item--width3 {
+		width: 852px;
+	}
+}
+
 @media (max-width: 1279px) and (max-device-width: 1279px) {
 	body, #page {
 		min-height: initial;
