@@ -112,7 +112,7 @@
 			}
 		}
 
-		$('#topmenu li:nth-child(2)').on('click touchstart', function(e) {
+		$('.menu-item-500').on('click touchstart', function(e) {
 			e.preventDefault();
 		});
 	});
