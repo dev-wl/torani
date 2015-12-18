@@ -1713,6 +1713,10 @@ ul#topmenu li.current-menu-item a {
 	.feed {
 		width: 440px;
 	}
+
+	#twitter-widget-0 {
+		height: 310px;
+	}
 }
 
 @media (max-width: 1680px) {
