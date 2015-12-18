@@ -2416,11 +2416,6 @@ ul#topmenu li.current-menu-item a {
 		font-size: 7px;
 	}
 
-	.single-post .image-block {
-		float: left;
-		min-width: initial;
-	}
-
 	.single-product .general, .post .entry-content, .blogpost .entry-content {
 		width: initial;
 		max-width: initial;
