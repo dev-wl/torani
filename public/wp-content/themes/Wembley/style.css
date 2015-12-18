@@ -2429,7 +2429,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.single-product .image-block {
-		max-width: 48%;
+		max-width: 48% !important;
 	}
 
 	.footer-right {
