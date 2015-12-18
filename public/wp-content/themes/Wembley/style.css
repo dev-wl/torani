@@ -2386,6 +2386,10 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
+	.description {
+		display: flex !important;
+	}
+
 	.flex-main article a img.img-responsive {
 	    max-width: 200px;
 	}
@@ -2422,6 +2426,10 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
+	.description {
+		display: block !important;
+	}
+	
 	.footer-right p.copy {
 	    width: 85% !important;
         font-size: 6px;
