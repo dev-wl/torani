@@ -2422,8 +2422,8 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.single-product .general, .post .entry-content, .blogpost .entry-content {
-		width: initial;
-		max-width: initial;
+		width: auto;
+		/*max-width: initial;*/
 
 		/*18px width 12px height*/
 	}
