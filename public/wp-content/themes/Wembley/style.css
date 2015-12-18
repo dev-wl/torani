@@ -1703,7 +1703,7 @@ ul#topmenu li.current-menu-item a {
 
 @media (max-width: 2960px) {
 	.sl-wrapper {
-		height: 700px;
+		height: 700px !important;
 		width: 1000px !important;
 	}
 }
