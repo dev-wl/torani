@@ -111,6 +111,10 @@
 				$('.description .colums').css('margin-left', '30px');
 			}
 		}
+
+		$('#topmenu li:nth-child(2)').on('click touchstart', function(e) {
+			e.preventDefault();
+		});
 	});
 
 	$(window).on('load', function() {
