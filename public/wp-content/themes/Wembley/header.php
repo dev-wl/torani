@@ -112,9 +112,6 @@
 			}
 		}
 
-		$('.menu-item-500').on('click touchstart', function(e) {
-			e.preventDefault();
-		});
 	});
 
 	$(window).on('load', function() {
