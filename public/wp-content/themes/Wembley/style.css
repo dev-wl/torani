@@ -2395,7 +2395,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 1px;
+		height: 140px;
 	}
 
 	.site-info .footer-right p.copy {
@@ -2438,6 +2438,10 @@ ul#topmenu li.current-menu-item a {
 		max-width: initial;*/
 
 		/*18px width 12px height*/
+	}
+
+	#darkener {
+		height: 140px;
 	}
 }
 
@@ -2629,10 +2633,6 @@ ul#topmenu li.current-menu-item a {
 	.fcred.col-12 {
 		width: 310px;
 		margin: 0px auto;
-	}
-
-	#darkener {
-		height: 165px;
 	}
 }
 
