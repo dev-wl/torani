@@ -2404,6 +2404,13 @@ ul#topmenu li.current-menu-item a {
 		float: left;
 		min-width: initial;
 	}
+
+	.single-product .general, .post .entry-content, .blogpost .entry-content {
+		width: initial;
+		max-width: initial;
+
+		/*18px width 12px height*/
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -2418,6 +2425,15 @@ ul#topmenu li.current-menu-item a {
 
 	.single-product .image-block .share-icons {
 		width: 100 !important;
+	}
+
+	.single-product .general, .post .entry-content, .blogpost .entry-content {
+		width: 100%;
+		max-width: 100%;
+		/*width: initial;
+		max-width: initial;*/
+
+		/*18px width 12px height*/
 	}
 }
 
@@ -2455,14 +2471,7 @@ ul#topmenu li.current-menu-item a {
 		/*display: none;*/
 	}
 
-	.single-product .general, .post .entry-content, .blogpost .entry-content {
-		width: 100%;
-		max-width: 100%;
-		/*width: initial;
-		max-width: initial;*/
-
-		/*18px width 12px height*/
-	}
+	/*18px width 12px height*/
 
 	.single-product .general .share-icons {
 		width: initial !important;
