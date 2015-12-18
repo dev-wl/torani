@@ -1705,6 +1705,14 @@ ul#topmenu li.current-menu-item a {
 	.grid-item--width3 {
 		width: 900px;
 	}
+
+	.grid-item--heightFeed {
+		height: 350px;
+	}
+
+	.feed {
+		width: 400px;
+	}
 }
 
 @media (max-width: 1680px) {
