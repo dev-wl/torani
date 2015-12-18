@@ -1701,6 +1701,39 @@ ul#topmenu li.current-menu-item a {
 }
 /*.huge-it-share-buttons.nobackground li:eq(4) a').attr('href', 'http://instagram.com/');*/
 
+@media (max-width: 2960px) {
+	.grid-item--width3 {
+		width: 900px;
+	}
+
+	.grid-item--heightFeed {
+		height: 335px;
+	}
+
+	.feed {
+		width: 440px;
+	}
+}
+
+@media (max-width: 1680px) {
+	.grid-item--width3 {
+		width: 852px;
+	}
+
+	.feed {
+		width: 390px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.grid-item--width3 {
+		width: 852px;
+	}
+
+	.feed {
+		width: 418px;
+	}
+}
 
 @media (max-width: 1279px) and (max-device-width: 1279px) {
 	body, #page {
@@ -2366,6 +2399,11 @@ ul#topmenu li.current-menu-item a {
 		margin: initial !important;
 		font-size: 7px;
 	}
+
+	.single-post .image-block {
+		float: left;
+		min-width: initial;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -2432,7 +2470,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.buy-now {
-		width: 82px;
+		width: 83px;
 	}
 
 	.mobile {
