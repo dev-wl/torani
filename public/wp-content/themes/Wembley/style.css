@@ -2428,6 +2428,10 @@ ul#topmenu li.current-menu-item a {
 		/*18px width 12px height*/
 	}
 
+	.single-product .image-block {
+		max-width: 48%;
+	}
+
 	.footer-right {
 	    padding-right: 19px;
 	}
