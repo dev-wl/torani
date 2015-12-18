@@ -2422,14 +2422,10 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.single-product .general, .post .entry-content, .blogpost .entry-content {
-		width: auto;
-		/*max-width: initial;*/
+		width: initial;
+		max-width: initial;
 
 		/*18px width 12px height*/
-	}
-
-	.single-product .image-block {
-		max-width: 48% !important;
 	}
 
 	.footer-right {
