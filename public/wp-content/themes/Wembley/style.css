@@ -2501,6 +2501,12 @@ ul#topmenu li.current-menu-item a {
 		max-width: initial !important;
 	}
 
+	.single-product .general {
+	    float: right;	
+        width: 100%;
+	    max-width: 100%;
+	}
+
 	article .image-block img {
 		margin-bottom: 10px !important;
 	}
