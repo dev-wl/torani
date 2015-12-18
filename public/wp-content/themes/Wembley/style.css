@@ -1715,7 +1715,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#twitter-widget-0 {
-		height: 310px;
+		height: 310px !important;
 	}
 }
 
