@@ -399,7 +399,6 @@ img {
 
 @media screen and (max-width: 768px) {
 	
-
 	.mobilenavi{
 		width: 100%;
 		padding:5px 10px;
@@ -2191,6 +2190,12 @@ ul#topmenu li.current-menu-item a {
 
 	#darkener {
 		height: 92px;
+	}
+}
+
+@media (device-width: 768px) {
+	.site-footer {
+		padding-top: 22px;
 	}
 }
 
