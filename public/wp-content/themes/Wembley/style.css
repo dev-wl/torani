@@ -2481,6 +2481,16 @@ ul#topmenu li.current-menu-item a {
 	    width: 151px;
 	    padding-left: 3px;
 	}
+
+	.description {
+		display: flex !important;
+		display: -webkit-flex !important;
+	}
+
+	.pages-header h1.page-title, .description h2.page-title, .description h1.page-titile {
+		margin-bottom: auto !important;
+		margin: auto 0px; 
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
