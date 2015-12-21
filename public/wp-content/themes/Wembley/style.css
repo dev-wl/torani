@@ -1843,6 +1843,13 @@ ul#topmenu li.current-menu-item a {
 	.footer-right p {
 		margin-bottom: 0px !important;
 	}
+
+	.description h1.page-title {
+		width: 90%;
+		-webkit-margin-before: none;
+		margin-bottom: 0px;
+		margin: auto 0px;
+	}
 }
 
 @media (device-width: 1280px) and (min-width: 1116px) {
