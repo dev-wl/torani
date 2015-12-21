@@ -2471,6 +2471,11 @@ ul#topmenu li.current-menu-item a {
 	.site-footer {
 		padding-top: 15px;
 	}
+
+	.single-product .general .share-icons {
+		width: 150px;
+		max-width: initial !important;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -2515,6 +2520,11 @@ ul#topmenu li.current-menu-item a {
 		width: 289px;
 	    margin: 4px auto;
 	}
+
+	.single-product .general .share-icons {
+		width: initial !important;
+		max-width: initial !important;
+	}
 }
 
 @media (max-width: 640px) {
@@ -2552,11 +2562,6 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	/*18px width 12px height*/
-
-	.single-product .general .share-icons {
-		width: initial !important;
-		max-width: initial !important;
-	}
 
 	.single-product .general {
 	    float: right;	
