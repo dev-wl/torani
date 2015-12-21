@@ -41,10 +41,7 @@ get_header(); ?>
 		?>
 
 	<div class="entry-content" style="text-align:justify;">
-		
-
-		<div class="description">
-			<?php if($image) : ?>
+		<?php if($image) : ?>
 			<div class="image-block">
 				<img class="img-responsive singlepic" src="<?php echo $image ?>"/>
 				<div class="share-icons">
@@ -53,6 +50,7 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 		
+		<div class="description">
 			<h2 class="page-title"><?php the_title(); ?></h2>
 		</div><!-- header -->
 		<?php echo get_the_content(); ?>
