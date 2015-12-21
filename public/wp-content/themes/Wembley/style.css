@@ -1866,6 +1866,12 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
+@media (max-device-width: 1280px) and (min-width: 900px) and (max-width: 1200px) {
+	#main {
+		width: 85%;
+	}
+}
+
 @media (device-width: 768px) and (orientation: landscape) {
 	nav#site-navigation {
 		display: block;
