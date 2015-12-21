@@ -2559,6 +2559,10 @@ ul#topmenu li.current-menu-item a {
 	.grid-item.grid-item--width3 {
 		height: 64px;
 	}
+
+	.img-responsive {
+		max-width: 95% !important;
+	}
 }
 
 @media (max-width: 640px) {
