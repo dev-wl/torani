@@ -51,7 +51,7 @@
 		} else {
 			$('.footer').css('position', 'static');
 			$('html, body').css('height', 'auto');
-			// $('html, body').css('height', '100%');
+			$('html, body').css('min-height', '100%');
 		}
 	}
 
