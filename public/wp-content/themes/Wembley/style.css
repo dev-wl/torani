@@ -2195,7 +2195,7 @@ ul#topmenu li.current-menu-item a {
 
 @media (device-width: 768px) {
 	.site-footer {
-		padding-top: 15px !important;
+		padding-top: 5px !important;
 	}
 }
 
