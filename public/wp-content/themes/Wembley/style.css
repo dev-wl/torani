@@ -2476,6 +2476,11 @@ ul#topmenu li.current-menu-item a {
 		width: 150px;
 		max-width: initial !important;
 	}
+
+	#maillist form input[type="email"] {
+	    width: 151px;
+	    padding-left: 3px;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
