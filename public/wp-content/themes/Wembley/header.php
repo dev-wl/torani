@@ -70,6 +70,8 @@
 		retailer = "<?php echo $retailer; ?>";
 		if(window.location.href.indexOf('privacy-policy') > -1)
 			$('.menu-item').removeClass('current-menu-item');
+		else if(window.location.href.indexOf('retailers/') > -1)
+			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
 		else if(blog == 1)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
 		else if(recepies == 1)
