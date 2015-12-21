@@ -70,14 +70,22 @@
 		retailer = "<?php echo $retailer; ?>";
 		if(window.location.href.indexOf('privacy-policy') > -1)
 			$('.menu-item').removeClass('current-menu-item');
-		else if(window.location.href.indexOf('retailers/') > -1)
-			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
+		else if(window.location.href.indexOf('retailers/') > -1) {
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$('.jspContainer ul#topmenu li:nth-child(8)');
+			else
+				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');	
+		}
 		else if(blog == 1)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
 		else if(recepies == 1)
 			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
-		else if(retailer == 1)
-			$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');
+		else if(retailer == 1) {
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$('.jspContainer ul#topmenu li:nth-child(8)');
+			else
+				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');	
+		}
 		else if(single == 1)
 			$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
 
