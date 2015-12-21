@@ -2188,6 +2188,10 @@ ul#topmenu li.current-menu-item a {
 	h1.page-title {
 		width: 100%;
 	}
+
+	#darkener {
+		height: 96px;
+	}
 }
 
 @media (min-width: 730px) and (max-width: 990px) {
