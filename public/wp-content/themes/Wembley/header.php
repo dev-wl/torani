@@ -73,8 +73,7 @@
 		else if(window.location.href.indexOf('retailers/') > -1) {
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 				$('ul#topmenu li').removeClass('current-menu-item');
-				$('.jspContainer ul#topmenu li:nth-child(8)').addClass('current-menu-item');	
-				alert('w');
+				$('.jspContainer ul#topmenu li:nth-child(8)').addClass('current-menu-item');
 			}
 			else
 				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');	
