@@ -113,12 +113,6 @@
 			}
 		}
 
-		alert("sl-wrapper height = " + $('.sl-wrapper').height());
-
-		if($('.sl-wrapper').height() == 0 || $('.sl-wrapper').height() == 'undefined' || $('.sl-wrapper').height() == null) {
-			$('.sl-wrapper').height(603);
-		}
-
 	});
 
 	$(window).on('load', function() {
@@ -176,6 +170,10 @@
 
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			recheckFooter();
+		}
+
+		if($('.sl-wrapper').height() == 0) {
+			$('.sl-wrapper').height(603);
 		}
 
 	});
