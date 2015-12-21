@@ -83,8 +83,10 @@
 		else if(recepies == 1)
 			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
 		else if(retailer == 1) {
-			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$('ul#topmenu li').removeClass('current-menu-item');
 				$('.jspContainer ul#topmenu li:nth-child(8)');
+			}
 			else
 				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');	
 		}
