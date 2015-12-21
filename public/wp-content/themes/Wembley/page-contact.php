@@ -49,7 +49,7 @@ get_header(); ?>
 	   box-shadow: 0px 0px 7px 0px inset;
 	}
 
-	@media (max-width: 768px) {
+	@media (device-width: 768px) {
 		.description h1.page-title {
 			/*width: 50% !important;*/
 			width: 19% !important;
