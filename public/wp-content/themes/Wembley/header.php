@@ -113,6 +113,10 @@
 			}
 		}
 
+		if($('.sl-wrapper').height() == 0 || $('.sl-wrapper').height() == 'undefined' || $('.sl-wrapper').height() == null) {
+			$('.sl-wrapper').height(603);
+		}
+
 	});
 
 	$(window).on('load', function() {
@@ -287,9 +291,5 @@
 		if($('.pushy').hasClass('pushy-open'))
 			e.preventDefault();
 	});
-
-	if($('.sl-wrapper').height() == 0 || $('.sl-wrapper').height() == 'undefined' || $('.sl-wrapper').height() == null) {
-		$('.sl-wrapper').height(603);
-	}
 
 </script>
