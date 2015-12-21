@@ -33,7 +33,7 @@ get_header(); ?>
 				<div class="description">
 					<h2 class="box-title"><?php the_title(); ?></h2>
 				</div>
-				<div class="box-meta"><?php the_content(); ?></div>	
+				<div class="box-meta" style="text-align:justify;"><?php the_content(); ?></div>	
 				<div class="share-icons">
 					<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 				</div>
