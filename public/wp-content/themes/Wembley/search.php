@@ -54,8 +54,6 @@ get_header(); ?>
 
 					<?php get_template_part( 'blog-tpl' ); ?>
 
-					<div class="clearfix"></div>
-
 				<?php endwhile; ?>
 			</div>
 			<div class="clearfix"></div>
