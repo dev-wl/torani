@@ -73,8 +73,9 @@
 		else if(window.location.href.indexOf('retailers/') > -1) {
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 				$('ul#topmenu li').removeClass('current-menu-item');
-				alert('b');
-				$('.jspContainer ul#topmenu li:nth-child(8)').addClass('current-menu-item');
+				setTimeout(function() {
+					$('.jspContainer ul#topmenu li:nth-child(8)').addClass('current-menu-item');
+				}, 1000);
 			}
 			else
 				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');	
