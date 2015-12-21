@@ -1880,6 +1880,10 @@ ul#topmenu li.current-menu-item a {
 		display: none;
 	}
 
+	#darkener {
+		height: 92px;
+	}
+
 }
 
 @media (min-device-width: 1100px) and (min-width: 835px) and (max-width: 1105px) {
