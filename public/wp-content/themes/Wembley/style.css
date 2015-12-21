@@ -2495,6 +2495,10 @@ ul#topmenu li.current-menu-item a {
 	.pages-header h1.page-title {
 		width: 100%;
 	}
+
+	.column {
+		margin-left: 10px;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
