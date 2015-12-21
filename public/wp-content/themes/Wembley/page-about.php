@@ -19,7 +19,7 @@ get_header(); ?>
 		display: block !important;
 	}
 
-	.share-icons {
+	.single-product .general .share-icons {
 		max-width: 100% !important;
 	}
 </style>
