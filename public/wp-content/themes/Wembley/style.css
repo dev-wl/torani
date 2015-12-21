@@ -2485,6 +2485,10 @@ ul#topmenu li.current-menu-item a {
 	#darkener {
 		height: 140px;
 	}
+
+	.blogpost .image-block {
+		max-width: 96%;
+	}
 }
 
 @media (max-width: 640px) {
