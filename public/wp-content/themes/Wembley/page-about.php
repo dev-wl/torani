@@ -20,7 +20,7 @@ get_header(); ?>
 	}
 
 	.share-icons {
-		max-width: 100%;
+		max-width: 100% !important;
 	}
 </style>
 
