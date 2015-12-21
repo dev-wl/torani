@@ -1720,9 +1720,9 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (min-width: 1580px) {
-	.grid-item--width3 {
+	/*.grid-item--width3 {
 		width: 852px;
-	}
+	}*/
 
 	.feed {
 		width: 390px;
