@@ -1701,7 +1701,7 @@ ul#topmenu li.current-menu-item a {
 }
 /*.huge-it-share-buttons.nobackground li:eq(4) a').attr('href', 'http://instagram.com/');*/
 
-@media (max-width: 2960px) {
+@media (min-width: 2860px) {
 	.grid-item--width3 {
 		width: 900px;
 	}
@@ -1719,7 +1719,7 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
-@media (max-width: 1680px) {
+@media (min-width: 1580px) {
 	.grid-item--width3 {
 		width: 852px;
 	}
