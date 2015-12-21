@@ -1720,13 +1720,13 @@ ul#topmenu li.current-menu-item a {
 }
 
 @media (min-width: 1680px) {
-	.grid-item--width3 {
+	/*.grid-item--width3 {
 		width: 852px;
-	}
+	}*/
 
-	.feed {
+	/*.feed {
 		width: 390px;
-	}
+	}*/
 }
 
 @media (max-width: 1400px) {
