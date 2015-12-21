@@ -2181,6 +2181,10 @@ ul#topmenu li.current-menu-item a {
 	#maillist form input[type="email"] {
 		padding-left: 3px;
 	}
+
+	.img-responsive {
+		max-width: 96%;
+	}
 }
 
 @media (device-width: 768px) and (orientation: landscape) { 
