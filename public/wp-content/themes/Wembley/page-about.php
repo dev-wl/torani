@@ -14,6 +14,10 @@ get_header(); ?>
 			max-width: 100% !important;
 		}
 	}
+
+	.description {
+		display: block !important;
+	}
 </style>
 
 	<div id="primary" class="content-area">
