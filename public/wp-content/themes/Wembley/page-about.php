@@ -47,7 +47,7 @@ get_header(); ?>
 					<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 				</div>
 			</div>
-		<?php endif; ?>	<div class="clearfix"></div>
+		<?php endif; ?>
 
 	<div class="entry-content" style="text-align:justify;">
 		<div class="description">
