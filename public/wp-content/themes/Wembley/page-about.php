@@ -18,6 +18,10 @@ get_header(); ?>
 	.description {
 		display: block !important;
 	}
+
+	.share-icons {
+		max-width: 100%;
+	}
 </style>
 
 	<div id="primary" class="content-area">
