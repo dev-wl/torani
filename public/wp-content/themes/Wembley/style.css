@@ -1880,10 +1880,6 @@ ul#topmenu li.current-menu-item a {
 		display: none;
 	}
 
-	#darkener {
-		height: 960px;
-	}
-
 }
 
 @media (min-device-width: 1100px) and (min-width: 835px) and (max-width: 1105px) {
@@ -2189,7 +2185,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 92px;
+		height: 902px;
 	}
 }
 
