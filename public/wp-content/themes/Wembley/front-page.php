@@ -217,7 +217,10 @@ get_header(); ?>
 	
 	$(document).ready(function() {
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			window.addEventListener('orientationchange', function() { window.location = window.location; });
+			window.addEventListener('orientationchange', function() {
+				$('body').css('opacity', '0.5');
+				window.location = window.location;
+			});
 		}
 
 		if($(window).width() <= 640) {
