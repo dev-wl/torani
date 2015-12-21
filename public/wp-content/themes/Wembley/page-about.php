@@ -39,7 +39,8 @@ get_header(); ?>
 			$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
 			$image = aq_resize( $img_url, 1200, 720, true ); //resize & crop the image
 		?>
-					
+
+	<div class="entry-content" style="text-align:justify;">
 		<?php if($image) : ?>
 			<div class="image-block">
 				<img class="img-responsive singlepic" src="<?php echo $image ?>"/>
@@ -48,8 +49,7 @@ get_header(); ?>
 				</div>
 			</div>
 		<?php endif; ?>
-
-	<div class="entry-content" style="text-align:justify;">
+		
 		<div class="description">
 			<h2 class="page-title"><?php the_title(); ?></h2>
 		</div><!-- header -->
