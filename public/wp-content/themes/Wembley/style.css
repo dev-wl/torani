@@ -2765,7 +2765,8 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.site-info .footer-right p.copy {
-		width: 94% !important;
+		/*width: 94% !important;*/
+		width: 100% !important;
 		margin: initial !important;
 	}
 }
