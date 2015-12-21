@@ -113,6 +113,8 @@
 			}
 		}
 
+		alert("sl-wrapper height = " + $('.sl-wrapper').height());
+
 		if($('.sl-wrapper').height() == 0 || $('.sl-wrapper').height() == 'undefined' || $('.sl-wrapper').height() == null) {
 			$('.sl-wrapper').height(603);
 		}
