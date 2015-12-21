@@ -2183,7 +2183,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.img-responsive {
-		max-width: 96%;
+		max-width: 96% !important;
 	}
 }
 
