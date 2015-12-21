@@ -113,6 +113,9 @@
 			}
 		}
 
+		if(window.location.href.indexOf('privacy-policy') > -1)
+			$('.menu-item').removeClass('current-menu-item');
+
 	});
 
 	$(window).on('load', function() {
