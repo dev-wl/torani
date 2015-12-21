@@ -2133,7 +2133,7 @@ ul#topmenu li.current-menu-item a {
 
 	.description h1.page-title {
 		width: 90%;
-		-webkit-margin-before: 20px;
+		/*-webkit-margin-before: 20px;*/
 	}
 }
 
