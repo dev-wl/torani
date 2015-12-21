@@ -173,7 +173,9 @@
 		}
 
 		if($('.sl-wrapper').height() == 0) {
-			$('.sl-wrapper').height(603);
+			if(navigator.userAgent.indexOf('Mac') != -1) {
+				$('.sl-wrapper').height(500);
+			}
 		}
 
 	});
