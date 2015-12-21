@@ -2453,6 +2453,20 @@ ul#topmenu li.current-menu-item a {
 	.footer-right {
 	    padding-right: 19px;
 	}
+
+	.footer-left {
+		width: 289px;
+	    margin: 4px auto;
+	    padding-left: 0px !important;
+	}
+
+	.footer .row {
+		margin-left: 0px !important;
+	}
+
+	.site-footer {
+		padding-top: 15px;
+	}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -2488,6 +2502,14 @@ ul#topmenu li.current-menu-item a {
 
 	.blogpost .image-block {
 		max-width: 93%;
+	}
+
+	.footer-left {
+		/*width: 100%;
+		min-width: 100%;*/
+		/*width: 278px;*/
+		width: 289px;
+	    margin: 4px auto;
 	}
 }
 
@@ -2666,13 +2688,6 @@ ul#topmenu li.current-menu-item a {
 		max-width: 100% !important;
 	}
 
-	.footer-left {
-		/*width: 100%;
-		min-width: 100%;*/
-		/*width: 278px;*/
-		width: 289px;
-	    margin: 4px auto;
-	}
 
 	.footer-left a:nth-child(3) {
 		font-size: 9px;
