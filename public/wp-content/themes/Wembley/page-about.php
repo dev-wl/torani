@@ -31,7 +31,9 @@ get_header(); ?>
 
 
 </style>
-
+<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?> >
 
 		<?php
@@ -49,18 +51,19 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 
-	<div class="general" style="text-align:justify;">
+	<div class="general">
 		<div class="description">
 			<h2 class="page-title"><?php the_title(); ?></h2>
 		</div><!-- header -->
-		<?php echo get_the_content(); ?>
+		<div class="box-meta"><?php the_content(); ?></div>	
 		<div class="share-icons">
 			<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 		</div>
 	</div><!-- .entry-content -->
-
+<div class="clearfix"></div>
 </article><!-- #post-## -->
-
+</main><!-- #main -->
+	</div><!-- #primary -->
 <script>
 	$(document).ready(function() {
 		setTimeout(function() {
