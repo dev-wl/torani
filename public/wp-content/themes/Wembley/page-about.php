@@ -49,7 +49,7 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 
-	<div class="entry-content" style="text-align:justify;">
+	<div class="general" style="text-align:justify;">
 		<div class="description">
 			<h2 class="page-title"><?php the_title(); ?></h2>
 		</div><!-- header -->
