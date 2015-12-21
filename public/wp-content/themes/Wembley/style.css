@@ -2182,7 +2182,7 @@ ul#topmenu li.current-menu-item a {
 		padding-left: 3px;
 	}
 
-	.img-responsive {
+	.blog-post .image-block {
 		max-width: 96% !important;
 	}
 }
