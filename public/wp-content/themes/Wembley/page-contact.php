@@ -52,7 +52,7 @@ get_header(); ?>
 	@media (max-width: 746px) {
 		.description h1.page-title {
 			/*width: 50% !important;*/
-			width: 100% !important;
+			width: 19% !important;
 		}
 
 		.column {
