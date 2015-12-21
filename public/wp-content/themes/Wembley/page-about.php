@@ -42,7 +42,7 @@ get_header(); ?>
 					
 		<?php if($image) : ?>
 			<div class="image-block">
-				<img class="img-responsive singlepic" src="<?php echo $image ?>"/>
+				<img class="img-responsive singlepic" src="<?php echo $image ?>"/> <div class="clearfix"></div>
 				<div class="share-icons">
 					<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
 				</div>
