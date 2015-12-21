@@ -23,6 +23,13 @@ get_header(); ?>
 		max-width: none;
 	}
 
+
+	@media (max-width: 400px) and (orientation: portrait) {
+		#main {
+			margin: 32px 10%;
+		}
+	}
+
 </style>
 
 	<div class="col-md-12 intro-me clearfix">
