@@ -38,16 +38,16 @@ get_header(); ?>
 			$thumb = get_post_thumbnail_id();
 			$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
 			$image = aq_resize( $img_url, 1200, 720, true ); //resize & crop the image
-		?><div class="clearfix"></div>
-					<div class="clearfix"></div>
-		<?php if($image) : ?><div class="clearfix"></div>
-			<div class="image-block"><div class="clearfix"></div>
+		?>
+					
+		<?php if($image) : ?>
+			<div class="image-block">
 				<img class="img-responsive singlepic" src="<?php echo $image ?>"/>
-				<div class="share-icons"><div class="clearfix"></div>
+				<div class="share-icons">
 					<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
-				</div><div class="clearfix"></div>
+				</div>
 			</div>
-		<?php endif; ?>	
+		<?php endif; ?>	<div class="clearfix"></div><div class="clearfix"></div><div class="clearfix"></div><div class="clearfix"></div><div class="clearfix"></div>
 
 	<div class="entry-content" style="text-align:justify;">
 		<div class="description">
