@@ -2181,10 +2181,6 @@ ul#topmenu li.current-menu-item a {
 	#maillist form input[type="email"] {
 		padding-left: 3px;
 	}
-
-	.blog-post .image-block {
-		max-width: 96% !important;
-	}
 }
 
 @media (device-width: 768px) and (orientation: landscape) { 
@@ -2345,9 +2341,13 @@ ul#topmenu li.current-menu-item a {
 		margin-left: 0;
 	}
 
-	.blogpost .image-block, .blogpost .entry-content {
+	.blogpost .entry-content {
 		float: none;
 		max-width: initial;
+	}
+
+	.blogpost .image-block {
+		max-width: 96%;
 	}
 
 	.sfsiplus_norm_row.sfsi_plus_wDiv div {
