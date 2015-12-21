@@ -2168,6 +2168,10 @@ ul#topmenu li.current-menu-item a {
 	#darkener {
 		height: 92px;
 	}
+
+	#maillist form input[type="email"] {
+		padding-left: 3px;
+	}
 }
 
 @media (device-width: 768px) and (orientation: landscape) { 
