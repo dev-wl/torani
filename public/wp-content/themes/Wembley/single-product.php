@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-de;ofkweiopfjweriofj
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -66,6 +65,12 @@ de;ofkweiopfjweriofj
 		setTimeout(function() {
 			$('.post .share-icons:eq(0)').width('100%'); //$('.img-responsive').width());
 		}, 500);
+
+		if($('$main').find('.image-block img').length > 0) {
+			pinterest = $('.image-block .share-icons .huge-it-share-buttons-list a:eq(2)');
+			old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
+			pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
+		}
 	});
 	
 </script>
