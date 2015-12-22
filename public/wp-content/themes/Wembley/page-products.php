@@ -62,6 +62,7 @@ get_header(); ?>
 				facebook.replace(old_link, "u=" + prod_link);
 				facebook.attr('onclick').replace(old_link, "u=" + prod_link);
 
+				alert('done');
 				// twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
 				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
 				
