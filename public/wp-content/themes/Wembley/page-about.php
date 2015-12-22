@@ -8,6 +8,10 @@
 get_header(); ?>
 
 <style>
+	.single-product .image-block {
+		max-width: 50% !important;
+	}
+
 	@media (max-width: 760px) {
 		.single-product .image-block {
 			width: 100% !important;
