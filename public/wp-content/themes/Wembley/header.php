@@ -20,7 +20,15 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
 	<![endif]-->
 
-	<?php if( is_single() ) : ?>
+	<?php
+
+		global $wp_query;
+		$post_id = $wp_query->post->ID;
+
+		$post = get_post( $post_id );
+		$slug = $post->post_name;
+
+	 if( is_single() || $slug == 'about') :?>
 			<meta property="og:url"                content="<?php echo the_permalink();?>" />
 			<meta property="og:type"               content="article" />
 			<meta property="og:title"              content="<?php the_title(); ?>" />
@@ -58,15 +66,6 @@
 		$retailer = 1;
 	else 
 		$retailer = 0;
-
-
-	global $wp_query;
-$post_id = $wp_query->post->ID;
-
-$post = get_post( $post_id );
-$slug = $post->post_name;
-
-echo 'slug = ' . $slug;
 ?>
 
 <script>
