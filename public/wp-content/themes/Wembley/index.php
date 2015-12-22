@@ -31,7 +31,6 @@ get_header(); ?>
 	
 	<div id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
-		ukbhiuibiuybuyuyuybybiuibui
 			<div class="description">
 				<h1 class="page-title">BLOG</h1> 
 				<?php 
