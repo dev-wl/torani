@@ -139,7 +139,7 @@ get_header(); ?>
 
 				//twitter
 				twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
-				old_link = twitter.attr('href').substring(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
+				old_link = twitter.attr('href').substring(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/')+1);
 				twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
 				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 
