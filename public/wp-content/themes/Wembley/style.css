@@ -1569,6 +1569,10 @@ ul.huge-it-share-buttons-list {
 	margin: 20px 0px !important;
 }
 
+h2.page-title {
+	text-transform: uppercase;
+}
+
 h1.page-title {
 	color: #705944 !important;
 	text-transform: uppercase;
