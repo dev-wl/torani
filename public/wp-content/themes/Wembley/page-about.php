@@ -22,6 +22,10 @@ get_header(); ?>
 	.single-product .general .share-icons {
 		max-width: 100% !important;
 	}
+
+	h2.box-title {
+		text-transform: uppercase;
+	}
 </style>
 
 	<div id="primary" class="content-area">
