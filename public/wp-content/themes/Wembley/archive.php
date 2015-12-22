@@ -133,7 +133,7 @@ get_header(); ?>
 				
 				//social links - fb
 				facebook = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(0)');
-				old_link = facebook.attr('href').substring(facebook.attr('href').indexOf('u='), facebook.attr('href').lastIndexOf('/'));
+				old_link = facebook.attr('href').substring(facebook.attr('href').indexOf('u='), facebook.attr('href').lastIndexOf('/')+1);
 				facebook.attr('href', facebook.attr('href').replace(old_link, "u=" + prod_link));
 				facebook.attr('onclick', facebook.attr('onclick').replace(old_link, "u=" + prod_link));
 
