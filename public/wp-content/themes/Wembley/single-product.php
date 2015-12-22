@@ -21,7 +21,6 @@ get_header(); ?>
 						
 			<?php if($image) : ?>
 				<div class="image-block">
-					<?php echo the_permalink();?>
 					<img class="img-responsive" src="<?php echo $image ?>"/>
 					<div class="share-icons">
 						<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
