@@ -74,7 +74,7 @@ get_header(); ?>
 
 		if($('.box-meta').find('img').length > 0) {
 			img = $('.box-meta img:eq(0)');
-			pinterest = $('.box-meta .share-icons .huge-it-share-buttons-list a:eq(2)');
+			pinterest = $('.general .share-icons .huge-it-share-buttons-list a:eq(2)');
 			old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
 			pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $(img).attr('src') ));
 		}
