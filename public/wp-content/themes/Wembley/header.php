@@ -108,7 +108,7 @@
 
 		if($('body').find('ul.huge-it-share-buttons-list')) {
 			// $('.huge-it-share-buttons.nobackground li:eq(4) a').css('background-image', 'url("/wp-content/themes/Wembley/inst.png")');
-			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').unbind('click');
+			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').attr('onclick', '');
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').attr('href', 'https://www.instagram.com/toranisinglecup/');
 			$('.huge-it-share-buttons.nobackground li:nth-child(5) a').css('border-radius', '3px');
 		}
