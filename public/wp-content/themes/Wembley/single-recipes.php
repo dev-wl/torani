@@ -70,7 +70,13 @@ get_header(); ?>
 		if($('.box-meta').find('img').length > 0) {
 			getSecondaryImage();
 		} else if(checkMainImage()) {
-			getMainImage('secondary');
+			// getMainImage('secondary');
+			selector = '.general .share-icons .huge-it-share-buttons-list a:eq(2)';
+			pinterest = $(selector);
+			old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
+			pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
+			pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
+			console.log('done! done!');
 		}
 	});
 
