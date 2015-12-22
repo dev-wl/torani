@@ -50,6 +50,7 @@ get_header(); ?>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			alert('a');
 			$.each($('.flex-main article', function() {
 				//get direct product link 
 				prod_link = $(this).find('a.read-more').attr('href');
