@@ -12,6 +12,10 @@ get_header(); ?>
 		max-width: 48% !important;
 	}
 
+	.box-meta {
+		font-size: 14px;
+	}
+
 	@media (device-width: 1280px) {
 		.single-product .image-block {
 			max-width: 47% !important;
