@@ -51,23 +51,23 @@ get_header(); ?>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			alert('a');
-			$.each($('.flex-main article', function() {
-				//get direct product link 
-				prod_link = $(this).find('a.read-more').attr('href');
-				//clear it
-				prod_link = prod_link.substr(7); 
+			// $.each($('.flex-main article', function() {
+			// 	//get direct product link 
+			// 	prod_link = $(this).find('a.read-more').attr('href');
+			// 	//clear it
+			// 	prod_link = prod_link.substr(7); 
 				
-				//social links
-				facebook = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(0)');
-				old_link = facebook.substr(facebook.indexOf('u='), facebook.lastIndexOf('/'));
-				facebook.replace(old_link, "u=" + prod_link);
-				facebook.attr('onclick').replace(old_link, "u=" + prod_link);
+			// 	//social links
+			// 	facebook = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(0)');
+			// 	old_link = facebook.substr(facebook.indexOf('u='), facebook.lastIndexOf('/'));
+			// 	facebook.replace(old_link, "u=" + prod_link);
+			// 	facebook.attr('onclick').replace(old_link, "u=" + prod_link);
 
-				alert('done');
-				// twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
-				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
+			// 	alert('done');
+			// 	// twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
+			// 	// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
 				
-			});
+			// });
 		});
 	</script>
 
