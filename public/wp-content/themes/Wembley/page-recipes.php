@@ -85,8 +85,8 @@ get_header(); ?>
 				pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $(this).find('a:eq(0) img').attr('src')));
 				
 				pinterest.attr('onclick', pinterest.attr('onclick').replace(old_article_link, "?url=" + prod_link));
-				pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $(this).find('a:eq(0) img').attr('src')));
-				console.log($(this).find('a:eq(0) img').length);
+				if($(this).find('a:eq(0) img').length > 0)
+					pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $(this).find('a:eq(0) img').attr('src')));
 			});
 		}, 1000);
 	});
