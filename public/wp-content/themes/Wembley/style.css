@@ -1744,6 +1744,12 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
+@media (max-width: 616px) and (min-device-width: 1280px) {
+	.footer #colophon {
+		padding-top: 3px;
+	}
+}
+
 @media (max-width: 1279px) and (max-device-width: 1279px) {
 	body, #page {
 		min-height: initial;
