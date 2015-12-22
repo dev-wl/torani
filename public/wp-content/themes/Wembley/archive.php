@@ -140,7 +140,7 @@ get_header(); ?>
 				twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
 				old_link = twitter.attr('href').substr(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
 				twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
-				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "stat=" + prod_link));
+				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 
 
 				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
