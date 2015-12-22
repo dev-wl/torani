@@ -70,6 +70,7 @@ get_header(); ?>
 		if($('.box-meta').find('img').length > 0) {
 			getSecondaryImage();
 		} else if(checkMainImage()) {
+			console.log('secondary');
 			getMainImage('secondary');
 		}
 	});
