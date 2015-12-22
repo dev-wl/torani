@@ -61,7 +61,7 @@
 
 
 	global $wp_query;
-$post_id = $wp_query->post->ID
+$post_id = $wp_query->post->ID;
 
 $post = get_post( $post_id );
 $slug = $post->post_name;
