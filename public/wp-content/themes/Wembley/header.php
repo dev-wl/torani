@@ -37,6 +37,7 @@
 
 <?php wp_head(); ?>
 
+
 <?php
 	if( in_category( array( 11,12,13 ) ) )
 		$products = 1;
@@ -57,6 +58,15 @@
 		$retailer = 1;
 	else 
 		$retailer = 0;
+
+
+	global $wp_query;
+$post_id = $wp_query->post->ID
+
+$post = get_post( $post_id );
+$slug = $post->post_name;
+
+echo 'slug = ' . $slug;
 ?>
 
 <script>
