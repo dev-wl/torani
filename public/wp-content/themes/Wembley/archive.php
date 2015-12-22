@@ -122,5 +122,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		alert('a');
+	});
+</script>
 
 <?php get_footer(); ?>
