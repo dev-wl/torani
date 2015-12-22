@@ -24,8 +24,8 @@
 			<meta property="og:url"                content="<?php echo the_permalink();?>" />
 			<meta property="og:type"               content="article" />
 			<meta property="og:title"              content="<?php the_title(); ?>" />
-			<meta property="og:description"        content="How much does culture influence creative thinking?" />
-			<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+			<meta property="og:description"        content="<?php the_title(); ?> - Read more on Torani site!" />
+			<meta property="og:image"              content="<?php echo $image; ?>" />
 	<?php endif; ?>
 
 <?php wp_head(); ?>
