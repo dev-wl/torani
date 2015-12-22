@@ -154,7 +154,7 @@ get_header(); ?>
 				pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $(this).find('a:eq(0) img').attr('src')));
 				
 			});
-		}, 2000);
+		}, 1000);
 	});
 </script>
 
