@@ -134,8 +134,8 @@ get_header(); ?>
 				//social links
 				facebook = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(0)');
 				old_link = facebook.attr('href').substr(facebook.attr('href').indexOf('u='), facebook.attr('href').lastIndexOf('/'));
-				facebook.attr('href').replace(old_link, "u=" + prod_link);
-				facebook.attr('onclick').replace(old_link, "u=" + prod_link);
+				facebook.attr('href', facebook.attr('href').replace(old_link, "u=" + prod_link));
+				facebook.attr('onclick', facebook.attr('onclick').replace(old_link, "u=" + prod_link));
 
 				// twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
 				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
