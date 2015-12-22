@@ -9,16 +9,24 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="/wp-content/themes/Wembley/js/masonry.pkgd.min.js"></script>
-<!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
-<![endif]-->
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="initial-scale=1">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="/wp-content/themes/Wembley/js/masonry.pkgd.min.js"></script>
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
+	<![endif]-->
+
+	<?php if( is_single() ) : ?>
+			<meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+			<meta property="og:type"               content="article" />
+			<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+			<meta property="og:description"        content="How much does culture influence creative thinking?" />
+			<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+	<?php endif; ?>
 
 <?php wp_head(); ?>
 
