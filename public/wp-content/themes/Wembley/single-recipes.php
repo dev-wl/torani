@@ -61,6 +61,46 @@ get_header(); ?>
 	// $('#main.site-main .recipe img').appendTo($('.post_images'));
 	// $('#page').addClass('single-details');
 	$('.post .share-icons:eq(0)').width('100%'); //$('.img-responsive').width());
+
+	$(document).ready(function() {
+		if(checkMainImage()) {
+			getMainImage();
+		}
+		
+
+		if($('.box-meta').find('img').length > 0) {
+			getSecondaryImage('primary');
+		} else if(checkMainImage()) {
+			getMainImage('secondary');
+		}
+	});
+
+	function checkMainImage() {
+		if($('#main').find('.image-block img').length > 0) {
+			return true;
+		}
+
+		return false;
+	}
+
+	function getMainImage(selector) {
+		if($(selector) == 'secondary')
+			selector = '.general .share-icons .huge-it-share-buttons-list a:eq(2)';
+		else
+			selector = '.image-block .share-icons .huge-it-share-buttons-list a:eq(2)';
+		pinterest = $(selector);
+		old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
+		pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
+		pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
+	}
+
+	function getSecondaryImage() {
+		img = $('.box-meta img:eq(0)');
+		pinterest = $('.general .share-icons .huge-it-share-buttons-list a:eq(2)');
+		old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
+		pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $(img).attr('src') ));
+		pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $(img).attr('src') ));
+	}
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
