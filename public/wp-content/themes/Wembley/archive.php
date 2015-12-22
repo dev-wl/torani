@@ -146,6 +146,7 @@ get_header(); ?>
 				old_article_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('?url='), pinterest.attr('href').lastIndexOf('&media'));
 				old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
 				pinterest.attr('href', pinterest.attr('href').replace(old_article_link, "?url=" + prod_link));
+				pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "media=" + $(this).find('a:eq(0) img').attr('src')));
 				// pinterest.attr('onclick', pinterest.attr('onclick').replace(old_link, "status=" + prod_link));
 				
 			});
