@@ -3,7 +3,7 @@
  * @package web2feel
  */
 ?>
-
+poifgrjeijh
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 blogpost'); ?>>
 
 		<?php
