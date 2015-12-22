@@ -1041,7 +1041,8 @@ a.buy:hover {
 .footer-left {
 	float: left;
 	margin-top: 15px;
-	margin-left: 200px;
+	/*margin-left: 200px;*/
+	margin-left: 50px;
 	color: #fff;
 	font-size: 18px;
 	font-family: "univers67_condensed_bold";
