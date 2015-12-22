@@ -25,6 +25,13 @@
 			<meta property="og:type"               content="article" />
 			<meta property="og:title"              content="<?php the_title(); ?>" />
 			<meta property="og:description"        content="<?php the_title(); ?> - Read more on Torani site!" />
+
+			<?php 
+				$thumb = get_post_thumbnail_id();
+				$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
+				$image = aq_resize( $img_url, 720, 560, true ); //resize & crop the image
+			?>
+
 			<meta property="og:image"              content="<?php echo $image; ?>" />
 	<?php endif; ?>
 
