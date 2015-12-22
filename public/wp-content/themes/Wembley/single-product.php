@@ -75,8 +75,7 @@ get_header(); ?>
 			getSecondaryImage('primary');
 		} else if(checkMainImage()) {
 			// getMainImage('secondary');
-			if($(selector) == 'secondary')
-				selector = '.general .share-icons .huge-it-share-buttons-list a:eq(2)';
+			selector = '.general .share-icons .huge-it-share-buttons-list a:eq(2)';
 			pinterest = $(selector);
 			old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
 			pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
