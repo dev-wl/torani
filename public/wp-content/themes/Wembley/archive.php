@@ -143,9 +143,10 @@ get_header(); ?>
 				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 
 				pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
-				// old_link = twitter.attr('href').substring(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
-				// twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
-				// twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
+				old_article_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('?url='), pinterest.attr('href').lastIndexOf('&media'));
+				old_medial_link = pinterest.attr('href').substring(pinterest.attr('href').indexOf('&media'), pinterest.attr('href').lastIndexOf('&description'));
+				pinterest.attr('href', pinterest.attr('href').replace(old_article_link, "?url=" + prod_link));
+				// pinterest.attr('onclick', pinterest.attr('onclick').replace(old_link, "status=" + prod_link));
 				
 			});
 		}, 2000);
