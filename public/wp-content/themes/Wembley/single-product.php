@@ -21,6 +21,7 @@ get_header(); ?>
 						
 			<?php if($image) : ?>
 				<div class="image-block">
+					<?php echo the_permalink();?>
 					<img class="img-responsive" src="<?php echo $image ?>"/>
 					<div class="share-icons">
 						<span class="share">share</span> <?php echo do_shortcode('[huge_it_share]'); //echo do_shortcode('[DISPLAY_ULTIMATE_PLUS]'); ?>
@@ -87,7 +88,7 @@ get_header(); ?>
 	}
 
 	function getMainImage(selector) {
-		if(selector == 'secondary')
+		if($(selector) == 'secondary')
 			selector = '.general .share-icons .huge-it-share-buttons-list a:eq(2)';
 		else
 			selector = '.image-block .share-icons .huge-it-share-buttons-list a:eq(2)';
