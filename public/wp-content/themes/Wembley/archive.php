@@ -133,15 +133,14 @@ get_header(); ?>
 				
 				//social links
 				facebook = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(0)');
-				old_link = facebook.attr('href').substr(facebook.attr('href').indexOf('u='), facebook.attr('href').lastIndexOf('/'));
+				old_link = facebook.attr('href').substring(facebook.attr('href').indexOf('u='), facebook.attr('href').lastIndexOf('/'));
 				facebook.attr('href', facebook.attr('href').replace(old_link, "u=" + prod_link));
 				facebook.attr('onclick', facebook.attr('onclick').replace(old_link, "u=" + prod_link));
 
 				twitter = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(1)');
-				old_link = twitter.attr('href').substr(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
-				// console.log("old_link = " + old_link);
-				// twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
-				// twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
+				old_link = twitter.attr('href').substring(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
+				twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
+				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 
 
 				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
