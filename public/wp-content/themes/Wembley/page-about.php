@@ -12,6 +12,12 @@ get_header(); ?>
 		max-width: 48% !important;
 	}
 
+	@media (device-width: 1280px) {
+		.single-product .image-block {
+			max-width: 47% !important;
+		}	
+	}
+
 	@media (max-width: 760px) {
 		.single-product .image-block {
 			width: 100% !important;
