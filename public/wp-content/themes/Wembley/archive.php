@@ -142,8 +142,10 @@ get_header(); ?>
 				twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
 				twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 
-
-				// pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
+				pinterest = $(this).find('.share-icons .huge-it-share-buttons-list a:eq(2)');
+				// old_link = twitter.attr('href').substring(twitter.attr('href').indexOf('status='), twitter.attr('href').lastIndexOf('/'));
+				// twitter.attr('href', twitter.attr('href').replace(old_link, "status=" + prod_link));
+				// twitter.attr('onclick', twitter.attr('onclick').replace(old_link, "status=" + prod_link));
 				
 			});
 		}, 2000);
