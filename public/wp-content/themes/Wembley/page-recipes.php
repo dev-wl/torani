@@ -59,7 +59,7 @@ get_header(); ?>
 <script type="text/javascript">
 	$(document).ready(function() {
 		setTimeout(function() {
-			$.each($('.flex-main article'), function() {
+			$.each($('#main article'), function() {
 				//get direct product link 
 				prod_link = $(this).find('a.read-more').attr('href');
 				//clear it
