@@ -1904,7 +1904,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#main .flex-main.blog article a img {
-		max-width: 96%;
+		max-width: 94%;
 	}
 
 }
@@ -2202,7 +2202,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#main .flex-main.blog article a img {
-		max-width: 95%;
+		max-width: 93%;
 	}
 }
 
@@ -2449,7 +2449,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.flex-main article a img.img-responsive {
-	    max-width: 190px;
+	    max-width: 170px;
 	}
 
 	.footer-right p.copy {
@@ -2491,9 +2491,10 @@ ul#topmenu li.current-menu-item a {
 		padding-top: 15px;
 	}
 
-	.single-product .general .share-icons {
+	.single-product .general .share-icons, .blogpost .entry-content .share-icons {
 		width: 150px;
-		max-width: initial !important;
+		/*max-width: initial !important;*/
+		max-width: 166px !important;
 	}
 
 	#maillist form input[type="email"] {
@@ -2573,7 +2574,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.img-responsive {
-		max-width: 95% !important;
+		max-width: 91% !important;
 	}
 }
 

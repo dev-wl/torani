@@ -12,6 +12,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -106,8 +107,17 @@
 		}
 		else if(blog == 1)
 			$('ul#topmenu li:first-child').addClass('current-menu-item');
-		else if(recepies == 1)
-			$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
+		else if(recepies == 1) {
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$('ul#topmenu li').removeClass('current-menu-item');
+				setTimeout(function() {
+					$('.jspContainer ul#topmenu li:nth-child(10)').addClass('current-menu-item');
+				}, 1000);
+			}
+			else {
+				$('ul#topmenu li:nth-child(4)').addClass('current-menu-item');
+			}
+		}
 		else if(retailer == 1) {
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 				$('ul#topmenu li').removeClass('current-menu-item');
@@ -118,8 +128,17 @@
 			else
 				$('ul#topmenu li:nth-child(2)').addClass('current-menu-item');
 		}
-		else if(single == 1)
-			$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
+		else if(single == 1) {
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$('ul#topmenu li').removeClass('current-menu-item');
+				setTimeout(function() {
+					$('.jspContainer ul#topmenu li:nth-child(9)').addClass('current-menu-item');
+				}, 1000);
+			}
+			else {
+				$('ul#topmenu li:nth-child(3)').addClass('current-menu-item');
+			}
+		}
 
 		$(window).on('scroll', function() {
 			if($(window).scrollTop() > 100)
@@ -161,6 +180,10 @@
 
 		if(window.location.href.indexOf('privacy-policy') > -1)
 			$('.menu-item').removeClass('current-menu-item');
+
+		$('.menu li div img').click(function() {
+			window.location.href = $(this).parent().find($('a')).attr('href');
+		});
 
 	});
 
@@ -235,6 +258,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/Wembley/style.css">
 <div class="pushy pushy-left">
 	<?php get_sidebar(); ?>
 </div>

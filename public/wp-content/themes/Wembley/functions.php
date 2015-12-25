@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'web2feel_widgets_init' );
  * Enqueue scripts and styles
  */
 function web2feel_scripts() {
-	wp_enqueue_style( 'web2feel-style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'web2feel-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/bootstrap.css');
 	wp_enqueue_style( 'glyphicon', get_template_directory_uri() . '/css/bootstrap-glyphicons.css');
 	wp_enqueue_style( 'pushy', get_template_directory_uri() . '/css/pushy.css');

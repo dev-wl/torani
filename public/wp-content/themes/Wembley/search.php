@@ -28,6 +28,16 @@ get_header(); ?>
 		}
 	}
 
+	@media (max-width: 746px) {
+		h1.page-title {
+		    width: 90% !important; 
+		}
+		
+		.flex-main article {
+		    margin: 0px auto 12px;
+		}
+	}
+
 	@media (max-width: 640px) {
 		.page-title {
 		    width: 50% !important;

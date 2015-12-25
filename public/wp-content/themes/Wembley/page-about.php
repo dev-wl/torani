@@ -22,6 +22,12 @@ get_header(); ?>
 		}	
 	}
 
+	@media (max-width: 780px) and (orientation: portrait){
+		.single-product .image-block {
+			margin-right: initial !important;
+		}
+	}
+
 	@media (max-width: 760px) {
 		.single-product .image-block {
 			width: 100% !important;
