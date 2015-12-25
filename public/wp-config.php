@@ -41,15 +41,6 @@ define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
 
 
-
-/*dev*/
-// define('DB_NAME', 'torani');
-// define('DB_USER', 'torani');
-// define('DB_PASSWORD', 'KQj5uXecz6');
-// define('DB_HOST', '46.101.36.226');
-// define('WP_HOME', 'http://torani.dev.wonderslab.com/');
-// define('WP_SITEURL', 'http://torani.dev.wonderslab.com/');
-
 // define('WP_HOME', 'http://ak.torani/');
 // define('WP_SITEURL', 'http://ak.torani/');
 
