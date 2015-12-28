@@ -20,25 +20,12 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'db606687222');
-
-/** MySQL database username */
-define('DB_USER', 'dbo606687222');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'k)bf4F4_TO');
-
-/** MySQL hostname */
-define('DB_HOST', 'db606687222.db.1and1.com');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
+define('DB_NAME', 'torani');
+define('DB_USER', 'torani');
+define('DB_PASSWORD', 'KQj5uXecz6');
+define('DB_HOST', '46.101.36.226');
+define('WP_HOME', 'http://torani.dev.wonderslab.com/');
+define('WP_SITEURL', 'http://torani.dev.wonderslab.com/');
 
 
 // define('WP_HOME', 'http://ak.torani/');
