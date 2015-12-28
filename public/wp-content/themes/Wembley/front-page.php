@@ -32,13 +32,40 @@ get_header(); ?>
 				padding-top: 0px !important;
 				margin: 74px auto 0px;
 			}
+
+			#content {
+				padding-bottom: 40px !important;
+			}
 	}
 
 	@media (device-width: 768px) and (orientation: portrait) {
 		.feed:nth-child(3) {
 		    left: 9% !important;
 		}
+
+		.feed:nth-child(3), .feed:last-child {
+		    top: 428px !important;
+		}
 	}
+
+	@media (device-width: 768px) and (orientation: landscape) {
+		.grid {
+			height: 1290px;
+		}
+
+		#main {
+			margin: 32px auto 0px auto;
+		}
+
+		.grid-item:nth-child(2) {
+			top: 600px !important;
+		}
+
+		.feed:nth-child(3), .feed:last-child {
+		    top: 803px !important;
+		}
+	}
+
 
 	@media(max-width: 640px) {
 		#main {
