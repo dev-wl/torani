@@ -20,16 +20,16 @@ body{
 
 /* Links */
 a {
-	color: #63be80;
+	color: #DC0003;
 
 }
 a:visited {
-	color: #63be80;
+	color: #DC0003;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #47aa67;
+	color: #000000;
 		text-decoration: none;
 }
 
