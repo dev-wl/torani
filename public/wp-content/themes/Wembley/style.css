@@ -845,6 +845,12 @@ ul#topmenu li a {
 	float: right;
 	width: 52px;
 	margin-left: 10px;
+	font-family: "univers49LtultraCn";
+	text-transform:uppercase;
+	font-size:24px;
+	text-align:left;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 
  #menu-buy-now {
@@ -880,6 +886,7 @@ ul#topmenu li a {
 h2.box-title a:link, h2.box-title a:visited {
 	color: #705944 !important;
 	font-family: "univers49LtultraCn";
+	letter-spacing: 1px;
 }
 
 #mobnav {
@@ -1468,6 +1475,7 @@ span.share {
 	/*margin-top: 5px;*/
 	font-family: "univers49LtultraCn";
 	font-size: 21px;
+	letter-spacing: 1px;
 }
 
 .share-icons {
@@ -1495,6 +1503,12 @@ ul.huge-it-share-buttons-list {
 	padding: 10px;
 	border-radius: 0px;
 	color: #DCDCDC !important;
+	font-family: "univers49LtultraCn";
+	text-transform:uppercase;
+	font-size:24px;
+	text-align:center;
+	text-shadow: 0 0 3px #000000;
+	letter-spacing: 1px;
 }
 
 .torani-btn:active {
@@ -1503,12 +1517,16 @@ ul.huge-it-share-buttons-list {
 
 .read-more {
 	background-color: #DAA520;
+	outline: 1px solid #DCDCDC;
+    outline-offset: -3px;
 }
 
 .buy-now {
 	background-color: #DC143C;
 	margin: 0px auto;
 	width: 91px;
+	outline: 1px solid #DCDCDC;
+    outline-offset: -3px;
 }
 
 .single-product .buy-now {
@@ -1557,6 +1575,7 @@ ul.huge-it-share-buttons-list {
 	margin-bottom: 12px;
 	color: #705944;
 	text-align: left !important;
+	letter-spacing: 1px;
 	/*width: initial !important;*/
 }
 
@@ -1583,7 +1602,7 @@ h1.page-title {
 	width: 16%;
 	margin: 0;
 	font-family: "univers49LtultraCn";
-	letter-spacing: 0px;
+	letter-spacing: 1px;
 	/*-webkit-text-stroke: 1.3px;*/
 }
 
@@ -2354,6 +2373,7 @@ ul#topmenu li.current-menu-item a {
 		text-align: center !important;
 		margin-bottom: 0px !important;
 		font-family: "univers49LtultraCn";
+		letter-spacing: 1px;
 	}
 
 	.flex-main article {
