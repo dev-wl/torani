@@ -12,7 +12,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/Wembley/style.css">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -258,7 +258,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<link rel="stylesheet" type="text/css" href="/wp-content/themes/Wembley/style.css">
 <div class="pushy pushy-left">
 	<?php get_sidebar(); ?>
 </div>
