@@ -334,6 +334,10 @@ img {
 	padding: 29px 10px;
 }
 
+#menu-buy-now li {
+	padding: 29px 35px;
+}
+
 .main-navigation ul > li a:link,.main-navigation ul > li a:visited {
 	color: #666;
 }
@@ -853,6 +857,10 @@ ul#topmenu li a {
 	letter-spacing: 1px;
 }
 
+#menu-secondary li:first-child a {
+	margin-top: 12px;
+}
+
  #menu-buy-now {
  	margin-left: 181px !important;
  }
@@ -869,7 +877,8 @@ ul#topmenu li a {
 }
 
 #menu-buy-now li:nth-child(1) img {
-	background: url("/wp-content/themes/Wembley/eeuu2.svg") repeat scroll 0% 0%;
+	/*background: url("/wp-content/themes/Wembley/eeuu2.svg") repeat scroll 0% 0%;*/
+	background: url("/wp-content/themes/Wembley/eeuu2_1.svg") repeat scroll 0% 0%;
 	background-position: 0% 0%;
 	background-size: 100% 100%;
  }
@@ -881,7 +890,7 @@ ul#topmenu li a {
  }
 
  #menu-buy-now li:nth-child(3) img {
- 	background: url("/wp-content/themes/Wembley/pin56.svg") repeat scroll 0% 0%;
+ 	background: url("/wp-content/themes/Wembley/pin56_1.svg") repeat scroll 0% 0%;
  	background-position: 0% 0%;
  	background-size: 100% 100%;
  }
@@ -2674,7 +2683,9 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.buy-now {
-		width: 83px;
+		/*width: 83px;*/
+		width: 100px;
+		height: 100px;
 	}
 
 	.mobile {

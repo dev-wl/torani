@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'db606687222');
+define('DB_NAME', 'torani');
 
 /** MySQL database username */
-define('DB_USER', 'dbo606687222');
+define('DB_USER', 'localtester');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'k)bf4F4_TO');
+define('DB_PASSWORD', '12345');
 
 /** MySQL hostname */
-define('DB_HOST', 'db606687222.db.1and1.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -37,15 +37,11 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
+// define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+// define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
 
-
-// define('WP_HOME', 'http://ak.torani/');
-// define('WP_SITEURL', 'http://ak.torani/');
-
-
-
+define('WP_HOME', 'http://torani/');
+define('WP_SITEURL', 'http://torani/');
 
 /**#@+
  * Authentication Unique Keys and Salts.

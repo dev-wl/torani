@@ -123,6 +123,28 @@ function update_description() {
 }
 add_action( 'wp_ajax_text-update', 'update_description' );
 
+function update_link() {
+	//add image description
+	
+	global $wpdb; // this is how you get access to the database
+
+	$postId = intval(substr($_POST['slide-id'], 5));
+
+	$link = $_POST['link'];
+
+	//check if the meta already exists
+	$the_meta = get_post_meta ( $postId, 'link', false);
+
+	//if it doesn't
+	if(empty($the_meta)) {
+		add_post_meta($postId, 'link', $link, true); //create it
+	} else {
+		update_post_meta($postId, 'link', $link); //else change it
+	}
+
+	wp_die(); // this is required to terminate immediately and return a proper response
+}
+add_action( 'wp_ajax_link-update', 'update_link' );
 
 function update_options() {
 	//add image description

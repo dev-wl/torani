@@ -128,14 +128,23 @@ get_header(); ?>
 									$attach = get_attached_media( 'image', $slider->ID);
 									$cleanedObject = current($attach);
 									$the_meta = get_post_meta ( $slider->ID, 'description', false);
+									$the_link = get_post_meta ( $slider->ID, 'link', false);
 								?>
 								<div class="slides <?php echo 'slide' . $i?> <?php echo get_option('effects') == 'on' ? 'slides-zoomy' : ''?>" style="background-image:url('')">
-									<div>
-										<img src="<?php echo $cleanedObject->guid?>" />
-										<?php if($the_meta[0] != '') : ?>
-											<div class="text"><?php echo $the_meta[0]; ?></div>
-										<?php endif; ?>
-									</div>
+									<?php if($the_link[0] != '') : ?>
+										<a href="<?php echo $the_link[0]; ?>">
+									<?php endif; ?>
+
+										<div>
+											<img src="<?php echo $cleanedObject->guid?>" />
+											<?php if($the_meta[0] != '') : ?>
+												<div class="text"><?php echo $the_meta[0]; ?></div>
+											<?php endif; ?>
+										</div>
+										
+									<?php if($the_link[0] != '') : ?>
+										</a>
+									<?php endif; ?>
 								</div>
 								<?php $i++; ?>
 								<?php endforeach; ?>
@@ -198,9 +207,11 @@ get_header(); ?>
 						  <?php if($i == 1) : ?>
 						  	<img src='<?php echo $img_url?>' alt=''/>
 						  <?php else : ?>
-							<div class="flipper_container">
-									<img src='<?php echo $img_url?>' alt=''/>
-							</div>
+						  	<a href="/blog/">
+								<div class="flipper_container">
+										<img src='<?php echo $img_url?>' alt=''/>
+								</div>
+							</a>
 						<?php endif; ?>
 						  </div>
 						<?php } endforeach;?>
