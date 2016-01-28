@@ -7,6 +7,12 @@
 
 get_header(); ?>
 
+<style>
+	article .entry-content p a {
+		word-wrap: break-word;
+	}
+</style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

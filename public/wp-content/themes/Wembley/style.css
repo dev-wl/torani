@@ -1099,11 +1099,13 @@ a.buy:hover {
 }
 
 .footer-left a:nth-child(1) img {
-	height: 46px !important;
+	/*height: 46px !important;*/
+	height: 63px !important;
 }
 
 .footer-left a:nth-child(2) img {
-	height: 44px !important;
+	/*height: 44px !important;*/
+	height: 60px !important;
 }
 
 .footer-left a:nth-child(3) {
@@ -1709,6 +1711,7 @@ article.col-lg-4.col-md-4.col-sm-6.col-xs-12 .share-icons {
 #main .flex-main.blog .options {
 	max-width: 100%;
 	margin-top: 15px;
+	width: 40%;
 }
 
 .blogpost .image-block {
@@ -1914,10 +1917,17 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.description h1.page-title {
-		width: 90%;
+		/*width: 90%;*/
+		width: 25%;
 		-webkit-margin-before: none;
 		margin-bottom: 0px;
 		margin: auto 0px;
+	}
+
+	.description .column {
+	    -moz-columns: 1 auto;
+	    columns: auto 1;
+	    -webkit-columns: auto 1;
 	}
 }
 
@@ -2683,9 +2693,9 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	.buy-now {
-		/*width: 83px;*/
-		width: 100px;
-		height: 100px;
+		width: 83px;
+		/*width: 100px;
+		height: 100px;*/
 	}
 
 	.mobile {

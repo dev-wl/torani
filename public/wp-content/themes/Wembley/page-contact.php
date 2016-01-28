@@ -49,6 +49,11 @@ get_header(); ?>
 	   box-shadow: 0px 0px 7px 0px inset;
 	}
 
+	.description h1.page-title {
+		margin-bottom: initial;
+		margin-top: 3px;
+	}
+
 	@media (device-width: 768px) {
 		.description h1.page-title {
 			/*width: 50% !important;*/

@@ -172,6 +172,10 @@
 		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('iPhone') == -1) {
 			if(window.location.href.indexOf('contact/') > -1)
 				return;
+			if(navigator.userAgent.indexOf('iPad') != -1) {
+				$('h1.page-title').attr('style', 'width:10% !important');
+				return;
+			}
 			if($('#main').find('h1.page-title')) {
 				$('h1.page-title').attr('style', 'width:100% !important');
 				$('.description .colums').css('margin-left', '30px');
@@ -345,6 +349,8 @@
 			$('#maillist').insertAfter('nav#site-navigation');
 		}
 	});
+
+	$('#menu-buy-now li:eq(0) a, #menu-buy-now li:eq(1) a').attr('target', '_blank')
 
 	if(/Android|iPad/i.test(navigator.userAgent) ) {
 		$(document).ready(function() {

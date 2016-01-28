@@ -21,15 +21,15 @@ get_header(); ?>
 								?>
 											
 								<?php if($image) : ?>
-								<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>"> <img class="img-responsive" src="<?php echo $image ?>"/></a>
+								<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" target="_blank"> <img class="img-responsive" src="<?php echo $image ?>"/></a>
 								<?php endif; ?>	
 								
-								<h2 class="box-title"><a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+								<h2 class="box-title"><a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" target="_blank" rel="bookmark"><?php the_title(); ?></a></h2>
 								<div class="box-meta"><?php the_excerpt(); ?></div>	
 								<!-- <div class="box-meta"><?php the_category(', '); ?></div> -->
 								
 								<div class="options">
-									<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" class="torani-btn read-more">BUY NOW</a>
+									<a href="<?php echo get_post_meta($post->ID, 'buy-now-link', true); ?>" target="_blank" class="torani-btn read-more">BUY NOW</a>
 								</div>
 						</article>
 
