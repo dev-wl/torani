@@ -75,6 +75,12 @@ get_header(); ?>
 		}
 	}
 
+	@media(max-width: 640px) and (orientation: portrait){
+		.footer {
+			margin-top: 45px;
+		}
+	}
+
 	@media (max-width: 400px) and (orientation: portrait) {
 		#main {
 			margin: 32px 10%;

@@ -174,6 +174,7 @@
 			}
 
 			function s(a) {
+				V = 850;
 				a === c && (a = $.position().top), T.scrollTop(0), ab = a;
 				var b = 0 === ab,
 					e = ab == _,

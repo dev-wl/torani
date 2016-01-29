@@ -805,6 +805,10 @@ ul#topmenu li a {
 	font-weight: 400;
 }
 
+ul#topmenu li a:hover {
+	color: #F5ED9F;
+}
+
 #menu-secondary, #menu-buy-now {
 	/*max-width: 1293px;*/
 	/*margin-left: auto;*/
@@ -1197,6 +1201,7 @@ p.copy {
 	border: medium none;
 	font-family: univers67_condensed_bold;
 	margin: 4px 0px 0px 7px;
+	padding: 0px 0px 0px 0px;
 }
 
 .products {
@@ -1557,16 +1562,18 @@ ul.huge-it-share-buttons-list {
 
 .read-more {
 	background-color: #DAA520;
-	outline: 1px solid #DCDCDC;
-    outline-offset: -3px;
+	/*outline: 1px solid #DCDCDC;
+    outline-offset: -3px;*/
+    border: 4px double #DCDCDC;
 }
 
 .buy-now {
 	background-color: #DC143C;
 	margin: 0px auto;
 	width: 91px;
-	outline: 1px solid #DCDCDC;
-    outline-offset: -3px;
+	/*outline: 1px solid #DCDCDC;
+    outline-offset: -3px;*/
+    border: 4px double #DCDCDC;
 }
 
 .single-product .buy-now {
@@ -2297,7 +2304,7 @@ ul#topmenu li.current-menu-item a {
 	.sl-wrapper {
 		position: relative !important;
 		width: 80%;
-		height: 300px !important;
+		height: 320px !important;
 		float: initial;
 		margin: 0px auto;
 	}
@@ -2379,7 +2386,7 @@ ul#topmenu li.current-menu-item a {
 		width: 50% !important;
 	}
 	.flipper_container {
-		height: 122px;
+		height: 105px;
 	}
 	.footer .row {
 		margin-right: 0px !important;
@@ -2525,7 +2532,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 139px;
+		height: 156px;
 	}
 
 	.site-info .footer-right p.copy {
@@ -2605,6 +2612,18 @@ ul#topmenu li.current-menu-item a {
 
 	.single-product .image-block .share-icons {
 		width: 100 !important;
+	}
+
+	.grid-item:nth-child(2) {
+		top: 210px !important;
+	}
+
+	.tw-feed {
+		top: 284px !important;
+	}
+
+	.fb-feed {
+		top: 630px !important;
 	}
 
 	.single-product .general, .post .entry-content, .blogpost .entry-content {
@@ -2696,6 +2715,16 @@ ul#topmenu li.current-menu-item a {
 		width: 83px;
 		/*width: 100px;
 		height: 100px;*/
+	}
+
+	.read-more {
+		outline: 0;
+	    border: 4px double #DCDCDC;
+	}
+
+	.buy-now {
+		outline: 0;
+	    border: 4px double #DCDCDC;
 	}
 
 	.mobile {
@@ -2902,7 +2931,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 140px;
+		height: 170px;
 	}
 
 	.footer-right {
