@@ -12,6 +12,10 @@ get_header(); ?>
 	#page {
 		background-color: #eae4d8;
 	}
+
+	#main header .description {
+		margin-top: 30px;
+	}
 </style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

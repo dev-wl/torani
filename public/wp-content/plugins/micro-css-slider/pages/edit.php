@@ -129,7 +129,9 @@
 			<img src="<?php echo $cleanedObject->guid; ?>" />
 		</div> 
 		<?php $the_meta = get_post_meta ( $cleanedObject->post_parent, 'description', false); ?>
+		<?php $the_link = get_post_meta ( $cleanedObject->post_parent, 'link', false); ?>
 		<textarea cols='10' rows='10' placeholder="Input image decription here" class="image_description" id="text-<?php echo $cleanedObject->post_parent; ?>"><?php echo isset($the_meta[0]) ? $the_meta[0] : ''?></textarea>
+		<input type="text" placeholder="Product link" class="link" id="link-<?php echo $cleanedObject->post_parent; ?>" value="<?php echo isset($the_link[0]) ? $the_link[0] : ''?>" />
 		<div class="cf"></div>
 
 		<a class="slide-delete" id="slide-<?php echo $cleanedObject->post_parent; ?>">Delete slilde</a>
@@ -235,6 +237,19 @@ function my_action_javascript() { ?>
 			jQuery.post(ajaxurl, data, function(response) {
 			});
 		});
+
+		jQuery('.link').on('change', function(e) {
+			var data = {
+				'action': 'link-update',
+				'slide-id': jQuery(this).attr('id'),
+				'link': jQuery(this).val()
+			};
+
+			// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
+			jQuery.post(ajaxurl, data, function(response) {
+			});
+		});
+
 	});
 	</script>
 

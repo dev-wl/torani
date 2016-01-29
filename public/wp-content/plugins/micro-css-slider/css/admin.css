@@ -19,10 +19,16 @@
 }
 
 .single-slide textarea {
-	height: 90%;
+	/*height: 90%;*/
+	height: 295px;
 	width: 330px;
 	margin: 10px 10px;
 	resize: none;
+}
+
+input.link {
+	width: 47%;
+	margin-left: 10px;
 }
 
 .cf {

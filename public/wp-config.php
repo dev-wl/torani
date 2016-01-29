@@ -40,12 +40,8 @@ define('DB_COLLATE', '');
 define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
 
-
 // define('WP_HOME', 'http://ak.torani/');
 // define('WP_SITEURL', 'http://ak.torani/');
-
-
-
 
 /**#@+
  * Authentication Unique Keys and Salts.
