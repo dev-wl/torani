@@ -44,7 +44,7 @@ get_header(); ?>
 		}
 
 		.feed:nth-child(3), .feed:last-child {
-		    top: 428px !important;
+		    top: 480px !important;
 		}
 	}
 

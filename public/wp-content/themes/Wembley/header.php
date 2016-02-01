@@ -173,7 +173,11 @@
 			if(window.location.href.indexOf('contact/') > -1)
 				return;
 			if(navigator.userAgent.indexOf('iPad') != -1) {
-				$('h1.page-title').attr('style', 'width:10% !important');
+				$('h1.page-title').attr('style', 'width:35% !important');
+				return;
+			}
+			if(navigator.userAgent.indexOf('Mac') != -1) {
+				$('h1.page-title').attr('style', 'width:20% !important');
 				return;
 			}
 			if($('#main').find('h1.page-title')) {
@@ -187,6 +191,13 @@
 
 		$('.menu li div img').click(function() {
 			window.location.href = $(this).parent().find($('a')).attr('href');
+		});
+
+		$('#submenu-buynow li:nth-child(1) img, #submenu-buynow li:nth-child(2) img').unbind('click');
+		$('#submenu-buynow li:nth-child(1) img, #submenu-buynow li:nth-child(2) img').click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			window.open($(this).parent().find($('a')).attr('href'), '_blank');
 		});
 
 	});

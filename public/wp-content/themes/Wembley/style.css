@@ -1098,7 +1098,7 @@ a.buy:hover {
 }
 
 .footer-left a {
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	color: #fff;
 }
 
@@ -1586,6 +1586,10 @@ ul.huge-it-share-buttons-list {
 	margin: 0px auto;
 }
 
+.category-retailers .box-meta {
+	width: 50%;
+}
+
 .single-product .image-block {
 	float: left;
 	max-width: 42% !important;
@@ -1938,6 +1942,12 @@ ul#topmenu li.current-menu-item a {
 	}
 }
 
+@media(min-width: 1200px) {
+	#colophon {
+	    padding-top: 15px;
+	}
+}
+
 @media (device-width: 1280px) and (min-width: 1116px) {
 	.grid-item--width3 {
 		width: 800px;
@@ -1955,6 +1965,10 @@ ul#topmenu li.current-menu-item a {
 
 	#main {
 		margin-top: 30px;
+	}
+
+	#darkener {
+		height: 111px;
 	}
 }
 
@@ -2268,7 +2282,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 78px;
+		height: 90px;
 	}
 
 	#maillist form input[type="email"] {
@@ -2749,6 +2763,10 @@ ul#topmenu li.current-menu-item a {
 		margin-right: 0px;
 		margin-top: -4px;
 		margin-bottom: 20px;
+	}
+
+	.sl-wrapper .controls {
+		margin-top: -8px;
 	}
 	
 	.torani-btn {

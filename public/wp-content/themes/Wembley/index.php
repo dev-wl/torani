@@ -21,6 +21,17 @@ get_header(); ?>
 	.description {
 		margin-bottom: 20px;
 	}
+
+	.description h1.page-title {
+		margin-bottom: initial;
+		margin-top: 3px;
+	}
+
+@media(device-width: 768px) {
+	.options {
+		text-align: center;
+	}
+}
 </style>
 
 	<!-- <div class="col-md-12 intro-me clearfix">

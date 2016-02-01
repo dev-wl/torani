@@ -16,6 +16,11 @@ get_header(); ?>
 	#main header .description {
 		margin-top: 30px;
 	}
+
+	.description h1.page-title {
+		margin-bottom: initial;
+		margin-top: 3px;
+	}
 </style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
