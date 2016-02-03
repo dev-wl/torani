@@ -81,6 +81,12 @@ get_header(); ?>
 			pinterest.attr('href', pinterest.attr('href').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
 			pinterest.attr('onclick', pinterest.attr('onclick').replace(old_medial_link, "&media=" + $('.image-block img').attr('src') ));
 		}
+
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			if($('body').height() < $(window).height()) {
+				$('html, body, #page').css('height', '100%');
+			}
+		}
 	});
 	
 	function checkMainImage() {
