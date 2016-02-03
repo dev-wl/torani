@@ -77,16 +77,16 @@
 			$('.footer').css('position', 'static');
 			$('html, body').css('height', 'auto');
 			$('html, body').css('min-height', '100%');
-
-			if($(window).width() >= 1900)  {
-				$('html, body').css('min-height', '98%');				
-			}
 		}
 	}
 
 	$(document).ready(function() {
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			recheckFooter();
+		}
+
+		if($(window).width() >= 1900)  {
+			$('html, body').css('min-height', '98%');				
 		}
 
 		if($('#submenu').find('.current-menu-item').length > 0)
