@@ -77,6 +77,10 @@
 			$('.footer').css('position', 'static');
 			$('html, body').css('height', 'auto');
 			$('html, body').css('min-height', '100%');
+
+			if($(window).width() >= 1900)  {
+				$('html, body').css('min-height', '98%');				
+			}
 		}
 	}
 
