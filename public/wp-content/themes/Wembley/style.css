@@ -1777,6 +1777,14 @@ ul#topmenu li.current-menu-item a {
 }
 /*.huge-it-share-buttons.nobackground li:eq(4) a').attr('href', 'http://instagram.com/');*/
 
+.wl-powered {
+	padding-top: 60px;
+}
+
+.wl-powered a {
+	color: #fff !important;
+}
+
 @media (min-width: 2860px) {
 	.grid-item--width3 {
 		width: 900px;
@@ -1968,7 +1976,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 111px;
+		height: 114px;
 	}
 }
 
@@ -2282,7 +2290,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 90px;
+		height: 106px;
 	}
 
 	#maillist form input[type="email"] {
@@ -2545,8 +2553,13 @@ ul#topmenu li.current-menu-item a {
 	    width: 58% !important;
 	}
 
+	.wl-powered {
+		width: 80%;
+		padding-top: 0px;
+	}
+
 	#darkener {
-		height: 156px;
+		height: 177px;
 	}
 
 	.site-info .footer-right p.copy {
@@ -2640,6 +2653,10 @@ ul#topmenu li.current-menu-item a {
 		top: 630px !important;
 	}
 
+	.wl-powered {
+		width: 80%;
+	}
+
 	.single-product .general, .post .entry-content, .blogpost .entry-content {
 		width: 100%;
 		max-width: 100%;
@@ -2650,7 +2667,7 @@ ul#topmenu li.current-menu-item a {
 	}
 
 	#darkener {
-		height: 140px;
+		height: 176px;
 	}
 
 	.blogpost .image-block {

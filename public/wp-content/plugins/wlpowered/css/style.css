@@ -1,0 +1,275 @@
+/*popup*/
+
+.wl-powered {
+ /* width: 18%;
+  margin: 0px auto;
+  display: block;*/
+  width: 20%;
+  margin: 0px auto;
+}
+
+.wl-powered a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#wlpopup-wrap {
+  display: none;
+  z-index: 7;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background : #000;
+  opacity: 0.6;
+  display: none;
+  z-index: 6;
+}
+
+#wlpopup-wrap {
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  width: 43%;
+}
+
+#wlpopup-wrap > img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.popup_form .contact-us img + p {
+  display: inline;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.close {
+  float: right;
+  margin-right: 28px;
+  cursor: pointer;
+  margin-top: 49px;
+}
+
+.close .close-overlay {
+  height: 23px;
+  width: 20px;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+#wlpopup-wrap .close::before {
+  content: " ";
+  width: 2px;
+  height: 24px;
+  display: block;
+  background-color: #66758c;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  margin-top: 11px;
+}
+
+#wlpopup-wrap .close::after {
+  content: " ";
+  width: 2px;
+  height: 24px;
+  display: block;
+  background-color: #66758c;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 11px;
+}
+
+.popup_form {
+  padding: 45px;
+  background: #fff;
+  color: #a5a5a5;
+}
+
+p.popup-response {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.popup_form .controls {
+  width: 98%;
+}
+
+.popup_form input[type='text']:nth-child(2) {
+  margin-right: 16px;
+}
+
+.popup_form input[type='text'] {
+  width: 38%;
+  /*width: 260px;*/
+  border: 2px solid #eeeeee;
+  background: #fff;
+}
+
+.popup_form label {
+  font-size: 15px;
+}
+
+.group {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup_form label:nth-child(6) {
+  margin-top: 20px;
+  display: block;
+}
+
+.popup_form textarea {
+  margin-top: 11px;
+  vertical-align: middle;
+  width: 99%;
+  height: 130px;
+  border: 1px solid #eeeeee;
+  background: #fff;
+}
+
+.popup_form .contact-us {
+  display: block;
+  margin-top: 20px;
+}
+
+.popup_form .contact-us img {
+  height: 30px;
+}
+
+.popup_form .contact-us a img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+.popup_form .contact-us div {
+  display: inline;
+  margin-left: 45px;
+}
+
+.popup_form .contact-us a:nth-child(3) img {
+  height: 25px;
+}
+
+.popup_form .contact-us a.contact {
+  float: right;
+  margin-right: 45px;
+  padding: 10px;
+  background: rgb(41, 188, 240) none repeat scroll 0% 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -5px;
+}
+
+.popup_form .contact-us a.contact.inactive {
+  pointer-events: none;
+  cursor: default;
+}
+
+.popup_form .preloader {
+  display: none;
+}
+
+.popup_form .preloader {
+  margin: 0px auto;
+  width: 110px;
+}
+
+.popup_form .preloader img {
+  height: 30px;
+}
+
+/*endpopup*/
+
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  /*popup*/
+  #wlpopup-wrap {
+    top: 1%;
+    left: 14%;
+    width: 73%;
+  }
+
+  .popup_form input[type='text'] {
+    width: 38%;
+  }
+  /*endpopup*/
+}
+
+@media only screen and (device-width: 768px) and (orientation:portrait) {
+  /*popup*/
+  .wl-powered {
+    margin-top: 10px;
+    width: 25%; 
+  }
+
+  #wlpopup-wrap {
+    left: 2%;
+    width: 96%;
+  }
+  /*endpopup*/
+}
+
+@media (max-width: 650px) {
+  /*popup*/
+  #wlpopup-wrap {
+    top: 0%;
+    left: 1%;
+    width: 98%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 123456;
+  }
+
+  .close {
+    margin-top: 0px;
+    position: absolute;
+    right: 0px;
+  }
+
+  .group {
+    display: block;
+  }
+
+  .group input[type="text"] {
+    display: block;
+    width: 100%;
+  }
+
+  .popup_form .contact-us div {
+    display: block;
+    margin-left: initial;
+    margin-bottom: 35px;
+  }
+  /*endpopup*/
+}
+
+@media (max-width: 650px) and (orientation: landscape) {
+   /*popup*/
+  .wl-powered {
+    width: 50%;
+  }
+
+   #wlpopup-wrap {
+    height: 320px;
+    overflow-y: scroll;
+    margin-bottom: 
+  }
+
+  .popup_form {
+    padding-bottom: 150px;
+  }
+  /*endpopup*/
+}

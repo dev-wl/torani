@@ -38,11 +38,16 @@
 						<a href="http://torani.com/" target="_blank"><p class="info">VISIT TORANI.COM</p></a>
 						<p class="copy">Torani is a trademark of R. Torre &amp; Company and is used under license to Single Cup Coffee</p>
 					</div>
+					<?php echo do_shortcode('[wlpowered]'); ?>
 					<div class="clearfix"></div>
 				</div>		
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 		</div>
+
+		<?php echo do_shortcode('[wlpowered-markup]'); ?>
+		<?php echo do_shortcode('[wlpowered-script]'); ?>
+		
 	</div> <!-- footer -->
 </div><!-- #page -->
 
