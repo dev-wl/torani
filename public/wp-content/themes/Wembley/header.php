@@ -273,9 +273,6 @@
 
 
 </script>
-<!--Justuno Script-->
-<script type="text/javascript" charset="utf-8">var ju_num="3836E8A2-80FE-4473-BD03-A2A18EB8E0E3";var asset_host=(("https:"==document.location.protocol)?"https":"http")+'://d2j3qa5nc37287.cloudfront.net/';(function() {var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=asset_host+'coupon_code1.js';var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);})();</script>
-<!--End Justuno-->
 <!-- Hotjar Tracking Code for http://www.toranisinglecup.com -->
 <script>
     (function(h,o,t,j,a,r){
