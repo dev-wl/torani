@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.pr-snapshot-cobrand {
+	color: #DC0003 !important;
+}
+
+.pr-snapshot-write-review {
+	color: #DC0003 !important;
+}
+
+.pr-review-author p{
+	text-align:left !important;
+}
+
+.pr-review-author-name a{
+	color: #DC0003 !important;
+}
+.pr-comments p{
+	text-align:left !important;
+}
+
+.pr-review-report-issue p{
+	text-align:left !important;
+}
+
+.pr-review-report-issue a{
+	color: #DC0003 !important;
+}
+
+.pr-review-helpful-text a{
+	color: #DC0003 !important;
+}
+
+.pr-review-rating-wrapper p{
+	text-align:left !important;
+}
+
+.pr-review-main-wrapper p{
+	text-align:left !important;
+}
+
+.pr-nav-back-to-top a{
+	color: #DC0003 !important;
+}
+
+.pr-page-nav a{
+	color: #DC0003 !important;
+}
